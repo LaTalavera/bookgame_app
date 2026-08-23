@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "edition": "Ceniza y Corona · catálogo visual canónico",
+  "assets": {
+    "scene-1": { "file": "scene-1.png", "width": 1024, "height": 1536, "bookPlate": true },
+    "scene-2": { "file": "scene-2.png", "width": 1024, "height": 1536, "bookPlate": true },
+    "scene-3": { "file": "scene-3.png", "width": 1024, "height": 1536, "bookPlate": true },
+    "scene-4": { "file": "scene-4.png", "width": 1024, "height": 1536, "bookPlate": true },
+    "scene-5": { "file": "scene-5.png", "width": 1536, "height": 1024, "bookPlate": true },
+    "scene-6": { "file": "scene-6.png", "width": 1024, "height": 1536, "bookPlate": true },
+    "07-el-custodio-en-la-capilla": { "file": "story/07-el-custodio-en-la-capilla.png", "width": 1024, "height": 1536, "bookPlate": true },
+    "08-el-quebrado-mayor": { "file": "story/08-el-quebrado-mayor.png", "width": 1536, "height": 1024, "bookPlate": true },
+    "09-el-discurso-de-la-duquesa": { "file": "story/09-el-discurso-de-la-duquesa.png", "width": 1024, "height": 1536, "bookPlate": true },
+    "10-la-redada-en-el-refugio": { "file": "story/10-la-redada-en-el-refugio.png", "width": 1536, "height": 1024, "bookPlate": true },
+    "11-el-sueno-compartido": { "file": "story/11-el-sueno-compartido.png", "width": 1536, "height": 1024, "bookPlate": true },
+    "12-el-consejo-del-valle": { "file": "story/12-el-consejo-del-valle.png", "width": 1536, "height": 1024, "bookPlate": true },
+    "13-el-primer-ligado": { "file": "story/13-el-primer-ligado.png", "width": 1024, "height": 1536, "bookPlate": true },
+    "14-la-muerte-de-sor-ygrid": { "file": "story/14-la-muerte-de-sor-ygrid.png", "width": 1536, "height": 1024, "bookPlate": false },
+    "15-la-espesura-rota": { "file": "story/15-la-espesura-rota.png", "width": 1536, "height": 1024, "bookPlate": false },
+    "16-el-monasterio-de-las-afueras": { "file": "story/16-el-monasterio-de-las-afueras.png", "width": 1536, "height": 1024, "bookPlate": false },
+    "17-combate-contra-la-duquesa-ordaz": { "file": "story/17-combate-contra-la-duquesa-ordaz.png", "width": 1536, "height": 1024, "bookPlate": false },
+    "18-la-cadena-rota": { "file": "story/18-la-cadena-rota.png", "width": 1536, "height": 1024, "bookPlate": false }
+  },
+  "sections": {
+    "1": "scene-1", "4": "07-el-custodio-en-la-capilla", "5": "14-la-muerte-de-sor-ygrid",
+    "30": "15-la-espesura-rota", "112": "scene-2", "126": "08-el-quebrado-mayor",
+    "1046": "10-la-redada-en-el-refugio", "1088": "09-el-discurso-de-la-duquesa",
+    "1110": "16-el-monasterio-de-las-afueras", "1129": "scene-3",
+    "1143": "17-combate-contra-la-duquesa-ordaz", "2001": "11-el-sueno-compartido",
+    "2088": "12-el-consejo-del-valle", "2116": "scene-4", "2129": "scene-5",
+    "2131": "13-el-primer-ligado", "2136": "13-el-primer-ligado",
+    "2144": "18-la-cadena-rota", "2145": "scene-6", "2902": "18-la-cadena-rota",
+    "2903": "scene-6"
+  }
+}

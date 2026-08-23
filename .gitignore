@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# Entorno virtual de los scripts del PDF: se reconstruye solo con
+# ./scripts/build_rules_pdf.sh a partir de scripts/requirements.txt
+scripts/.venv/
+__pycache__/
+*.py[cod]

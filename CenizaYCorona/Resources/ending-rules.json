@@ -1,0 +1,40 @@
+{
+  "tables": [
+    {
+      "section_id": 133,
+      "rules": [
+        { "destination": 950, "description": "Tu Corrupción es 10", "conditions": { "corruption": { "min": 10 } } },
+        { "destination": 905, "description": "Tu Corrupción es 7 o más", "conditions": { "corruption": { "min": 7 } } },
+        { "destination": 901, "description": "PADRE CENIZA CAÍDO y Orden de la Ceniza +4 o más", "conditions": { "all_flags": ["PADRE_CENIZA_CAIDO"], "reputation": { "orden": 4 } } },
+        { "destination": 902, "description": "TOMÁS VACILA o PADRE CENIZA CAPTURADO, con Secta 0 o más", "conditions": { "any_flags": ["TOMAS_VACILA", "PADRE_CENIZA_CAPTURADO"], "reputation": { "secta": 0 } } },
+        { "destination": 903, "description": "Los Libres +4 o más", "conditions": { "reputation": { "los_libres": 4 } } },
+        { "destination": 904, "description": "NIÑOS A SALVO y BREN RESCATADO", "conditions": { "all_flags": ["NINOS_A_SALVO", "BREN_RESCATADO"] } },
+        { "destination": 906, "description": "Ninguna de las anteriores", "conditions": { "fallback": true } }
+      ]
+    },
+    {
+      "section_id": 1145,
+      "rules": [
+        { "destination": 1950, "description": "Tu Corrupción es 10", "conditions": { "corruption": { "min": 10 } } },
+        { "destination": 1901, "description": "ALIANZA VAAS, ORDAZ EXPUESTA y Favor Cortesano +3 o más", "conditions": { "all_flags": ["ALIANZA_VAAS", "ORDAZ_EXPUESTA"], "reputation": { "favor": 3 } } },
+        { "destination": 1902, "description": "El Guardián del Censo derrotado y ORDAZ CONVENCIDA", "conditions": { "all_visited_sections": [1138], "all_flags": ["ORDAZ_CONVENCIDA"] } },
+        { "destination": 1903, "description": "ALIANZA REFUGIO y Los Libres +3 o más", "conditions": { "all_flags": ["ALIANZA_REFUGIO"], "reputation": { "los_libres": 3 } } },
+        { "destination": 1904, "description": "El Guardián del Censo ha caído y Orden de la Ceniza +3 o más", "conditions": { "all_visited_sections": [1138], "reputation": { "orden": 3 } } },
+        { "destination": 1905, "description": "El Guardián del Censo ha caído y tu Corrupción está entre 7 y 9", "conditions": { "all_visited_sections": [1138], "corruption": { "min": 7, "max": 9 } } },
+        { "destination": 1906, "description": "Ninguna de las anteriores", "conditions": { "fallback": true } }
+      ]
+    },
+    {
+      "section_id": 2150,
+      "rules": [
+        { "destination": 2950, "description": "Tu Corrupción es 10", "conditions": { "corruption": { "min": 10 } } },
+        { "destination": 2903, "description": "PACTO PROPUESTO, PACTO ACEPTADO y Vínculo 8 o más", "conditions": { "all_flags": ["PACTO_PROPUESTO", "PACTO_ACEPTADO"], "reputation": { "vinculo": 8 } } },
+        { "destination": 2901, "description": "Reforjar la cadena con VOLUNTARIOS DEL VALLE", "conditions": { "all_flags": ["DECISION_REFORJAR", "VOLUNTARIOS_DEL_VALLE"] } },
+        { "destination": 2902, "description": "Romper la cadena", "conditions": { "all_flags": ["DECISION_ROMPER"] } },
+        { "destination": 2904, "description": "Reforjar la cadena con VOLUNTARIOS RECHAZADOS", "conditions": { "all_flags": ["DECISION_REFORJAR", "VOLUNTARIOS_RECHAZADOS"] } },
+        { "destination": 2905, "description": "Tu Corrupción está entre 7 y 9", "conditions": { "corruption": { "min": 7, "max": 9 } } },
+        { "destination": 2906, "description": "Ninguna de las anteriores", "conditions": { "fallback": true } }
+      ]
+    }
+  ]
+}
