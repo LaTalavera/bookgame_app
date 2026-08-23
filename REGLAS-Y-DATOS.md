@@ -212,14 +212,14 @@ Solo existen dos copias de `saga.json`, y son idénticas (SHA-256 `cc893dcf…`)
 
 | Ruta | Papel |
 |---|---|
-| `~/Desktop/Libro/ceniza-y-corona-app/public/data/saga.json` | **maestro**, versionado en git; es lo que sirve la web en `/data/saga.json` |
-| `~/Desktop/Libro/CenizaYCorona/CenizaYCorona/Resources/saga.json` | copia empaquetada dentro del `.app` de iOS |
+| `~/Desktop/GitHub/bookgame_web/public/data/saga.json` | **maestro**, versionado en git; es lo que sirve la web en `/data/saga.json` |
+| `~/Desktop/GitHub/bookgame_app/CenizaYCorona/Resources/saga.json` | copia empaquetada dentro del `.app` de iOS |
 
 Al editar el maestro hay que copiarlo a la app iOS:
 
 ```bash
-cp ~/Desktop/Libro/ceniza-y-corona-app/public/data/saga.json \
-   ~/Desktop/Libro/CenizaYCorona/CenizaYCorona/Resources/saga.json
+cp ~/Desktop/GitHub/bookgame_web/public/data/saga.json \
+   ~/Desktop/GitHub/bookgame_app/CenizaYCorona/Resources/saga.json
 ```
 
 La app iOS lo lee en un solo sitio, `SagaLibrary.swift`, con el nombre fijo
