@@ -69,7 +69,7 @@ final class CombatSession {
 
     let seccionID: Int
     let datos: CombatData
-    let enemigo: EnemyStats
+    var enemigo: EnemyStats
 
     var vidaEnemigo: Int
     var fase: Fase = .listo
@@ -199,6 +199,10 @@ final class CombatSession {
     var ecoProfundoUsos = 0
     /// Muro de Voto (Penitente): 1 Eco, reduce en 2 el daño de esta ronda.
     var muroDeVotoArmado = false
+    /// Romper la cadena (§2147): armado antes de golpear, se consume una sola
+    /// vez y deja el combate "roto" el resto del enfrentamiento.
+    var cadenaRotaArmada = false
+    var cadenaRota = false
 
     init(seccionID: Int, datos: CombatData) {
         self.seccionID = seccionID
@@ -230,9 +234,18 @@ final class CombatSession {
         ecoProfundoArmado = snapshot.ecoProfundoArmado ?? false
         ecoProfundoUsos = snapshot.ecoProfundoUsos ?? 0
         muroDeVotoArmado = snapshot.muroDeVotoArmado ?? false
+        cadenaRota = snapshot.cadenaRota ?? false
+        if cadenaRota, let romper = regla?.romperCadena {
+            enemigo = EnemyStats(nombre: enemigo.nombre, defensa: romper.defensaEnemigo,
+                                  vida: enemigo.vida, ataque: enemigo.ataque, dano: romper.danoEnemigo)
+        }
     }
 
     var terminado: Bool { fase == .ganado || fase == .perdido }
+
+    func puedeRomperLaCadena(_ state: GameState) -> Bool {
+        regla?.romperCadena != nil && !cadenaRota && !terminado
+    }
 
     func puedeUsarFuria(_ state: GameState) -> Bool {
         state.vocacion == .cuchilla && !donDeVocacionUsado && !terminado
@@ -414,6 +427,14 @@ final class CombatSession {
         let atributo = state.atributo(modo.atributo)
         var modificador = atributo
         var donForzadoUsado = false
+        if cadenaRotaArmada, let romper = regla?.romperCadena, !cadenaRota {
+            cadenaRota = true
+            cadenaRotaArmada = false
+            enemigo = EnemyStats(nombre: enemigo.nombre, defensa: romper.defensaEnemigo,
+                                  vida: enemigo.vida, ataque: enemigo.ataque, dano: romper.danoEnemigo)
+            registro.append(LineaDeCombate(ronda: ronda, lado: .sistema,
+                                           texto: "Rompes la cadena tú mismo: \(romper.invitacion)"))
+        }
         if golpeDeGrietaArmado {
             modificador += DonForzado.golpeDeGrieta.bono
             state.ganarCorrupcion(DonForzado.golpeDeGrieta.costeCorrupcion)
@@ -468,6 +489,7 @@ final class CombatSession {
             ultimoCritico = !golpeAutomatico && tirada.total >= enemigo.defensa + 5
             if ultimoCritico { dano *= 2 }
             dano += bonoDeEmboscada(state)
+            if cadenaRota, let romper = regla?.romperCadena { dano += romper.bonoDanoPropio }
             // «resta N al daño que le inflijas», con la excepción del daño mágico.
             if let r = regla, r.reduceDano > 0 {
                 let esMagico: Bool = { if case .hechizo = modo { return true }; return false }()
@@ -638,6 +660,7 @@ struct CombatSnapshot: Codable, Hashable {
     let ecoProfundoArmado: Bool?
     let ecoProfundoUsos: Int?
     let muroDeVotoArmado: Bool?
+    let cadenaRota: Bool?
 
     init(_ combate: CombatSession) {
         seccionID = combate.seccionID
@@ -661,5 +684,6 @@ struct CombatSnapshot: Codable, Hashable {
         ecoProfundoArmado = combate.ecoProfundoArmado
         ecoProfundoUsos = combate.ecoProfundoUsos
         muroDeVotoArmado = combate.muroDeVotoArmado
+        cadenaRota = combate.cadenaRota
     }
 }

@@ -7,7 +7,7 @@ import Foundation
 /// único efecto pasivo, permanente y sin gestión: no hay que gastarlo, ni
 /// recordarlo por ronda, ni anotarlo más de una vez en la ficha.
 ///
-/// Espejo de la tabla COMPANIONS de ceniza-y-corona-app/lib/game-engine.ts.
+/// Espejo de la tabla COMPANIONS de ../bookgame_web/lib/game-engine.ts.
 struct Companero: Hashable, Identifiable {
     var id: String { flag }
     let flag: String

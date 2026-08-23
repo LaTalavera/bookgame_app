@@ -21,6 +21,7 @@ final class FinalReachabilityTests: XCTestCase {
             (1145, 1905, { $0.visitadas = [1138]; $0.corrupcion = 7 }),
             (1145, 1906, { _ in }),
             (2150, 2950, { $0.corrupcion = 10 }),
+            (2150, 2908, { $0.flags = ["BREN_RESCATADO", "MARCADOS_LIBERADOS", "DECISION_REFORJAR", "VOLUNTARIOS_DEL_VALLE"]; $0.reputacion[.vinculo] = 8 }),
             (2150, 2903, { $0.flags = ["PACTO_PROPUESTO", "PACTO_ACEPTADO"]; $0.reputacion[.vinculo] = 8 }),
             (2150, 2901, { $0.flags = ["DECISION_REFORJAR", "VOLUNTARIOS_DEL_VALLE"] }),
             (2150, 2902, { $0.flags = ["DECISION_ROMPER"] }),
@@ -67,7 +68,7 @@ final class FinalReachabilityTests: XCTestCase {
         XCTAssertEqual(reachable.subtracting(reserved), ids.subtracting(reserved), "Hay secciones no alcanzables desde los inicios de libro.")
 
         let endings = Set(ids.filter { library[$0]?.esFinal == true })
-        XCTAssertEqual(endings.count, 25, "La biblioteca debe exponer los 25 finales de la saga.")
+        XCTAssertEqual(endings.count, 26, "La biblioteca debe exponer los 26 finales de la saga.")
         var reverse = Dictionary(uniqueKeysWithValues: ids.map { ($0, Set<Int>()) })
         for (source, targets) in adjacency {
             for target in targets { reverse[target, default: []].insert(source) }
@@ -388,6 +389,51 @@ final class FinalReachabilityTests: XCTestCase {
         XCTAssertEqual(vidente.herramientas(para: pruebaVol, atributo: .vol).count, 1)
         XCTAssertTrue(vidente.herramientas(para: pruebaAgi, atributo: .agi).isEmpty,
                       "La tinta solo vale para la Voluntad.")
+    }
+
+    // MARK: - §2080 y §2147: agencia real en los dos combates que rompian el Libro 3
+
+    func testGuardianDeCalzadaOfreceUnaSalidaMasDificilParaQuienNoEsVidente() {
+        guard let section = library[2080], let data = section.combat else {
+            return XCTFail("Falta el combate §2080.")
+        }
+        let combate = CombatSession(seccionID: 2080, datos: data)
+        let vidente = GameState(nombre: "Ilena", vocacion: .vidente,
+                                reparto: [.fue: 1, .agi: 1, .vol: 1], scope: .book(.tercero))
+        let cuchilla = GameState(nombre: "Otra", vocacion: .cuchilla,
+                                 reparto: [.fue: 1, .agi: 1, .vol: 1], scope: .book(.tercero))
+        XCTAssertEqual(combate.dificultadDeSalida(vidente), .dificil)
+        XCTAssertEqual(combate.dificultadDeSalida(cuchilla), .heroica)
+    }
+
+    func testRomperLaCadenaEscalaAlEnemigoYPersisteEntreRondas() {
+        guard let section = library[2147], let data = section.combat else {
+            return XCTFail("Falta el combate §2147.")
+        }
+        let combate = CombatSession(seccionID: 2147, datos: data)
+        let state = GameState(nombre: "Rompedora", vocacion: .cuchilla,
+                              reparto: [.fue: 20, .agi: 20, .vol: 20], scope: .book(.tercero))
+
+        XCTAssertTrue(combate.puedeRomperLaCadena(state))
+        XCTAssertFalse(combate.cadenaRota)
+        let defensaOriginal = combate.enemigo.defensa
+        let danoOriginal = combate.enemigo.dano
+
+        combate.cadenaRotaArmada = true
+        combate.atacar(state: state, modo: .arma(state.arma))
+
+        XCTAssertTrue(combate.cadenaRota, "Romper la cadena debe dejar el estado marcado el resto del combate.")
+        XCTAssertFalse(combate.cadenaRotaArmada, "El interruptor se consume tras usarse, como el resto de dones armados.")
+        XCTAssertFalse(combate.puedeRomperLaCadena(state), "Solo se puede romper una vez por combate.")
+        XCTAssertGreaterThan(combate.enemigo.defensa, defensaOriginal)
+        XCTAssertGreaterThan(combate.enemigo.dano, danoOriginal)
+
+        // La escalada persiste aunque se intente volver a armar el interruptor.
+        combate.cadenaRotaArmada = true
+        let defensaTrasRomper = combate.enemigo.defensa
+        combate.atacar(state: state, modo: .arma(state.arma))
+        XCTAssertEqual(combate.enemigo.defensa, defensaTrasRomper,
+                       "Una vez rota, no debe volver a escalar ni a resetearse.")
     }
 
     private func closure(from starts: [Int], through adjacency: [Int: Set<Int>]) -> Set<Int> {

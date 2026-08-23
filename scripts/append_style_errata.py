@@ -32,7 +32,8 @@ from fix_rules_section import (  # noqa: E402
     ASH, HEAD_GRAY, PART_WINE, TEXT_BLACK, decorated_page,
 )
 
-ROOT = Path(__file__).resolve().parents[2]
+WORKSPACE_ROOT = Path(__file__).resolve().parents[2]
+ROOT = WORKSPACE_ROOT.parent / "Libro"
 LIBRO = ROOT / "CenizaYCorona_SAGA_ILUSTRADA_EDICION_EQUILIBRADA.pdf"
 ERRATAS = Path(__file__).resolve().parent / "errata_estilo.json"
 TEMPORAL = ROOT / "output" / "pdf" / "_erratas_tmp.pdf"

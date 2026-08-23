@@ -1,6 +1,9 @@
 # macOS
 .DS_Store
 
+# Local AI assistant instructions
+CLAUDE.md
+
 # Xcode
 build/
 DerivedData/

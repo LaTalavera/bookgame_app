@@ -83,7 +83,7 @@ Ficheros:
   las páginas 153 y 155 corregidas. Se editó en sitio, reutilizando las fuentes
   y los códigos de carácter del propio PDF, así que la tipografía es idéntica.
   Ninguna otra página cambia y el documento sigue teniendo 260 páginas.
-- `ceniza-y-corona-app/public/data/saga.json` — **el maestro de datos**. Está
+- `../bookgame_web/public/data/saga.json` — **el maestro de datos**. Está
   bajo git, así que tiene historial y se puede revertir. De aquí se copia a la
   app iOS.
 
@@ -148,8 +148,8 @@ preparativos de marcha, las cuatro vocaciones y que toda sección alcanzable
 conserve una ruta a un final. Para comprobar ambos lados:
 
 ```bash
-cd ceniza-y-corona-app && npm run build
-xcodebuild -project ../CenizaYCorona/CenizaYCorona.xcodeproj \
+cd ../bookgame_web && npm run build
+cd ../bookgame_app && xcodebuild -project CenizaYCorona.xcodeproj \
   -scheme CenizaYCorona -destination 'platform=iOS Simulator,name=iPhone 17' test
 ```
 
@@ -258,5 +258,5 @@ de dificultad más arriba: nada queda cerrado a nadie.
 Las otras 24 reglas de la tabla no son nuevas — son las líneas `*Especial:*`
 que el propio libro ya escribía en cada combate y que la app ignoraba.
 
-`ceniza-y-corona-app/lib/combat-rules.ts` se **genera** desde este archivo
+`../bookgame_web/lib/combat-rules.ts` se **genera** desde este archivo
 Swift. Si tocas uno, regenera el otro; si no, las dos apps divergen.

@@ -189,6 +189,21 @@
           }
         },
         {
+          "destination": 2908,
+          "description": "BREN RESCATADO, MARCADOS LIBERADOS, reforjar con VOLUNTARIOS DEL VALLE y Vínculo 8 o más",
+          "conditions": {
+            "all_flags": [
+              "BREN_RESCATADO",
+              "MARCADOS_LIBERADOS",
+              "DECISION_REFORJAR",
+              "VOLUNTARIOS_DEL_VALLE"
+            ],
+            "reputation": {
+              "vinculo": 8
+            }
+          }
+        },
+        {
           "destination": 2903,
           "description": "PACTO PROPUESTO, PACTO ACEPTADO y Vínculo 8 o más",
           "conditions": {

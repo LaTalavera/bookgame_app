@@ -1,17 +1,17 @@
 /* Genera CenizaYCorona/Rules/Epilogo.swift a partir de la fuente unica de
-   verdad, ceniza-y-corona-app/lib/epilogue.ts, para que el texto del epilogo
+   verdad, bookgame_web/lib/epilogue.ts, para que el texto del epilogo
    no pueda divergir entre la web y la app movil.
 
-   Uso:  node CenizaYCorona/scripts/gen-epilogo-swift.mjs            */
+   Uso:  node scripts/gen-epilogo-swift.mjs                         */
 
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const aqui = path.dirname(fileURLToPath(import.meta.url));
-const raiz = path.resolve(aqui, "..", "..");
-const ORIGEN = path.join(raiz, "ceniza-y-corona-app", "lib", "epilogue.ts");
-const DESTINO = path.join(raiz, "CenizaYCorona", "CenizaYCorona", "Rules", "Epilogo.swift");
+const workspaceRoot = path.resolve(aqui, "..", "..");
+const ORIGEN = path.join(workspaceRoot, "bookgame_web", "lib", "epilogue.ts");
+const DESTINO = path.join(workspaceRoot, "bookgame_app", "CenizaYCorona", "Rules", "Epilogo.swift");
 
 const src = fs.readFileSync(ORIGEN, "utf8");
 const inicio = src.indexOf("EPILOGUE_LINES: EpilogueLine[] = [");
@@ -43,8 +43,8 @@ let out = `import Foundation
 /// de esto cambia un número. Si una palabra clave necesitase una tirada,
 /// estaría en ReglasEspeciales.swift, no aquí.
 ///
-/// GENERADO desde ceniza-y-corona-app/lib/epilogue.ts. No editar a mano:
-/// cambia el TypeScript y ejecuta CenizaYCorona/scripts/gen-epilogo-swift.mjs.
+/// GENERADO desde bookgame_web/lib/epilogue.ts. No editar a mano:
+/// cambia el TypeScript y ejecuta scripts/gen-epilogo-swift.mjs.
 enum Epilogo {
     struct Linea: Hashable, Identifiable {
         var id: String { flag }

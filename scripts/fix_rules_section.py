@@ -40,7 +40,8 @@ from reportlab.platypus import (
     Table, TableStyle,
 )
 
-ROOT = Path(__file__).resolve().parents[2]
+WORKSPACE_ROOT = Path(__file__).resolve().parents[2]
+ROOT = WORKSPACE_ROOT.parent / "Libro"
 FONTS = Path(__file__).resolve().parent / "fonts"
 
 # El resto del libro compone el cuerpo en DejaVu Serif y los títulos

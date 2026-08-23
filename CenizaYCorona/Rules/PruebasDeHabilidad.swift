@@ -76,6 +76,14 @@ enum PruebasDeHabilidad {
     static let todas: [PruebaDeHabilidad] = [
 
         // ── Libro Primero ───────────────────────────────────────────────────
+        PruebaDeHabilidad(seccion: 32, atributo: .fue, dificultad: .media,
+                          exito: RamaDePrueba(destino: 33),
+                          fallo: RamaDePrueba(destino: 33, danoD6: 1)),
+
+        PruebaDeHabilidad(seccion: 36, atributo: .agi, dificultad: .media,
+                          exito: RamaDePrueba(destino: 38),
+                          fallo: RamaDePrueba(destino: 38, danoD6: 1)),
+
         PruebaDeHabilidad(seccion: 102, atributo: .agi, dificultad: .media,
                           exito: RamaDePrueba(destino: 103),
                           fallo: RamaDePrueba(destino: 103, flags: ["RUIDO_EN_LA_PRISION"]),
@@ -153,6 +161,14 @@ enum PruebasDeHabilidad {
                           fallo: RamaDePrueba(destino: 1137)),
 
         // ── Libro Tercero ───────────────────────────────────────────────────
+        PruebaDeHabilidad(seccion: 2012, atributo: .agi, dificultad: .media,
+                          exito: RamaDePrueba(destino: 2013),
+                          fallo: RamaDePrueba(destino: 2013, danoD6: 1)),
+
+        PruebaDeHabilidad(seccion: 2044, atributo: .vol, dificultad: .dificil,
+                          exito: RamaDePrueba(destino: 2045),
+                          fallo: RamaDePrueba(destino: 2045, corrupcion: 1)),
+
         PruebaDeHabilidad(seccion: 2046, atributo: .vol, dificultad: .media,
                           exito: RamaDePrueba(destino: 2048),
                           fallo: RamaDePrueba(destino: 2048)),

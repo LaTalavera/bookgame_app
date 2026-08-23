@@ -29,10 +29,11 @@ from fix_rules_section import (  # noqa: E402
     ASH, HEAD_GRAY, PART_WINE, TEXT_BLACK, decorated_page,
 )
 
-ROOT = Path(__file__).resolve().parents[2]
-LIBRO = ROOT / "CenizaYCorona_SAGA_ILUSTRADA_EDICION_EQUILIBRADA.pdf"
-SAGA = ROOT / "ceniza-y-corona-app" / "public" / "data" / "saga.json"
-TEMPORAL = ROOT / "output" / "pdf" / "_cuadernillo_tmp.pdf"
+WORKSPACE_ROOT = Path(__file__).resolve().parents[2]
+BOOK_ROOT = WORKSPACE_ROOT.parent / "Libro"
+LIBRO = BOOK_ROOT / "CenizaYCorona_SAGA_ILUSTRADA_EDICION_EQUILIBRADA.pdf"
+SAGA = WORKSPACE_ROOT / "bookgame_web" / "public" / "data" / "saga.json"
+TEMPORAL = BOOK_ROOT / "output" / "pdf" / "_cuadernillo_tmp.pdf"
 
 MARCA = "SECCIONES REVISADAS"
 TITULO = "AP\u00c9NDICE \u2014 SECCIONES REVISADAS"

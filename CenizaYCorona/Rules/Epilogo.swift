@@ -11,8 +11,8 @@ import Foundation
 /// de esto cambia un número. Si una palabra clave necesitase una tirada,
 /// estaría en ReglasEspeciales.swift, no aquí.
 ///
-/// GENERADO desde ceniza-y-corona-app/lib/epilogue.ts. No editar a mano:
-/// cambia el TypeScript y ejecuta CenizaYCorona/scripts/gen-epilogo-swift.mjs.
+/// GENERADO desde bookgame_web/lib/epilogue.ts. No editar a mano:
+/// cambia el TypeScript y ejecuta scripts/gen-epilogo-swift.mjs.
 enum Epilogo {
     struct Linea: Hashable, Identifiable {
         var id: String { flag }
