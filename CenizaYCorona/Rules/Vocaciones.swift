@@ -52,7 +52,7 @@ enum Vocacion: String, CaseIterable, Identifiable, Codable, Hashable {
     var vidaInicial: Int {
         switch self {
         case .cuchilla: return 24
-        case .vigia: return 22
+        case .vigia: return 24
         case .vidente: return 22
         case .penitente: return 24
         }
@@ -95,7 +95,7 @@ enum Vocacion: String, CaseIterable, Identifiable, Codable, Hashable {
         }
     }
 
-    var escudo: Bool { self == .cuchilla || self == .vidente || self == .penitente }
+    var escudo: Bool { self == .cuchilla || self == .vigia || self == .vidente || self == .penitente }
 
     /// Parte III: la Defensa base impresa en la ficha de vocación.
     var defensaInicial: Int {

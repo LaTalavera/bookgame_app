@@ -172,6 +172,25 @@ vocación con una combinación de supervivencia y daño viable. Las pruebas de
 web e iOS bloquean regresiones por debajo de 22 Vida máxima, Defensa 9 y un
 modo de ataque de daño 3 para cualquiera de las cuatro vocaciones.
 
+### Escudo y Vida para la Vigía (24 de agosto de 2026)
+
+Una simulación de 100 partidas completas (Libro I a III) por vocación, con un
+motor que gasta recursos con criterio, mostró que la Vigía Errante moría el
+73% de las veces y no llegaba a un final del Libro III ni una sola vez en 100
+intentos — frente a un 37% de muertes de la Cuchilla. La causa: la Vigía era
+la única de las cuatro vocaciones sin escudo (Defensa 9 en vez de 10) y
+arrancaba con 22 de Vida en vez de 24, sin ningún recurso de combate que lo
+compensara — Ojo de Vardo repite una prueba de habilidad, no una tirada de
+ataque, así que no ayuda en los combates largos que la estaban matando.
+
+Se le da escudo (Defensa 9→10) y se sube su Vida de 22 a 24, igualándola con
+la Cuchilla y el Penitente. El daño del arco corto (3) y el propio Ojo de
+Vardo no se tocan: son un cambio de diseño más profundo que este ajuste no
+cubre. Repitiendo la simulación tras el cambio, la Vigía pasa a morir el 47%
+de las veces (Cuchilla: 46%) y `scripts/balance-por-vocacion.mjs`, con 3.000
+partidas por libro, confirma la paridad: 9,9% de muertes para la Cuchilla
+frente a 10,0% para la Vigía jugando con recursos.
+
 Simulando 7.200 partidas con el motor de la app, ya con pruebas de habilidad:
 
 - 0 fallos estructurales: toda partida termina en un final real.

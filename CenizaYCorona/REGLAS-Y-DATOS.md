@@ -61,3 +61,39 @@ reutilizando fuente y códigos de carácter, verificado con render antes/despué
 antes de guardar (no cambia el resto del documento; el PDF resultante pesa
 menos por recompresión sin pérdida de pikepdf, no por tocar imágenes —
 comprobado por hash, byte a byte idénticas).
+
+## Escudo y Vida para la Vigía Errante (24 de agosto de 2026)
+
+Simulando 100 partidas completas (Libro I a III) por vocación con un motor
+que gasta recursos con criterio (curar cuando conviene, guardar los dones
+para los combates duros), la Vigía Errante moría el 73% de las veces y no
+llegó a un final del Libro III ni una sola vez en 100 intentos — la Cuchilla,
+con el mismo criterio de juego, moría el 37%.
+
+La causa no es el arco corto (daño 3, igual que el bastón de la Vidente) ni
+la iniciativa (AGI 7 ya supera el Ataque de los dos jefes que más la
+mataban, §126 y §1137, igual que la Cuchilla). Es que la Vigía era la única
+de las cuatro vocaciones sin escudo — Defensa 9 en vez de 10 — y arrancaba
+con 22 de Vida en vez de 24, sin ningún recurso que lo compensara: Ojo de
+Vardo repite una prueba de habilidad fallida, nunca una tirada de ataque,
+así que no aporta nada en los combates largos de desgaste que la estaban
+matando (a diferencia de la Furia de la Cuchilla, el Eco Profundo de la
+Vidente o el Voto de Ceniza del Penitente, los tres útiles dentro del
+combate).
+
+Cambiado: **escudo** para la Vigía (Defensa 9→10) y **Vida inicial 22→24**,
+igualándola con la Cuchilla y el Penitente en sus dos números de
+supervivencia física. No se toca el daño del arco ni el propio Ojo de
+Vardo — redecidir cómo el don ayuda en combate es una intervención mayor
+que este ajuste no cubre. Repitiendo la simulación tras el cambio, la
+Vigía pasa a morir el 47% de las veces (Cuchilla: 46%), y
+`scripts/balance-por-vocacion.mjs` (3.000 partidas por libro) confirma la
+paridad: 9,9% de muertes para la Cuchilla frente a 10,0% para la Vigía
+jugando con recursos.
+
+Cambiado en `Vocaciones.swift::vidaInicial` y `Vocaciones.swift::escudo`,
+y en `../bookgame_web/lib/full-rules.ts` (`VOCATIONS.vigia.maxLife` y
+`.shield`). Un test de `test-engine.mjs` que reescala una partida antigua
+en proporción a la Vida máxima de la vocación cambió su valor esperado de
+11 a 12 como consecuencia directa (no es una regresión: el propio cálculo
+no cambió, solo la constante de la que depende).
