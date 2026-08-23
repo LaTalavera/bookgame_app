@@ -7,7 +7,7 @@ import Foundation
 /// único efecto pasivo, permanente y sin gestión: no hay que gastarlo, ni
 /// recordarlo por ronda, ni anotarlo más de una vez en la ficha.
 ///
-/// Espejo de la tabla COMPANIONS de ceniza-y-corona-app/lib/game-engine.ts.
+/// Espejo de la tabla COMPANIONS de ../bookgame_web/lib/game-engine.ts.
 struct Companero: Hashable, Identifiable {
     var id: String { flag }
     let flag: String
@@ -26,7 +26,7 @@ struct Companero: Hashable, Identifiable {
         Companero(flag: "BAJA_ILENA", nombre: "Ilena",
                   efecto: "+1 a tus pruebas de Voluntad.", pruebaDeVol: 1),
         Companero(flag: "BAJA_SOLA", nombre: "Nadie",
-                  efecto: "+1 Eco máximo: bajas sola y la Grieta se oye entera.", ecos: 1),
+                  efecto: "+1 Eco máximo: bajas en solitario y la Grieta se oye entera.", ecos: 1),
     ]
 
     static func con(flag: String) -> Companero? {

@@ -54,6 +54,18 @@ struct SalidaDeVocacion: Hashable {
     }
 }
 
+/// Una vez por combate, el jugador puede elegir romper voluntariamente una
+/// escalada narrativa (p. ej. una cadena que sostiene al enemigo) a cambio de
+/// golpear más fuerte el resto del combate, sabiendo que el enemigo también
+/// lo hará. Decisión real de riesgo/recompensa, no automática.
+struct RomperCadena: Hashable {
+    var bonoDanoPropio: Int
+    var danoEnemigo: Int
+    var defensaEnemigo: Int
+    var titulo: String
+    var invitacion: String
+}
+
 /// Todo lo que el texto añade a un combate concreto.
 struct ReglaDeCombate {
     /// La salida propia de una vocación que evita el combate entero.
@@ -88,6 +100,8 @@ struct ReglaDeCombate {
     var parlamento: Parlamento? = nil
     /// Las elecciones propias de la sección se habilitan al bajar de esta Vida.
     var umbralDeSalida: Int? = nil
+    /// La elección de romper voluntariamente la cadena, si el texto la ofrece.
+    var romperCadena: RomperCadena? = nil
     var nota: String? = nil
 }
 
@@ -157,7 +171,8 @@ enum ReglasEspeciales {
         122: ReglaDeCombate(primerGolpeAutomaticoCon: "VENTAJA_DE_SIGILO", umbralDeSalida: 8,
                             nota: "A Vida 8 o menos ofrece tregua."),
 
-        126: ReglaDeCombate(salida: .hablar(.heroica, "Bajo las placas del Quebrado Mayor aún resuena el nombre que perdió.", "Pronuncias ese nombre y la criatura se aparta, estremecida por un recuerdo que no puede combatir.")),
+        126: ReglaDeCombate(salida: .hablar(.heroica, "Bajo las placas del Quebrado Mayor aún resuena el nombre que perdió.", "Pronuncias ese nombre y la criatura se aparta, estremecida por un recuerdo que no puede combatir."),
+                           nota: "Antes de tu primer golpe puedes nombrarlo (VOL Heroica); si el combate ya ha empezado, baja de 15 de Vida y se vuelve mucho más letal. Usa pociones y Dones si hace falta."),
 
         // §1022 — el Sabueso detecta la Corrupción
         1022: ReglaDeCombate(nota: "Detecta Corrupción de 4 o más salvo ocultación previa (AGI Difícil)."),
@@ -180,17 +195,26 @@ enum ReglasEspeciales {
                               descargaAlCaerVOL: .media,
                              nota: "Al caer libera Sangre Vieja."),
 
+        // §1137 — «Autoridad absoluta» y «Fractura»: sostiene el ritual pero se desintegra al quebrarlo
+        1137: ReglaDeCombate(nota: "Resiste su Autoridad absoluta (VOL Difícil) y baja su Vida de 18: se desintegra 2 puntos cada ronda, aunque golpea más fuerte mientras dure."),
+
         // §1143 — la tregua con Ordaz (rama añadida al libro)
         1143: ReglaDeCombate(parlamento: Parlamento(
             requisito: .vidaEnemigoBajaDe(6), atributo: .vol, dificultad: .dificil,
             flagAlSuperarla: "ORDAZ_CONVENCIDA", repAlSuperarla: nil, destino: 1144,
             invitacion: "Ordaz flaquea. Puedes bajar el arma y parlamentar en vez de rematarla.",
-            alFallar: "No te escucha. El combate continúa.")),
+            alFallar: "No te escucha. El combate continúa."),
+            nota: "Baja su Vida de 6: intentará huir, o puedes convencerla con VOL Difícil. No es una fanática: sabe que morir aquí no le sirve a nadie."),
 
         // §2016 y §2080 — «resta 2 al daño de armas convencionales; el mágico le afecta por completo»
         2016: ReglaDeCombate(reduceDano: 2, reduccionSoloConvencional: true,
                              nota: "La piedra apaga el acero. La Sangre Vieja no."),
-        2080: ReglaDeCombate(reduceDano: 2, reduccionSoloConvencional: true,
+        2080: ReglaDeCombate(salida: SalidaDeVocacion(vocacion: .vidente, atributo: .vol, dificultad: .dificil,
+                             titulo: "Completar la estrofa",
+                             invitacion: "Ilena reconoce el principio del verso que lo despertó. Si alguien completa la estrofa, el mecanismo podría reconocer la contraseña y volver a dormir.",
+                             exito: "Las palabras encajan como una llave. El Guardián se detiene a media zancada y se pliega otra vez sobre la nieve.",
+                             alFallar: "Te equivocas de sílaba a mitad de verso. Ya no hay forma de evitar el combate."),
+                             reduceDano: 2, reduccionSoloConvencional: true,
                              nota: "La piedra apaga el acero. La Sangre Vieja no."),
 
         // §2029 — «si tu Vínculo es 4 o más, puedes hablar con ella en vez de combatir»
@@ -199,6 +223,16 @@ enum ReglasEspeciales {
             flagAlSuperarla: nil, repAlSuperarla: (.vinculo, 1), destino: 2030,
             invitacion: "El Ancla todavía recuerda lo que fue. Puedes intentar hablarle.",
             alFallar: "No queda nada que escuche. Los filamentos se tensan.")),
+
+        // §2136 — «Autoridad de sangre»: pruebas de compulsión al empezar y en cada umbral de Vida
+        2136: ReglaDeCombate(nota: "Supera la prueba de VOL (Difícil) al empezar y de nuevo bajo 25 y 12 de Vida, o pierdes el turno. No pelea con odio: lleva ochocientos años sosteniendo el anclaje."),
+
+        // §2147 — «Ocho siglos de paciencia» y «la cadena tira»
+        2147: ReglaDeCombate(romperCadena: RomperCadena(
+            bonoDanoPropio: 2, danoEnemigo: 11, defensaEnemigo: 15,
+            titulo: "Romper la cadena",
+            invitacion: "Ambos golpeáis sin restricción a partir de ahora: tu Daño sube, pero también el suyo."),
+            nota: "Cada tres asaltos puede hablar en vez de atacar: supera VOL Heroica o pierdes Vida y ganas Corrupción. Puedes romper la cadena con tus propias manos una vez para golpear más fuerte el resto del combate, sabiendo que él también lo hará."),
 
         // §2033 y §2052 — «ataca siempre primero en el primer asalto»
         2033: ReglaDeCombate(salida: .sigilo(.dificil, "Los Errantes cazan por vibración. Si nadie se mueve, no hay nada que cazar.", "Os quedáis quietos en la nieve hasta que pasan de largo."), atacaPrimeroSiempre: true, nota: "Cae sobre ti antes de que lo veas."),

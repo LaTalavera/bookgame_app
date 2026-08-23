@@ -14,7 +14,8 @@ from reportlab.lib.units import inch
 from reportlab.pdfgen import canvas
 from reportlab.platypus import BaseDocTemplate, Frame, PageBreak, PageTemplate, Paragraph, Spacer, Table, TableStyle
 
-ROOT = Path(__file__).resolve().parents[2]
+WORKSPACE_ROOT = Path(__file__).resolve().parents[2]
+ROOT = WORKSPACE_ROOT.parent / "Libro"
 SOURCE = ROOT / "CenizaYCorona_SAGA_ILUSTRADA.pdf"
 OUTPUT = ROOT / "output" / "pdf" / "CenizaYCorona_SAGA_ILUSTRADA_EDICION_EQUILIBRADA.pdf"
 ORNAMENTED_BACKGROUND = ROOT / "output" / "imagegen" / "ceniza-corona-parchment-template.png"

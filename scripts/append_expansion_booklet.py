@@ -29,18 +29,21 @@ from fix_rules_section import (  # noqa: E402
     ASH, HEAD_GRAY, PART_WINE, TEXT_BLACK, decorated_page,
 )
 
-ROOT = Path(__file__).resolve().parents[2]
-LIBRO = ROOT / "CenizaYCorona_SAGA_ILUSTRADA_EDICION_EQUILIBRADA.pdf"
-SAGA = ROOT / "ceniza-y-corona-app" / "public" / "data" / "saga.json"
-TEMPORAL = ROOT / "output" / "pdf" / "_cuadernillo_tmp.pdf"
+WORKSPACE_ROOT = Path(__file__).resolve().parents[2]
+BOOK_ROOT = WORKSPACE_ROOT.parent / "Libro"
+LIBRO = BOOK_ROOT / "CenizaYCorona_SAGA_ILUSTRADA_EDICION_EQUILIBRADA.pdf"
+SAGA = WORKSPACE_ROOT / "bookgame_web" / "public" / "data" / "saga.json"
+TEMPORAL = BOOK_ROOT / "output" / "pdf" / "_cuadernillo_tmp.pdf"
 
 MARCA = "SECCIONES REVISADAS"
 TITULO = "AP\u00c9NDICE \u2014 SECCIONES REVISADAS"
 
 # Secciones que el cuadernillo reimprime. Las que ya existian en el libro
 # cambian de contenido; las nuevas no estaban impresas en ningun sitio.
-REVISADAS = [1054, 1055, 1057, 1065, 1066, 1079, 1080, 1081, 1110]
-NUEVAS = [1500, 1501, 1502, 1503, 1504, 1505]
+REVISADAS = [3, 4, 16, 33, 42, 50, 53, 89, 96, 102, 114, 115, 133,
+             1001, 1025, 1030, 1054, 1055, 1057, 1065, 1066, 1079, 1080, 1081,
+             1110, 1133, 1136, 1145, 2001, 2014, 2150]
+NUEVAS = [447, 448, 449, 450, 451, 452, 453, 1500, 1501, 1502, 1503, 1504, 1505, 2907]
 
 INTRO = (
     "Las secciones que siguen sustituyen a las del cuerpo del libro con el mismo n\u00famero. "

@@ -36,4 +36,10 @@ echo "==> Regenerando el capitulo de reglas"
 # anadidos, asi que las secciones que ganan una decision nueva se reimprimen
 # en un apendice al final. Es idempotente: repetirlo no acumula cuadernillos.
 echo "==> Anadiendo el cuadernillo de secciones revisadas"
-exec "$VENV/bin/python" "$SCRIPT_DIR/append_expansion_booklet.py"
+"$VENV/bin/python" "$SCRIPT_DIR/append_expansion_booklet.py"
+
+# El cuadernillo anterior se regenera truncando todo lo que tenga detras, asi
+# que la fe de erratas debe reponerse siempre despues de el. Este es el orden
+# que deja el PDF completo: cuerpo + secciones revisadas + erratas.
+echo "==> Anadiendo la fe de erratas de estilo"
+exec "$VENV/bin/python" "$SCRIPT_DIR/append_style_errata.py"

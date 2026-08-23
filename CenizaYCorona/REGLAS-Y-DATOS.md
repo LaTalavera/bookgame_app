@@ -17,7 +17,7 @@ propio hechizo antimuerto:
   primera vez los Ecos se recargan y el hechizo avanzado (`repertorio`)
   se puede aprender dentro del Libro II. Página 103 del PDF, sección 1006
   en `saga.json` (las dos copias: `CenizaYCorona/Resources/` y
-  `ceniza-y-corona-app/public/data/`).
+  `../bookgame_web/public/data/`).
 
 Ninguno de los dos cambios es una regla nueva: el Penitente ya tenía el
 hechizo escrito en la Parte V, y §18 ya decía que los descansos existen.
@@ -30,7 +30,7 @@ A diferencia de los dos cambios de arriba, este sí es una decisión mía, no
 una corrección de una imposibilidad del libro — documentado aparte por eso.
 
 Simulando partidas al azar por vocación con `scripts/balance-por-vocacion.mjs`
-(en `ceniza-y-corona-app/`), la Vidente moría en el 82-83% de las partidas
+(en `../bookgame_web/`), la Vidente moría en el 82-83% de las partidas
 con recursos, la más frágil de las cuatro con diferencia. La causa no es la
 Vida (16, la más baja) ni la Defensa: subirlas 4 puntos en simulación no
 movía la tasa de muerte ni un punto. La causa es que con 3 Ecos totales
@@ -52,10 +52,10 @@ consciente, por ahora.
 Cada uso sigue constando 1 Corrupción por separado (2 usos = 2 Corrupción
 como máximo). Cambiado en `Vocaciones.swift::don`, `CombatSession.swift`
 (`ecoProfundoUsado: Bool` → `ecoProfundoUsos: Int`, tope 2),
-`ceniza-y-corona-app/lib/full-rules.ts` (texto del don),
-`ceniza-y-corona-app/lib/game-engine.ts` (nuevo `CombatState.deepEchoUses`,
+`../bookgame_web/lib/full-rules.ts` (texto del don),
+`../bookgame_web/lib/game-engine.ts` (nuevo `CombatState.deepEchoUses`,
 antes compartía el campo `vocationGiftUsed` de la Cuchilla) y
-`ceniza-y-corona-app/app/page.tsx` (botón de combate). Página 17 del PDF:
+`../bookgame_web/app/page.tsx` (botón de combate). Página 17 del PDF:
 «una vez por combate» → «dos veces por combate», editado en sitio
 reutilizando fuente y códigos de carácter, verificado con render antes/después
 antes de guardar (no cambia el resto del documento; el PDF resultante pesa

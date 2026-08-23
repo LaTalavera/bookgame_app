@@ -13,7 +13,8 @@ from reportlab.platypus import (
     TableStyle,
 )
 
-OUT = Path(__file__).resolve().parents[2] / "output" / "pdf" / "CenizaYCorona_Guia_de_Expedicion_y_Combate.pdf"
+WORKSPACE_ROOT = Path(__file__).resolve().parents[2]
+OUT = WORKSPACE_ROOT.parent / "Libro" / "output" / "pdf" / "CenizaYCorona_Guia_de_Expedicion_y_Combate.pdf"
 
 INK = HexColor("#25191a")
 WINE = HexColor("#6c1729")

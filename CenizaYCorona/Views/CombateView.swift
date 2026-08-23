@@ -302,6 +302,7 @@ struct CombateView: View {
                 }
                 if modosDisponibles.count > 1 { selectorDeModo }
                 donesDeVocacion
+                opcionDeRomperCadena
                 dones
                 if combate.puedeForzarElHechizo(state, modo: modoActivo) {
                     BotonSecundario(titulo: "Forzar \(modoActivo.nombre) sin Ecos · +1 Corrupción", alto: 46) {
@@ -462,6 +463,24 @@ struct CombateView: View {
                         combate.muroDeVotoArmado.toggle()
                     }
                 }
+            }
+        }
+    }
+
+    /// §2147: decisión única de riesgo/recompensa para romper la cadena.
+    @ViewBuilder
+    private var opcionDeRomperCadena: some View {
+        if let romper = combate.regla?.romperCadena {
+            if combate.puedeRomperLaCadena(state) {
+                botonArmable(titulo: romper.titulo,
+                             nota: "+\(romper.bonoDanoPropio) tu daño · también el suyo",
+                             armado: combate.cadenaRotaArmada) {
+                    combate.cadenaRotaArmada.toggle()
+                }
+            } else if combate.cadenaRota {
+                Text(romper.invitacion)
+                    .font(.cyBody(11))
+                    .foregroundStyle(Color.cyTintaTenue)
             }
         }
     }

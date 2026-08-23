@@ -49,12 +49,12 @@ enum Bestiario {
         2016: EnemyStats(nombre: "GUARDIÁN DE CALZADA", defensa: 12, vida: 22, ataque: 3, dano: 5),
         2029: EnemyStats(nombre: "ANCLA VIVIENTE", defensa: 10, vida: 20, ataque: 2, dano: 4),
         2033: EnemyStats(nombre: "ERRANTE DEL CONFÍN", defensa: 10, vida: 15, ataque: 3, dano: 4),
-        2052: EnemyStats(nombre: "ERRANTE DEL CONFÍN", defensa: 10, vida: 15, ataque: 3, dano: 4),
+        2052: EnemyStats(nombre: "ERRANTE DEL CONFÍN", defensa: 11, vida: 17, ataque: 3, dano: 4),
         2068: EnemyStats(nombre: "COSA DE ESLABÓN", defensa: 11, vida: 18, ataque: 3, dano: 4),
-        2080: EnemyStats(nombre: "GUARDIÁN DE CALZADA", defensa: 12, vida: 22, ataque: 3, dano: 5),
-        2115: EnemyStats(nombre: "COSA DE ESLABÓN", defensa: 11, vida: 18, ataque: 3, dano: 4),
+        2080: EnemyStats(nombre: "GUARDIÁN DE CALZADA", defensa: 12, vida: 20, ataque: 3, dano: 5),
+        2115: EnemyStats(nombre: "COSA DE ESLABÓN", defensa: 12, vida: 20, ataque: 3, dano: 4),
         2136: EnemyStats(nombre: "EL PRIMER LIGADO", defensa: 13, vida: 34, ataque: 4, dano: 5),
-        2147: EnemyStats(nombre: "ASHKELEN, EL DURMIENTE", defensa: 15, vida: 60, ataque: 5, dano: 8)
+        2147: EnemyStats(nombre: "ASHKELEN, EL DURMIENTE", defensa: 13, vida: 42, ataque: 4, dano: 7)
     ]
 
     /// Si una sección de combate no tuviera ficha, se deduce del libro al que
