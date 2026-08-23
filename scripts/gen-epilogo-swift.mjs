@@ -53,7 +53,7 @@ enum Epilogo {
     }
 
     /// Cuántas líneas se leen como máximo al cerrar una partida.
-    static let maximoDeLineas = 6
+    static let maximoDeLineas = 9
 
     static let lineas: [Linea] = [
 `;

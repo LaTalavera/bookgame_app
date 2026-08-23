@@ -39,8 +39,10 @@ TITULO = "AP\u00c9NDICE \u2014 SECCIONES REVISADAS"
 
 # Secciones que el cuadernillo reimprime. Las que ya existian en el libro
 # cambian de contenido; las nuevas no estaban impresas en ningun sitio.
-REVISADAS = [1054, 1055, 1057, 1065, 1066, 1079, 1080, 1081, 1110]
-NUEVAS = [1500, 1501, 1502, 1503, 1504, 1505]
+REVISADAS = [3, 4, 16, 33, 42, 50, 53, 89, 96, 102, 114, 115, 133,
+             1001, 1025, 1030, 1054, 1055, 1057, 1065, 1066, 1079, 1080, 1081,
+             1110, 1133, 1136, 1145, 2001, 2014, 2150]
+NUEVAS = [447, 448, 449, 450, 451, 452, 453, 1500, 1501, 1502, 1503, 1504, 1505, 2907]
 
 INTRO = (
     "Las secciones que siguen sustituyen a las del cuerpo del libro con el mismo n\u00famero. "

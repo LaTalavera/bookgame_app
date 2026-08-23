@@ -67,7 +67,7 @@ final class FinalReachabilityTests: XCTestCase {
         XCTAssertEqual(reachable.subtracting(reserved), ids.subtracting(reserved), "Hay secciones no alcanzables desde los inicios de libro.")
 
         let endings = Set(ids.filter { library[$0]?.esFinal == true })
-        XCTAssertEqual(endings.count, 24, "La biblioteca debe exponer los 24 finales de la saga.")
+        XCTAssertEqual(endings.count, 25, "La biblioteca debe exponer los 25 finales de la saga.")
         var reverse = Dictionary(uniqueKeysWithValues: ids.map { ($0, Set<Int>()) })
         for (source, targets) in adjacency {
             for target in targets { reverse[target, default: []].insert(source) }

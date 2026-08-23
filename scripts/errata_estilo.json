@@ -1,0 +1,262 @@
+[
+ {
+  "id": 22,
+  "antes": "Anota el objeto **Honda de Bren** (no tiene efecto de juego; es un recordatorio de por qué haces esto).",
+  "despues": "Anota el objeto **Honda de Bren**."
+ },
+ {
+  "id": 29,
+  "antes": "Sella te lo agradece con una mirada que vale más que cualquier palabra clave.",
+  "despues": "Sella te lo agradece con una mirada que vale más que cualquier promesa."
+ },
+ {
+  "id": 49,
+  "antes": "Te acercas agachado, conteniendo la respiración.",
+  "despues": "Te acercas a ras de suelo, conteniendo la respiración."
+ },
+ {
+  "id": 52,
+  "antes": "Te obligas a quedarte quieto, aunque cada instinto te grita que actúes ya.",
+  "despues": "Te obligas a no moverte, aunque cada instinto te grita que actúes ya."
+ },
+ {
+  "id": 53,
+  "antes": "Si tu Vida llega a 0, no mueres, pero te ves obligado a retirarte a la carrera; ve a la sección 54 con 1 Vida y anota la palabra clave `RETIRADA FORZOSA`.*",
+  "despues": "Si tu Vida llega a 0, no mueres, pero no te queda otra que retirarte a la carrera; ve a la sección 54 con 1 Vida y anota la palabra clave `RETIRADA FORZOSA`.*"
+ },
+ {
+  "id": 54,
+  "antes": "No hay manera de sacarlo ahora, no tú solo, no contra tantos.",
+  "despues": "No hay manera de sacarlo ahora, no por tu cuenta, no contra tantos."
+ },
+ {
+  "id": 55,
+  "antes": "Estás solo, herido, lejos de casa, y la Secta se aleja hacia el este llevándose todo lo que juraste proteger.",
+  "despues": "Estás sin nadie, con heridas, lejos de casa, y la Secta se aleja hacia el este llevándose todo lo que juraste proteger."
+ },
+ {
+  "id": 62,
+  "antes": "Pero durante un instante, mirándote las manos, no estás del todo seguro de que sigan siendo del todo tuyas.",
+  "despues": "Pero durante un instante, mirándote las manos, no tienes del todo claro que sigan siendo del todo tuyas."
+ },
+ {
+  "id": 63,
+  "antes": "Decides, con la cabeza más clara de lo que ha estado desde que saliste de Valcenar, que perseguir a la Secta tú solo hasta las Fauces Rotas es una manera segura de morir sin ayudar a nadie.",
+  "despues": "Decides, con la cabeza más clara de lo que ha estado desde que saliste de Valcenar, que perseguir a la Secta por tu cuenta hasta las Fauces Rotas es una manera segura de morir sin ayudar a nadie."
+ },
+ {
+  "id": 66,
+  "antes": "Entras en el patio de armas del Puesto Ceniza sola, cubierta de polvo y sangre seca, mientras los soldados de guardia intercambian miradas que no se molestan en disimular.",
+  "despues": "Entras en el patio de armas del Puesto Ceniza sin nadie al lado, con el polvo y la sangre seca encima, mientras los soldados de guardia intercambian miradas que no se molestan en disimular."
+ },
+ {
+  "id": 67,
+  "antes": "*(Si tienes la palabra clave `LLEGADA POR EL PROTECTOR`, lee este párrafo: Llegas con un grupo entero de supervivientes a cuestas, y esa sola imagen —un Marcado guiando a los suyos a un lugar seguro en vez de huir solo— corre por el Puesto antes de que termines de cruzar el patio.)* *(Si tienes la palabra clave `LLEGADA POR EL CAZADOR`, lee este párrafo: Llegas sola, exhausta, con más información de primera mano sobre la Secta que cualquier patrulla de la Orden ha conseguido en meses, y eso hace que te reciban con una mezcla de alarma y respeto.)*",
+  "despues": "*(Si tienes la palabra clave `LLEGADA POR EL PROTECTOR`, lee este párrafo: Llegas con un grupo entero de supervivientes a cuestas, y esa sola imagen —alguien con la Marca guiando a los suyos a un lugar seguro en vez de huir por su cuenta— corre por el Puesto antes de que termines de cruzar el patio.)* *(Si tienes la palabra clave `LLEGADA POR EL CAZADOR`, lee este párrafo: Llegas sin nadie, al límite, con más información de primera mano sobre la Secta que cualquier patrulla de la Orden ha conseguido en meses, y eso hace que te reciban con una mezcla de alarma y respeto.)*"
+ },
+ {
+  "id": 75,
+  "antes": "Cuando te ve entrar —Marcada, con la cicatriz visible— algo en su expresión cambia.",
+  "despues": "Cuando te ve entrar —con la Marca y la cicatriz a la vista— algo en su expresión cambia."
+ },
+ {
+  "id": 82,
+  "antes": "Hay algo en la idea de enfrentarte sola a lo que viene que te aterra y, al mismo tiempo, te parece lo único honesto que puedes ofrecerle a Bren después de la promesa que le hiciste: que serás tú, y nadie más, quien vuelva a por él.",
+  "despues": "Hay algo en la idea de enfrentarte sin nadie a lo que viene que te aterra y, al mismo tiempo, te parece lo único honesto que puedes ofrecerle a Bren después de la promesa que le hiciste: que serás tú, y nadie más, quien vuelva a por él."
+ },
+ {
+  "id": 105,
+  "antes": "Te quedas sola por primera vez desde que salisteis del Puesto Ceniza, con las Fauces Rotas enteras entre tú y lo que sea que el Padre Ceniza esté a punto de hacer.",
+  "despues": "Te quedas sin compañía por primera vez desde que salisteis del Puesto Ceniza, con las Fauces Rotas enteras entre tú y lo que sea que el Padre Ceniza esté a punto de hacer."
+ },
+ {
+  "id": 117,
+  "antes": "Te mueves entre las sombras de las columnas con una precisión que ni tú misma sabías que tenías, hasta quedar a apenas unos pasos del Padre Ceniza, que sigue con los brazos alzados hacia el vórtice sobre el altar, ajeno a tu presencia.",
+  "despues": "Te mueves entre las sombras de las columnas con una precisión que ni tú sabías que tenías, hasta quedar a apenas unos pasos del Padre Ceniza, que sigue con los brazos alzados hacia el vórtice sobre el altar, ajeno a tu presencia."
+ },
+ {
+  "id": 119,
+  "antes": "—Una Marcada de Valcenar —dice, con la misma voz serena del prisionero que oíste describir, o del hombre que escuchaste junto al fuego, si fue ese tu camino hasta aquí—.",
+  "despues": "—Alguien con la Marca, de Valcenar —dice, con la misma voz serena del prisionero que oíste describir, o del hombre que escuchaste junto al fuego, si fue ese tu camino hasta aquí—."
+ },
+ {
+  "id": 125,
+  "antes": "*(Si no, estás sola ante lo que viene.)*",
+  "despues": "*(Si no, estás sin nadie ante lo que viene.)*"
+ },
+ {
+  "id": 126,
+  "antes": "Este es el combate más duro de *La Marca Rota*. Usa todos los recursos que tengas: pociones, hechizos, Dones Forzados si hace falta.",
+  "despues": "*(Combate excepcionalmente duro: cuenta con emplear pociones, hechizos y Dones Forzados si hace falta.)*"
+ },
+ {
+  "id": 900,
+  "antes": "Vaelgard es un mundo duro, y este librojuego está diseñado para jugarse más de una vez: cada Marcado que crees, cada decisión distinta que tomes, revelará caminos, personajes y secretos que esta partida no llegó a mostrarte.",
+  "despues": "Vaelgard es un mundo duro. Cada Marcado nuevo, cada decisión distinta, abre caminos, personajes y secretos que esta partida no llegó a mostrar."
+ },
+ {
+  "id": 901,
+  "antes": "El Padre Ceniza no sobrevivió a las Fauces Rotas, y una parte de ti —la parte que sostuvo la espada al final— no está segura de arrepentirse de ello, por mucho que las últimas palabras de Ygrid le pesen en la memoria: *no los odies, ni siquiera a ellos*. El Comandante Orwyn te recibe de vuelta en Puesto Ceniza como lo que ya eres, formalmente y de hecho: una agente de la Orden de la Ceniza, la primera en generaciones en demostrar, desde dentro de la propia experiencia de ser Marcada, que la disciplina y el deber pueden convivir con la Sangre Vieja sin que esta te consuma.",
+  "despues": "El Padre Ceniza no sobrevivió a las Fauces Rotas, y una parte de ti —la parte que sostuvo la espada al final— no acaba de arrepentirse de ello, por mucho que las últimas palabras de Ygrid le pesen en la memoria: *no los odies, ni siquiera a ellos*. El Comandante Orwyn te recibe de vuelta en Puesto Ceniza como lo que ya eres, formalmente y de hecho: agente de la Orden de la Ceniza, la primera persona en generaciones en demostrar, desde dentro de la propia experiencia de ser Marcada, que la disciplina y el deber pueden convivir con la Sangre Vieja sin que esta te consuma."
+ },
+ {
+  "id": 950,
+  "antes": "En su lugar, te transformas: el cristal negro se extiende bajo tu piel más rápido de lo que ningún sanador podría detener, tu voluntad se difumina en algo más grande y más frío que tú misma, y cuando Bren te llama por tu nombre, al final, no estás segura de reconocerlo.",
+  "despues": "En su lugar, te transformas: el cristal negro se extiende bajo tu piel más rápido de lo que ningún sanador podría detener, tu voluntad se difumina en algo más grande y más frío que tú, y cuando Bren te llama por tu nombre, al final, no sabes si lo reconoces."
+ },
+ {
+  "id": 950,
+  "antes": "Este es el final de tu historia en *La Marca Rota* — el más oscuro de todos los que este libro tiene que ofrecer, y una advertencia honesta sobre el precio real de la Sangre Vieja.",
+  "despues": "Este es el final de tu historia en *La Marca Rota*: el más oscuro de todos, el precio de la Sangre Vieja cobrado entero."
+ },
+ {
+  "id": 1002,
+  "antes": "*(Si eres agente de la Orden de la Ceniza, es Orwyn quien te la entrega en persona, con el sello ya roto.)* *(En cualquier otro caso, el mensajero pregunta por ti por tu nombre —o por la descripción de \"la Marcada de Valcenar\"— antes de entregártela directamente a ti.)*",
+  "despues": "*(Si eres agente de la Orden de la Ceniza, es Orwyn quien te la entrega en persona, con el sello ya roto.)* *(En cualquier otro caso, el mensajero pregunta por ti por tu nombre —o por la descripción de \"quien lleva la Marca de Valcenar\"— antes de entregártela directamente a ti.)*"
+ },
+ {
+  "id": 1011,
+  "antes": "Agentes con el brazal de la cadena rota cruzan pasillos con prisa, hablando en voz baja, y más de uno te mira dos veces al verte entrar: la Marcada de las Fauces Rotas ya tiene cierta reputación, para bien y para mal, incluso aquí.",
+  "despues": "Agentes con el brazal de la cadena rota cruzan pasillos con prisa, hablando en voz baja, y más de uno te mira dos veces al verte entrar: quien sobrevivió a las Fauces Rotas ya tiene cierta reputación, para bien y para mal, incluso aquí."
+ },
+ {
+  "id": 1025,
+  "antes": "*(Anota la palabra clave `ORDEN DIVIDIDA CONOCIDA`: lo que ocurra entre Orwyn y Serel a partir de ahora será importante en el Libro Tercero de esta crónica, gane quien gane la Convocatoria.)*",
+  "despues": "*(Anota la palabra clave `ORDEN DIVIDIDA CONOCIDA`: lo que ocurra entre Orwyn y Serel a partir de ahora pesará mucho más allá de la Convocatoria, gane quien la gane.)*"
+ },
+ {
+  "id": 1032,
+  "antes": "El converso —dice llamarse Yannic, aunque no estás segura de que sea su verdadero nombre— te cuenta lo que sabe: algunos Renacidos remanentes, sin liderazgo claro desde la caída del Padre Ceniza, han empezado a acercarse a la Grieta hija del monasterio, convencidos de que puede ser una segunda oportunidad para terminar lo que empezaron en las Fauces Rotas.",
+  "despues": "El converso —dice llamarse Yannic, aunque no tienes claro que sea su verdadero nombre— te cuenta lo que sabe: algunos Renacidos remanentes, sin liderazgo claro desde la caída del Padre Ceniza, han empezado a acercarse a la Grieta hija del monasterio, convencidos de que puede ser una segunda oportunidad para terminar lo que empezaron en las Fauces Rotas."
+ },
+ {
+  "id": 1035,
+  "antes": "La mañana de la Convocatoria llega antes de que te sientas del todo preparada, como ocurre siempre con los días que de verdad importan.",
+  "despues": "La mañana de la Convocatoria llega antes de que te sientas en condiciones, como ocurre siempre con los días que de verdad importan."
+ },
+ {
+  "id": 1044,
+  "antes": "- **Si fallas:** entras directamente, dejándote llevar por la urgencia, y solo dentro te das cuenta de que no estás sola.",
+  "despues": "- **Si fallas:** entras directamente, dejándote llevar por la urgencia, y solo dentro te das cuenta de que no estás a solas."
+ },
+ {
+  "id": 1069,
+  "antes": "Y perdona por no haberte hablado con más franqueza la primera vez que nos vimos, si es que ya nos vimos en esta versión de tu historia.",
+  "despues": "*(Si ya tenías la palabra clave `CONTACTO CON VAAS` antes de entrar en el jardín, añade: —Y perdona por no haberte hablado con más franqueza la primera vez que nos vimos.)*"
+ },
+ {
+  "id": 1077,
+  "antes": "Funciona mejor de lo esperado: tu reputación —la Marcada que sobrevivió a las Fauces Rotas y derrotó a un espadachín profesional en un jardín de palacio— te precede lo suficiente como para que decidan que no merece la pena el riesgo.",
+  "despues": "Funciona mejor de lo esperado: tu reputación —quien sobrevivió a las Fauces Rotas y derrotó a un espadachín profesional en un jardín de palacio— te precede lo suficiente como para que decidan que no merece la pena el riesgo."
+ },
+ {
+  "id": 1081,
+  "antes": "Duermes mal esa noche, no por miedo, sino por la cantidad de piezas sueltas que llevas ya reunidas: el rumor del monasterio, confirmado ahora por tres fuentes distintas si has seguido caminos distintos en libros o partidas anteriores; la certeza de que Casa Ordaz tiene más enemigos poderosos de los que declara en público; y la sensación, cada vez más firme, de que la Convocatoria de mañana va a ser mucho más que un simple trámite de testimonios. Cuando por fin amanece, no estás descansada, pero sí tienes clarísimo el tamaño de lo que llevas encima.",
+  "despues": "Duermes mal esa noche, no por miedo, sino por la cantidad de piezas sueltas que llevas ya reunidas: el rumor del monasterio, confirmado ahora por tres fuentes distintas; la certeza de que Casa Ordaz tiene más enemigos poderosos de los que declara en público; y la sensación, cada vez más firme, de que la Convocatoria de mañana va a ser mucho más que un simple trámite de testimonios. Cuando por fin amanece, no has descansado, pero sí tienes clarísimo el tamaño de lo que llevas encima."
+ },
+ {
+  "id": 1086,
+  "antes": "*(Si tienes la palabra clave `SENDA DEL INFILTRADO`, lee este párrafo: entras sola, con la Marca cubierta por costumbre, sabiendo cosas sobre esta ciudad que nadie más en este salón sospecha siquiera que existen.)*",
+  "despues": "*(Si tienes la palabra clave `SENDA DEL INFILTRADO`, lee este párrafo: entras a solas, con la Marca tapada por costumbre, sabiendo cosas sobre esta ciudad que nadie más en este salón sospecha siquiera que existen.)*"
+ },
+ {
+  "id": 1086,
+  "antes": "En un salón lleno de gente que ha venido a mirarte, es el único sitio donde puedes estar sola un rato.",
+  "despues": "En un salón lleno de gente que ha venido a mirarte, es el único sitio donde puedes estar a solas un rato."
+ },
+ {
+  "id": 1114,
+  "antes": "No estás sola.",
+  "despues": "No estás a solas."
+ },
+ {
+  "id": 1133,
+  "antes": "Te mueves hacia los prisioneros más cercanos antes que hacia Bastian, decidida a quitarle a Ordaz sus \"sujetos preparados\" antes de que nada más pueda ocurrir.",
+  "despues": "Te mueves hacia los prisioneros más cercanos antes que hacia Bastian, con la intención de quitarle a Ordaz sus \"sujetos preparados\" antes de que nada más pueda ocurrir."
+ },
+ {
+  "id": 1139,
+  "antes": "No estás sola mucho tiempo con los restos del ritual: Illiana Ordaz entra en la cámara con la Vara del Censo bien sujeta, y por primera vez desde que la conociste, algo parecido a la sorpresa genuina cruza su rostro al ver a su campeón derrotado y el altar apagándose.",
+  "despues": "No estás a solas mucho tiempo con los restos del ritual: Illiana Ordaz entra en la cámara con la Vara del Censo bien sujeta, y por primera vez desde que la conociste, algo parecido a la sorpresa genuina cruza su rostro al ver a su campeón derrotado y el altar apagándose."
+ },
+ {
+  "id": 1950,
+  "antes": "Cuando Meritxell, u Orwyn, o quien haya llegado a importarte en esta ciudad, te llama por tu nombre al final, no estás segura de reconocerlo. Este es el final de tu historia en *El Trono Roto* — el más oscuro de todos los que este libro tiene que ofrecer, y una advertencia honesta, una vez más, sobre el precio real de la Sangre Vieja cuando se fuerza sin límite.",
+  "despues": "Cuando Meritxell, u Orwyn, o quien haya llegado a importarte en esta ciudad, te llama por tu nombre al final, no sabes si lo reconoces. Este es el final de tu historia en *El Trono Roto*: el más oscuro de todos, el precio de la Sangre Vieja cuando se fuerza sin límite."
+ },
+ {
+  "id": 2001,
+  "antes": "Estás de pie sobre una llanura de ceniza que no existe en ningún mapa de Vaelgard, y no estás sola: hay cientos de personas contigo, miles quizás, todas mirando en la misma dirección.",
+  "despues": "Estás de pie sobre una llanura de ceniza que no existe en ningún mapa de Vaelgard, y no estás a solas: hay cientos de personas contigo, miles quizás, todas mirando en la misma dirección."
+ },
+ {
+  "id": 2021,
+  "antes": "Esta vez estás sola, y cuando la respiración lenta llena el aire, la sensación no es de anuncio colectivo, sino de alguien que ha girado la cabeza para mirarte específicamente a ti.",
+  "despues": "Esta vez estás a solas, y cuando la respiración lenta llena el aire, la sensación no es de anuncio colectivo, sino de alguien que ha girado la cabeza para mirarte específicamente a ti."
+ },
+ {
+  "id": 2022,
+  "antes": "**2.** Guardártelo por ahora: es tu sueño, tu sangre y tu conversación, y no estás segura de querer que se convierta en una nota al pie de un informe de la Orden.",
+  "despues": "**2.** Guardártelo por ahora: es tu sueño, tu sangre y tu conversación, y no tienes claro que quieras que se convierta en una nota al pie de un informe de la Orden."
+ },
+ {
+  "id": 2025,
+  "antes": "Una frase repetida en distintas caligrafías, como si se hubiera ido copiando de unos a otros: *\"El que venga después: no estás solo aquí.\"*",
+  "despues": "Una frase repetida en distintas caligrafías, como si se hubiera ido copiando de unos a otros: *\"El que venga después: no estás a solas aquí.\"*"
+ },
+ {
+  "id": 2042,
+  "antes": "Y les dices la parte que más te cuesta: que reforjar la cadena exigiría anclas plenas y voluntarias, y que por eso no piensas decidirlo sola.",
+  "despues": "Y les dices la parte que más te cuesta: que reforjar la cadena exigiría anclas plenas y voluntarias, y que por eso no piensas decidirlo en solitario."
+ },
+ {
+  "id": 2045,
+  "antes": "**2.** Resolverlo cruzando tú misma con los doce, delante de todos, sin discutir ni una palabra.",
+  "despues": "**2.** Resolverlo cruzándolo en persona con los doce, delante de todos, sin discutir ni una palabra."
+ },
+ {
+  "id": 2071,
+  "antes": "Ni aquí, ni improvisando, ni tú sola de madrugada con un cordel y un montón de chatarra viva.",
+  "despues": "Ni aquí, ni improvisando, ni tú en solitario de madrugada con un cordel y un montón de chatarra viva."
+ },
+ {
+  "id": 2078,
+  "antes": "—Tú misma lo has dicho antes —responde ella—.",
+  "despues": "—Tú lo has dicho antes —responde ella—."
+ },
+ {
+  "id": 2111,
+  "antes": "—Fíjate en el detalle —dice tu acompañante, o lo piensas tú misma si bajas sola—.",
+  "despues": "—Fíjate en el detalle —dice tu acompañante, o lo piensas por tu cuenta si bajas en solitario—."
+ },
+ {
+  "id": 2127,
+  "antes": "*(Si bajas sola, no hay nada que decidir.)*",
+  "despues": "*(Si bajas en solitario, no hay nada que decidir.)*"
+ },
+ {
+  "id": 2902,
+  "antes": "Y hay mucha gente en Vaelgard que jamás te perdonará haber apostado el mundo entero en una decisión que tomaste tú sola, a mil doscientos metros bajo tierra, sin consultar a nadie de arriba.",
+  "despues": "Y hay mucha gente en Vaelgard que jamás te perdonará haber apostado el mundo entero en una decisión que tomaste en solitario, a mil doscientos metros bajo tierra, sin consultar a nadie de arriba."
+ },
+ {
+  "id": 2903,
+  "antes": "*(Este es el final más difícil de alcanzar de toda la saga: exige haber cultivado el Vínculo desde la primera sección, haber escuchado en vez de rehuir, y haber bajado a preguntar en vez de a resolver. Si lo has conseguido, enhorabuena de verdad.)*",
+  "despues": "*(Final excepcional: solo se alcanza con el Vínculo cultivado desde el principio, escuchando en vez de rehuir y bajando a preguntar en vez de a resolver.)*"
+ },
+ {
+  "id": 2905,
+  "antes": "Te sientas en el borde, sola, y miras la boca sellada del pozo hasta que se pone el sol.",
+  "despues": "Te sientas en el borde, a solas, y miras la boca sellada del pozo hasta que se pone el sol."
+ },
+ {
+  "id": 2905,
+  "antes": "Pagaste el precio entero tú sola, sin que nadie te lo pidiera y sin que casi nadie llegue a saberlo nunca.",
+  "despues": "Pagaste el precio entero en solitario, sin que nadie te lo pidiera y sin que casi nadie llegue a saberlo nunca."
+ },
+ {
+  "id": 2906,
+  "antes": "*(Este es el final neutro de la saga. Si has llegado aquí, prueba a jugarla de nuevo escuchando más y resolviendo menos: hay al menos dos desenlaces que este camino no llega a mostrarte.)*",
+  "despues": "*(Final neutro. Hay al menos dos desenlaces que este camino no llega a mostrar: se abren escuchando más y resolviendo menos.)*"
+ }
+]

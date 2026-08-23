@@ -45,11 +45,11 @@
     "thread": "prologo",
     "title": "La muralla",
     "illustration": null,
-    "text": "Corres hacia la puerta oeste, donde la guardia de Valcenar —media docena de granjeros con lanzas y un solo veterano de verdad— intenta sostener una brecha que ya se ha abierto en la empalizada. Un hombre de túnica gris ceniza, con un símbolo de grieta abierta bordado en el pecho, ha cruzado ya al otro lado y avanza hacia los defensores con un cuchillo curvo en la mano y una serenidad que te hiela más que cualquier grito de guerra.\n\nEs un **Fanático Renacido**. Y viene directo hacia ti.\n\n◈ **FANÁTICO RENACIDO** — Defensa 8 · Vida 12 · Ataque +2 · Daño 3\n\n*Combate tutorial.* Si tu Vida llega a 0 en este combate, no mueres: Ygrid llega a tiempo de cubrirte y arrastrarte fuera de la línea de golpe. Ve a la sección 5 igualmente, con 1 Vida, y anota la palabra clave `HERIDA DE VALCENAR`.\n\nSi derrotas al fanático, ve a la sección **5**.",
+    "text": "Corres hacia la puerta oeste, donde la guardia de Valcenar —media docena de granjeros con lanzas y un solo veterano de verdad— intenta sostener una brecha que ya se ha abierto en la empalizada. Un hombre de túnica gris ceniza, con un símbolo de grieta abierta bordado en el pecho, ha cruzado ya al otro lado y avanza hacia los defensores con un cuchillo curvo en la mano y una serenidad que te hiela más que cualquier grito de guerra.\n\nEs un **Fanático Renacido**. Y viene directo hacia ti.\n\n◈ **FANÁTICO RENACIDO** — Defensa 8 · Vida 12 · Ataque +2 · Daño 3\n\n*Combate tutorial.* Si tu Vida llega a 0 en este combate, no mueres: Ygrid llega a tiempo de cubrirte y arrastrarte fuera de la línea de golpe. Ve a la sección **447**.\n\nSi derrotas al fanático, ve a la sección **5**.",
     "combat": {
       "enemy": "FANÁTICO RENACIDO",
       "on_win": 5,
-      "on_lose": 5,
+      "on_lose": 447,
       "notes": "Combate tutorial sin muerte real. Si el jugador llega a 0 PV: 1 PV, palabra clave HERIDA DE VALCENAR, ir a 5 igualmente."
     },
     "choices": [],
@@ -65,11 +65,11 @@
       "caption": "El Custodio en la capilla",
       "brief": "Interior de una capilla de madera humilde iluminada por velas volcadas y el resplandor rojizo de fuera. Un guerrero con armadura de placas oscura incrustada de fragmentos de cristal negro luminiscente sujeta por el brazo a un niño aterrorizado (Bren) mientras varios niños Marcados se esconden entre los bancos. El protagonista aparece en la puerta, silueteado por la luz del incendio exterior, con el arma en alto. Estilo: escena dramática D&D, claroscuro intenso, composición cinematográfica."
     },
-    "text": "Llegas a la capilla justo cuando un **Custodio de Grieta** —armadura de placas oscura, esquirlas de cristal negro incrustadas en el peto, casco cerrado con forma de grieta— arranca a Bren de entre los bancos donde se escondían los niños. Bren grita tu nombre. Los demás niños Marcados están agazapados contra el altar, demasiado aterrados para moverse.\n\nEl Custodio te ve en la puerta y no se detiene. Ni siquiera acelera. Solo te mira, con la calma terrible de quien sabe que tiene más fuerza que tú y no necesita demostrarlo.\n\n—Aparta —dice, con una voz que suena casi aburrida—. O te llevo también a ti.\n\n◈ **CUSTODIO DE GRIETA** — Defensa 10 · Vida 16 · Ataque +3 · Daño 4\n\n*Combate tutorial, más duro que el de la muralla.* Si tu Vida llega a 0, Ygrid irrumpe en el último instante y te aparta de la línea de golpe. Ve a la sección 5 igualmente, con 1 Vida, y anota la palabra clave `HERIDA DE VALCENAR`. El Custodio, en cualquier caso —lo derrotes o no—, consigue llevarse a Bren: es demasiado fuerte para que lo evites del todo esta noche. Anota la palabra clave `VISTE A BREN CAUTIVO`.\n\nCuando el combate termine, ve a la sección **5**.",
+    "text": "Llegas a la capilla justo cuando un **Custodio de Grieta** —armadura de placas oscura, esquirlas de cristal negro incrustadas en el peto, casco cerrado con forma de grieta— arranca a Bren de entre los bancos donde se escondían los niños. Bren grita tu nombre. Los demás niños Marcados están agazapados contra el altar, demasiado aterrados para moverse.\n\nEl Custodio te ve en la puerta y no se detiene. Ni siquiera acelera. Solo te mira, con la calma terrible de quien sabe que tiene más fuerza que tú y no necesita demostrarlo.\n\n—Aparta —dice, con una voz que suena casi aburrida—. O te llevo también a ti.\n\n◈ **CUSTODIO DE GRIETA** — Defensa 10 · Vida 16 · Ataque +3 · Daño 4\n\n*Combate tutorial, más duro que el de la muralla.* Si tu Vida llega a 0, Ygrid irrumpe en el último instante y te aparta de la línea de golpe. Ve a la sección **448**. El Custodio, en cualquier caso —lo derrotes o no—, consigue llevarse a Bren: es demasiado fuerte para que lo evites del todo esta noche. Anota la palabra clave `VISTE A BREN CAUTIVO`.\n\nCuando el combate termine, ve a la sección **5**.",
     "combat": {
       "enemy": "CUSTODIO DE GRIETA",
       "on_win": 5,
-      "on_lose": 5,
+      "on_lose": 448,
       "notes": "Combate tutorial. Gane o pierda el jugador, Bren es capturado (canon). Set flags VISTE_A_BREN_CAUTIVO siempre; HERIDA_DE_VALCENAR si PV llega a 0."
     },
     "choices": [],
@@ -310,11 +310,11 @@
     "id": 16,
     "thread": "hebra_a",
     "title": "El campamento de paso",
-    "text": "Le cuentas a Cael lo que el novicio te dijo. Su expresión se endurece.\n\n—Un campamento de paso significa que no fueron directos a la Grieta. Están reuniendo algo más grande antes de entrar. Vamos.\n\nCeniza os guía entre los árboles quemados hasta un claro donde los rescoldos de una veintena de hogueras aún humean. La Secta ya se ha ido, pero dejó atrás algo que no esperaba perder: un **Custodio de Grieta**, apostado como retaguardia para cubrir la retirada.\n\n◈ **CUSTODIO DE GRIETA** — Defensa 10 · Vida 16 · Ataque +3 · Daño 4\n*Cael y Ceniza luchan contigo: resta 2 al resultado de cada tirada de ataque del Custodio (Cael lo distrae con flechas).*\n\nSi ganas, ve a la sección **18**. Si tu Vida llega a 0, Cael te saca de la pelea a tiempo: ve a la sección **18** igualmente, con 1 Vida, y anota la palabra clave `HERIDA DEL CAMPAMENTO`.",
+    "text": "Le cuentas a Cael lo que el novicio te dijo. Su expresión se endurece.\n\n—Un campamento de paso significa que no fueron directos a la Grieta. Están reuniendo algo más grande antes de entrar. Vamos.\n\nCeniza os guía entre los árboles quemados hasta un claro donde los rescoldos de una veintena de hogueras aún humean. La Secta ya se ha ido, pero dejó atrás algo que no esperaba perder: un **Custodio de Grieta**, apostado como retaguardia para cubrir la retirada.\n\n◈ **CUSTODIO DE GRIETA** — Defensa 10 · Vida 16 · Ataque +3 · Daño 4\n*Cael y Ceniza luchan contigo: resta 2 al resultado de cada tirada de ataque del Custodio (Cael lo distrae con flechas).*\n\nSi ganas, ve a la sección **18**. Si tu Vida llega a 0, Cael te saca de la pelea a tiempo: ve a la sección **449**.",
     "combat": {
       "enemy": "CUSTODIO DE GRIETA (asistido)",
       "on_win": 18,
-      "on_lose": 18,
+      "on_lose": 449,
       "notes": "Ayuda de Cael: -2 a las tiradas de ataque del enemigo. Derrota no letal aquí, añade HERIDA_DEL_CAMPAMENTO."
     },
     "choices": [],
@@ -427,7 +427,7 @@
     "id": 22,
     "thread": "hebra_a",
     "title": "El campamento abandonado",
-    "text": "Esa noche, acampáis en las ruinas de una vieja posada de postas imperial, con solo dos paredes en pie. Mientras Cael monta guardia con Ceniza, encuentras entre los escombros un objeto que se te encoge el estómago al reconocer: una honda de cuero trenzado, hecha a mano, con las iniciales de Bren grabadas torpemente en el mango. La debió de perder —o dejar caer a propósito— durante la marcha forzada.\n\nLa guardas sin decir nada. Cael, que te ve hacerlo, no pregunta.\n\n—Mañana llegamos al Vado Roto —dice en cambio—. Y desde ahí, al Puesto Ceniza es cosa de horas.\n\nAnota el objeto **Honda de Bren** (no tiene efecto de juego; es un recordatorio de por qué haces esto).\n\nVe a la sección **23**.",
+    "text": "Esa noche, acampáis en las ruinas de una vieja posada de postas imperial, con solo dos paredes en pie. Mientras Cael monta guardia con Ceniza, encuentras entre los escombros un objeto que se te encoge el estómago al reconocer: una honda de cuero trenzado, hecha a mano, con las iniciales de Bren grabadas torpemente en el mango. La debió de perder —o dejar caer a propósito— durante la marcha forzada.\n\nLa guardas sin decir nada. Cael, que te ve hacerlo, no pregunta.\n\n—Mañana llegamos al Vado Roto —dice en cambio—. Y desde ahí, al Puesto Ceniza es cosa de horas.\n\nAnota el objeto **Honda de Bren**.\n\nVe a la sección **23**.",
     "combat": null,
     "choices": [
       {
@@ -565,7 +565,7 @@
     "id": 29,
     "thread": "hebra_b",
     "title": "Esperar el alba",
-    "text": "Decides que un grupo de niños, ancianos y una mujer embarazada no debería caminar a ciegas por un bosque peligroso. Esperáis, nerviosos, a que el cielo empiece a clarear. La espera os cuesta horas que no recuperaréis, pero al menos nadie se tuerce un tobillo en la oscuridad antes de empezar.\n\nSella te lo agradece con una mirada que vale más que cualquier palabra clave.\n\nVe a la sección **30**.",
+    "text": "Decides que un grupo de niños, ancianos y una mujer embarazada no debería caminar a ciegas por un bosque peligroso. Esperáis, nerviosos, a que el cielo empiece a clarear. La espera os cuesta horas que no recuperaréis, pero al menos nadie se tuerce un tobillo en la oscuridad antes de empezar.\n\nSella te lo agradece con una mirada que vale más que cualquier promesa.\n\nVe a la sección **30**.",
     "combat": null,
     "choices": [
       {
@@ -645,11 +645,11 @@
     "id": 33,
     "thread": "hebra_b",
     "title": "Algo se mueve entre los árboles",
-    "text": "Un crujido de madera —no de pisadas, de madera doblándose— os detiene en seco. Entre dos troncos retorcidos, una silueta se despliega hasta alcanzar la altura de un hombre alto: ramas por brazos, corteza agrietada de brillo rojizo, raíces que se arrastran en vez de piernas. Una **Espina Andante**, despertada por el paso de tanta gente por su territorio.\n\nSe interpone directamente entre el grupo y el sendero de salida.\n\n◈ **ESPINA ANDANTE** — Defensa 9 · Vida 18 · Ataque +2 · Daño 4\n*Especial: resta 1 al daño que le inflijas (mínimo 1).*\n*Si pierdes esta pelea, uno de los refugiados sufre heridas graves protegiendo a los demás en tu lugar: anota la palabra clave `PRECIO PAGADO` y continúa con 1 Vida.*\n\nSi ganas, ve a la sección **34**. Si tu Vida llega a 0, ve a la sección **34** igualmente con la palabra clave `PRECIO PAGADO`.",
+    "text": "Un crujido de madera —no de pisadas, de madera doblándose— os detiene en seco. Entre dos troncos retorcidos, una silueta se despliega hasta alcanzar la altura de un hombre alto: ramas por brazos, corteza agrietada de brillo rojizo, raíces que se arrastran en vez de piernas. Una **Espina Andante**, despertada por el paso de tanta gente por su territorio.\n\nSe interpone directamente entre el grupo y el sendero de salida.\n\n◈ **ESPINA ANDANTE** — Defensa 9 · Vida 18 · Ataque +2 · Daño 4\n*Especial: resta 1 al daño que le inflijas (mínimo 1).*\nSi ganas, ve a la sección **34**. Si tu Vida llega a 0, ve a la sección **450**.",
     "combat": {
       "enemy": "ESPINA ANDANTE",
       "on_win": 34,
-      "on_lose": 34,
+      "on_lose": 450,
       "notes": "Derrota no letal: PRECIO_PAGADO, 1 PV, continúa."
     },
     "choices": [],
@@ -820,10 +820,10 @@
     "id": 42,
     "thread": "hebra_b",
     "title": "Alas negras sobre el campamento",
-    "text": "El graznido metálico llega justo cuando el fuego se apaga. Una **Bandada de Cuervos de Cristal**, atraída por el resplandor de las últimas brasas, desciende sobre el campamento.\n\n◈ **BANDADA DE CUERVOS DE CRISTAL** — Defensa 7 · Vida 8 · Ataque +1 · Daño 2\n*Ataca dos veces por ronda. Si no la derrotas en 3 rondas, uno de los refugiados sufre un corte (sin consecuencias mecánicas, pero anota la palabra clave `NOCHE DIFÍCIL`).*\n\nSi ganas, ve a la sección **43**. Si tu Vida llega a 0, ve a la sección **900**.",
+    "text": "El graznido metálico llega justo cuando el fuego se apaga. Una **Bandada de Cuervos de Cristal**, atraída por el resplandor de las últimas brasas, desciende sobre el campamento.\n\n◈ **BANDADA DE CUERVOS DE CRISTAL** — Defensa 7 · Vida 8 · Ataque +1 · Daño 2\n*Ataca dos veces por ronda. Si no la derrotas en 3 rondas, uno de los refugiados sufre un corte (sin consecuencias mecánicas, pero anota la palabra clave `NOCHE DIFÍCIL`).*\n\nSi ganas, ve a la sección **453**. Si tu Vida llega a 0, ve a la sección **900**.",
     "combat": {
       "enemy": "BANDADA DE CUERVOS DE CRISTAL",
-      "on_win": 43,
+      "on_win": 453,
       "on_lose": 900
     },
     "choices": [],
@@ -956,7 +956,7 @@
     "id": 49,
     "thread": "hebra_c",
     "title": "El grupo grande",
-    "text": "Te decides por el grupo grande —la apuesta más segura, aunque nada de lo que hagas esta noche pueda llamarse seguro. El rastro te lleva a través de campos quemados hasta la linde de un bosque bajo, donde ves, por primera vez con claridad, el resplandor de una hoguera de campamento entre los árboles.\n\nTe acercas agachado, conteniendo la respiración.\n\nVe a la sección **51**.",
+    "text": "Te decides por el grupo grande —la apuesta más segura, aunque nada de lo que hagas esta noche pueda llamarse seguro. El rastro te lleva a través de campos quemados hasta la linde de un bosque bajo, donde ves, por primera vez con claridad, el resplandor de una hoguera de campamento entre los árboles.\n\nTe acercas a ras de suelo, conteniendo la respiración.\n\nVe a la sección **51**.",
     "combat": null,
     "choices": [
       {
@@ -982,7 +982,8 @@
       },
       {
         "text": "Fallo en la prueba de VOL",
-        "target": 51
+        "target": 51,
+        "sets_flag": "MAREADO_POR_LA_GRIETA"
       }
     ],
     "sets_flags": [],
@@ -1018,7 +1019,7 @@
     "id": 52,
     "thread": "hebra_c",
     "title": "Escuchar",
-    "text": "Te obligas a quedarte quieto, aunque cada instinto te grita que actúes ya. La paciencia da sus frutos: en la siguiente hora escuchas hablar de las Fauces Rotas, del plan de reunir a \"suficientes Marcados\" antes de la próxima luna nueva, y de una ruta de marcha que pasa, convenientemente, cerca de un desfiladero estrecho donde un solo explorador decidido podría intentar algo.\n\nEmpiezas a entender algo incómodo: esta gente no se ve a sí misma como monstruos. Se ve como la última esperanza de un mundo que perdió demasiado hace ochenta y tres años.\n\nAnota las palabras clave `LAS FAUCES ROTAS`, `PALABRAS DEL PADRE CENIZA` y `DESFILADERO CONOCIDO` (+1 Reputación con la Secta de los Renacidos, por haberlos escuchado sin juzgar de inmediato).\n\nVe a la sección **54**.",
+    "text": "Te obligas a no moverte, aunque cada instinto te grita que actúes ya. La paciencia da sus frutos: en la siguiente hora escuchas hablar de las Fauces Rotas, del plan de reunir a \"suficientes Marcados\" antes de la próxima luna nueva, y de una ruta de marcha que pasa, convenientemente, cerca de un desfiladero estrecho donde un solo explorador decidido podría intentar algo.\n\nEmpiezas a entender algo incómodo: esta gente no se ve a sí misma como monstruos. Se ve como la última esperanza de un mundo que perdió demasiado hace ochenta y tres años.\n\nAnota las palabras clave `LAS FAUCES ROTAS`, `PALABRAS DEL PADRE CENIZA` y `DESFILADERO CONOCIDO` (+1 Reputación con la Secta de los Renacidos, por haberlos escuchado sin juzgar de inmediato).\n\nVe a la sección **54**.",
     "combat": null,
     "choices": [
       {
@@ -1041,11 +1042,11 @@
     "id": 53,
     "thread": "hebra_c",
     "title": "Demasiado pronto",
-    "text": "No puedes esperar más. Te arrastras hacia el carro mientras los cultistas siguen hablando, pero una rama cede bajo tu peso con un crujido que suena, en el silencio de la noche, como un trueno.\n\nDos figuras se levantan de inmediato, cuchillos curvos en mano.\n\n◈ **FANÁTICO RENACIDO** — Defensa 8 · Vida 12 · Ataque +2 · Daño 3\n*Solo, sin ayuda esta vez: estás en desventaja numérica y lo sabes. Si tu Vida llega a 0, no mueres, pero te ves obligado a retirarte a la carrera; ve a la sección 54 con 1 Vida y anota la palabra clave `RETIRADA FORZOSA`.*\n\nSi ganas, los demás cultistas se despiertan también y decides que es mejor retirarte antes de que te rodeen. Ve a la sección **54** de todos modos, hayas ganado o no el combate, pero anota la palabra clave `ATAQUE PREMATURO` si ganaste.",
+    "text": "No puedes esperar más. Te arrastras hacia el carro mientras los cultistas siguen hablando, pero una rama cede bajo tu peso con un crujido que suena, en el silencio de la noche, como un trueno.\n\nDos figuras se levantan de inmediato, cuchillos curvos en mano.\n\n◈ **FANÁTICO RENACIDO** — Defensa 8 · Vida 12 · Ataque +2 · Daño 3\n*Solo, sin ayuda esta vez: estás en desventaja numérica y lo sabes. Si tu Vida llega a 0, no mueres, pero no te queda otra que retirarte a la carrera: ve a la sección **452**.*\n\nSi ganas, ve a la sección **451**.",
     "combat": {
       "enemy": "FANÁTICO RENACIDO",
-      "on_win": 54,
-      "on_lose": 54,
+      "on_win": 451,
+      "on_lose": 452,
       "notes": "Ambos resultados llevan a 54; on_lose añade RETIRADA_FORZOSA y 1PV, on_win añade ATAQUE_PREMATURO."
     },
     "choices": [],
@@ -1062,7 +1063,7 @@
       "caption": "Bren en el carro",
       "brief": "Interior oscuro de un carro con barrotes de madera; varios niños Marcados acurrucados juntos, el más cercano a la luz es Bren, un niño de unos diez años con expresión de terror y alivio mezclados al reconocer al protagonista al otro lado de los barrotes. Manos pequeñas aferradas a la madera. Estilo: escena íntima y desgarradora, poca luz, primer plano."
     },
-    "text": "Alcanzas a ver el interior del carro un instante —lo suficiente para que el corazón se te encoja. Bren está ahí, acurrucado entre otros dos niños, con los ojos muy abiertos al reconocerte entre las sombras.\n\n—¡Vas a...! —empieza, pero un cultista lo hace callar antes de que termine la frase.\n\nNo hay manera de sacarlo ahora, no tú solo, no contra tantos. Lo sabes con una certeza que duele físicamente.\n\n—Volveré —le prometes en un susurro que esperas que alcance a oír—. Te lo juro.\n\nAnota la palabra clave `VISTE A BREN CAUTIVO` (si no la tenías ya) y `PROMESA A BREN`.\n\nVe a la sección **55**.",
+    "text": "Alcanzas a ver el interior del carro un instante —lo suficiente para que el corazón se te encoja. Bren está ahí, acurrucado entre otros dos niños, con los ojos muy abiertos al reconocerte entre las sombras.\n\n—¡Vas a...! —empieza, pero un cultista lo hace callar antes de que termine la frase.\n\nNo hay manera de sacarlo ahora, no por tu cuenta, no contra tantos. Lo sabes con una certeza que duele físicamente.\n\n—Volveré —le prometes en un susurro que esperas que alcance a oír—. Te lo juro.\n\nAnota la palabra clave `VISTE A BREN CAUTIVO` (si no la tenías ya) y `PROMESA A BREN`.\n\nVe a la sección **55**.",
     "combat": null,
     "choices": [
       {
@@ -1081,7 +1082,7 @@
     "id": 55,
     "thread": "hebra_c",
     "title": "Solo en la oscuridad",
-    "text": "Te retiras entre los árboles con el corazón todavía martilleando y la promesa recién hecha pesándote en el pecho más que cualquier armadura. Estás solo, herido, lejos de casa, y la Secta se aleja hacia el este llevándose todo lo que juraste proteger.\n\nEl agotamiento te golpea de golpe, como una ola. Te apoyas contra un árbol para no caer.\n\n**1.** Descansar unas horas antes de continuar, por prudencia: ve a la sección **56**.\n**2.** Seguir adelante ahora mismo, sin detenerte: ve a la sección **57**.",
+    "text": "Te retiras entre los árboles con el corazón todavía martilleando y la promesa recién hecha pesándote en el pecho más que cualquier armadura. Estás sin nadie, con heridas, lejos de casa, y la Secta se aleja hacia el este llevándose todo lo que juraste proteger.\n\nEl agotamiento te golpea de golpe, como una ola. Te apoyas contra un árbol para no caer.\n\n**1.** Descansar unas horas antes de continuar, por prudencia: ve a la sección **56**.\n**2.** Seguir adelante ahora mismo, sin detenerte: ve a la sección **57**.",
     "combat": null,
     "choices": [
       {
@@ -1221,7 +1222,7 @@
     "id": 62,
     "thread": "hebra_c",
     "title": "El primer coste",
-    "text": "Cierras los ojos y tiras de ese hilo frío que sientes en la Marca. El alivio es instantáneo —la fatiga se disuelve, las heridas se cierran un poco más rápido de lo natural— pero deja detrás un regusto amargo, casi metálico, que no tenías antes.\n\nGana 1 punto de Corrupción y cura 1D6+2 puntos de Vida.\n\nTe levantas más fuerte, sí. Pero durante un instante, mirándote las manos, no estás del todo seguro de que sigan siendo del todo tuyas.\n\nVe a la sección **63**.",
+    "text": "Cierras los ojos y tiras de ese hilo frío que sientes en la Marca. El alivio es instantáneo —la fatiga se disuelve, las heridas se cierran un poco más rápido de lo natural— pero deja detrás un regusto amargo, casi metálico, que no tenías antes.\n\nGana 1 punto de Corrupción y cura 1D6+2 puntos de Vida.\n\nTe levantas más fuerte, sí. Pero durante un instante, mirándote las manos, no tienes del todo claro que sigan siendo del todo tuyas.\n\nVe a la sección **63**.",
     "combat": null,
     "choices": [
       {
@@ -1238,7 +1239,7 @@
     "id": 63,
     "thread": "hebra_c",
     "title": "Hacia el Puesto",
-    "text": "Decides, con la cabeza más clara de lo que ha estado desde que saliste de Valcenar, que perseguir a la Secta tú solo hasta las Fauces Rotas es una manera segura de morir sin ayudar a nadie. El Puesto Ceniza, con su guarnición y sus recursos, es la única baza real que tienes de volver a por Bren con alguna posibilidad de éxito.\n\nCambias de rumbo hacia el norte, hacia el camino imperial que lleva al Puesto.\n\nVe a la sección **64**.",
+    "text": "Decides, con la cabeza más clara de lo que ha estado desde que saliste de Valcenar, que perseguir a la Secta por tu cuenta hasta las Fauces Rotas es una manera segura de morir sin ayudar a nadie. El Puesto Ceniza, con su guarnición y sus recursos, es la única baza real que tienes de volver a por Bren con alguna posibilidad de éxito.\n\nCambias de rumbo hacia el norte, hacia el camino imperial que lleva al Puesto.\n\nVe a la sección **64**.",
     "combat": null,
     "choices": [
       {
@@ -1289,7 +1290,7 @@
     "id": 66,
     "thread": "hebra_c",
     "title": "Puesto Ceniza",
-    "text": "Entras en el patio de armas del Puesto Ceniza sola, cubierta de polvo y sangre seca, mientras los soldados de guardia intercambian miradas que no se molestan en disimular. Ninguna otra persona ha llegado hasta ahora con noticias tan frescas —ni con un aspecto tan cercano al colapso.\n\nAnota la palabra clave `LLEGADA POR EL CAZADOR`.\n\nVe a la sección **67**.",
+    "text": "Entras en el patio de armas del Puesto Ceniza sin nadie al lado, con el polvo y la sangre seca encima, mientras los soldados de guardia intercambian miradas que no se molestan en disimular. Ninguna otra persona ha llegado hasta ahora con noticias tan frescas —ni con un aspecto tan cercano al colapso.\n\nAnota la palabra clave `LLEGADA POR EL CAZADOR`.\n\nVe a la sección **67**.",
     "combat": null,
     "choices": [
       {
@@ -1312,7 +1313,7 @@
       "caption": "El Comandante Orwyn",
       "brief": "Hombre humano de unos cincuenta años, cabello y barba entrecanos muy cortos, armadura de la Orden de la Ceniza (símbolo de cadena rota) desgastada por años de uso real, una cicatriz vieja cruzándole una ceja. De pie ante una mesa cubierta de mapas en una sala de piedra iluminada por antorchas. Mirada directa, cansada pero firme. Estilo: retrato de líder militar D&D, iluminación cálida de antorcha."
     },
-    "text": "*(Si tienes la palabra clave `LLEGADA POR EL GUARDIÁN`, lee este párrafo: Cael te acompaña personalmente hasta la sala de mando, y el propio hecho de que un explorador veterano vuelva escoltando a un Marcado desconocido basta para que las puertas se abran sin demasiadas preguntas.)*\n\n*(Si tienes la palabra clave `LLEGADA POR EL PROTECTOR`, lee este párrafo: Llegas con un grupo entero de supervivientes a cuestas, y esa sola imagen —un Marcado guiando a los suyos a un lugar seguro en vez de huir solo— corre por el Puesto antes de que termines de cruzar el patio.)*\n\n*(Si tienes la palabra clave `LLEGADA POR EL CAZADOR`, lee este párrafo: Llegas sola, exhausta, con más información de primera mano sobre la Secta que cualquier patrulla de la Orden ha conseguido en meses, y eso hace que te reciban con una mezcla de alarma y respeto.)*\n\nSea cual sea tu camino hasta aquí, terminas en la misma sala: una cámara de piedra en lo alto de la torre, con mapas de todo el este de Cárdenas extendidos sobre una mesa larga. El Comandante Orwyn te recibe de pie, sin sentarse, como si sentarse fuera un lujo que no se ha permitido en años.\n\n—Así que tú eres de quien Cael/los supervivientes/las heridas hablan —dice, ajustando la frase según lo que ya le hayan contado—. Cuéntame todo. Desde el principio. No omitas nada.\n\nVe a la sección **68**.",
+    "text": "*(Si tienes la palabra clave `LLEGADA POR EL GUARDIÁN`, lee este párrafo: Cael te acompaña personalmente hasta la sala de mando, y el propio hecho de que un explorador veterano vuelva escoltando a un Marcado desconocido basta para que las puertas se abran sin demasiadas preguntas.)*\n\n*(Si tienes la palabra clave `LLEGADA POR EL PROTECTOR`, lee este párrafo: Llegas con un grupo entero de supervivientes a cuestas, y esa sola imagen —alguien con la Marca guiando a los suyos a un lugar seguro en vez de huir por su cuenta— corre por el Puesto antes de que termines de cruzar el patio.)*\n\n*(Si tienes la palabra clave `LLEGADA POR EL CAZADOR`, lee este párrafo: Llegas sin nadie, al límite, con más información de primera mano sobre la Secta que cualquier patrulla de la Orden ha conseguido en meses, y eso hace que te reciban con una mezcla de alarma y respeto.)*\n\nSea cual sea tu camino hasta aquí, terminas en la misma sala: una cámara de piedra en lo alto de la torre, con mapas de todo el este de Cárdenas extendidos sobre una mesa larga. El Comandante Orwyn te recibe de pie, sin sentarse, como si sentarse fuera un lujo que no se ha permitido en años.\n\n—Así que tú eres de quien Cael/los supervivientes/las heridas hablan —dice, ajustando la frase según lo que ya le hayan contado—. Cuéntame todo. Desde el principio. No omitas nada.\n\nVe a la sección **68**.",
     "combat": null,
     "choices": [
       {
@@ -1464,7 +1465,7 @@
     "id": 75,
     "thread": "convergencia",
     "title": "El converso",
-    "text": "El prisionero es un hombre de mediana edad, encadenado pero no maltratado más allá de lo estrictamente necesario; Orwyn, para su crédito, no dirige un lugar de torturas gratuitas. Cuando te ve entrar —Marcada, con la cicatriz visible— algo en su expresión cambia.\n\n—Tú deberías estar de nuestro lado —te dice, no como amenaza, sino casi como súplica—. El Padre Ceniza no miente. Perdí a mi mujer en la Ruptura. Él perdió a toda su familia. Él no quiere que vuelva a pasar lo mismo... quiere que no haga falta ya ningún sacrificio, nunca más.\n\n—¿Y los niños que os habéis llevado? —preguntas—. ¿Eso no es un sacrificio?\n\nEl hombre no tiene una buena respuesta para eso. Baja la mirada.\n\nAnota la palabra clave `HISTORIA DEL PADRE CENIZA` (información útil más adelante).\n\nVe a la sección **77**.",
+    "text": "El prisionero es un hombre de mediana edad, encadenado pero no maltratado más allá de lo estrictamente necesario; Orwyn, para su crédito, no dirige un lugar de torturas gratuitas. Cuando te ve entrar —con la Marca y la cicatriz a la vista— algo en su expresión cambia.\n\n—Tú deberías estar de nuestro lado —te dice, no como amenaza, sino casi como súplica—. El Padre Ceniza no miente. Perdí a mi mujer en la Ruptura. Él perdió a toda su familia. Él no quiere que vuelva a pasar lo mismo... quiere que no haga falta ya ningún sacrificio, nunca más.\n\n—¿Y los niños que os habéis llevado? —preguntas—. ¿Eso no es un sacrificio?\n\nEl hombre no tiene una buena respuesta para eso. Baja la mirada.\n\nAnota la palabra clave `HISTORIA DEL PADRE CENIZA` (información útil más adelante).\n\nVe a la sección **77**.",
     "combat": null,
     "choices": [
       {
@@ -1604,7 +1605,7 @@
     "id": 82,
     "thread": "convergencia",
     "title": "Sola",
-    "text": "—Esto lo tengo que hacer yo —dices, y aunque Orwyn frunce el ceño, no te lo prohíbe.\n\nHay algo en la idea de enfrentarte sola a lo que viene que te aterra y, al mismo tiempo, te parece lo único honesto que puedes ofrecerle a Bren después de la promesa que le hiciste: que serás tú, y nadie más, quien vuelva a por él.\n\nAnota la palabra clave `CAMINO EN SOLITARIO`.\n\nVe a la sección **83**.",
+    "text": "—Esto lo tengo que hacer yo —dices, y aunque Orwyn frunce el ceño, no te lo prohíbe.\n\nHay algo en la idea de enfrentarte sin nadie a lo que viene que te aterra y, al mismo tiempo, te parece lo único honesto que puedes ofrecerle a Bren después de la promesa que le hiciste: que serás tú, y nadie más, quien vuelva a por él.\n\nAnota la palabra clave `CAMINO EN SOLITARIO`.\n\nVe a la sección **83**.",
     "combat": null,
     "choices": [
       {
@@ -1745,7 +1746,12 @@
     "combat": null,
     "choices": [
       {
-        "text": null,
+        "text": "Éxito: memorizas el momento exacto del hueco",
+        "target": 91,
+        "sets_flag": "HUECO_CONOCIDO"
+      },
+      {
+        "text": "Fallo: memorizas el patrón solo de forma aproximada",
         "target": 91
       }
     ],
@@ -1880,7 +1886,13 @@
     "combat": null,
     "choices": [
       {
-        "text": null,
+        "text": "Detenerte un momento por el prisionero-señuelo",
+        "target": 97,
+        "requires": "PRAGMATISMO",
+        "sets_flag": "COSTE_DEL_SENUELO"
+      },
+      {
+        "text": "Seguir adelante sin detenerte",
         "target": 97
       }
     ],
@@ -1991,8 +2003,13 @@
     "combat": null,
     "choices": [
       {
-        "text": null,
+        "text": "Éxito (o llevas ganzúas): abres las celdas en un minuto",
         "target": 103
+      },
+      {
+        "text": "Fallo: el metal resuena por el corredor",
+        "target": 103,
+        "sets_flag": "RUIDO_EN_LA_PRISION"
       }
     ],
     "sets_flags": [],
@@ -2048,7 +2065,7 @@
     "id": 105,
     "thread": "mazmorra",
     "title": "La escolta",
-    "text": "Tu acompañante no discute. Reúne a los niños, Bren incluido —que protesta, quiere quedarse a ayudar, y al que tienes que convencer con una mirada que no admite discusión— y los guía de vuelta hacia el vestíbulo y la escalinata de salida.\n\n—Nos vemos fuera —te dice tu acompañante antes de irse—. Viva.\n\nTe quedas sola por primera vez desde que salisteis del Puesto Ceniza, con las Fauces Rotas enteras entre tú y lo que sea que el Padre Ceniza esté a punto de hacer.\n\nAnota la palabra clave `NIÑOS A SALVO` (+2 Reputación con Los Libres, +1 con la Orden de la Ceniza).\n\nVe a la sección **107**.",
+    "text": "Tu acompañante no discute. Reúne a los niños, Bren incluido —que protesta, quiere quedarse a ayudar, y al que tienes que convencer con una mirada que no admite discusión— y los guía de vuelta hacia el vestíbulo y la escalinata de salida.\n\n—Nos vemos fuera —te dice tu acompañante antes de irse—. Viva.\n\nTe quedas sin compañía por primera vez desde que salisteis del Puesto Ceniza, con las Fauces Rotas enteras entre tú y lo que sea que el Padre Ceniza esté a punto de hacer.\n\nAnota la palabra clave `NIÑOS A SALVO` (+2 Reputación con Los Libres, +1 con la Orden de la Ceniza).\n\nVe a la sección **107**.",
     "combat": null,
     "choices": [
       {
@@ -2231,8 +2248,14 @@
     "combat": null,
     "choices": [
       {
-        "text": null,
-        "target": 115
+        "text": "Éxito: el soporte se astilla y el vórtice tiembla",
+        "target": 115,
+        "sets_flag": "SABOTAJE_LOGRADO"
+      },
+      {
+        "text": "Fallo: el golpe resuena sin romper nada",
+        "target": 115,
+        "sets_flag": "SABOTAJE_FALLIDO"
       }
     ],
     "sets_flags": [],
@@ -2248,12 +2271,12 @@
     "combat": null,
     "choices": [
       {
-        "text": "Si tienes BREN RESCATADO, ir a la confrontación",
+        "text": "Ir a la confrontación: los niños ya están a salvo",
         "target": 116,
         "requires": "BREN_RESCATADO"
       },
       {
-        "text": "Si no, ir a rescatar a Bren",
+        "text": "Ir a rescatar a Bren y a los demás",
         "target": 101
       }
     ],
@@ -2289,7 +2312,7 @@
     "id": 117,
     "thread": "mazmorra",
     "title": "Sin ser vista",
-    "text": "Te mueves entre las sombras de las columnas con una precisión que ni tú misma sabías que tenías, hasta quedar a apenas unos pasos del Padre Ceniza, que sigue con los brazos alzados hacia el vórtice sobre el altar, ajeno a tu presencia.\n\nPodrías atacarlo ahora mismo, sin previo aviso.\n\nAnota la palabra clave `VENTAJA DE SIGILO`.\n\nVe a la sección **119**.",
+    "text": "Te mueves entre las sombras de las columnas con una precisión que ni tú sabías que tenías, hasta quedar a apenas unos pasos del Padre Ceniza, que sigue con los brazos alzados hacia el vórtice sobre el altar, ajeno a tu presencia.\n\nPodrías atacarlo ahora mismo, sin previo aviso.\n\nAnota la palabra clave `VENTAJA DE SIGILO`.\n\nVe a la sección **119**.",
     "combat": null,
     "choices": [
       {
@@ -2328,7 +2351,7 @@
       "caption": "El Padre Ceniza, frente a frente",
       "brief": "Primer plano de la confrontación: el Padre Ceniza bajando los brazos y volviéndose hacia el protagonista, expresión de sorpresa serena, no de furia; báculo aún brillando débilmente. Detrás de él, el vórtice de niebla roja sobre el altar. Cultistas congelados a media acción alrededor. Estilo: momento de tensión suspendida, composición centrada, iluminación roja intensa."
     },
-    "text": "El Padre Ceniza baja los brazos y se vuelve hacia ti, y por un instante —solo un instante— algo en su rostro no es ni furia ni miedo, sino un reconocimiento cansado, casi triste.\n\n—Una Marcada de Valcenar —dice, con la misma voz serena del prisionero que oíste describir, o del hombre que escuchaste junto al fuego, si fue ese tu camino hasta aquí—. Has recorrido un camino muy largo para llegar hasta este momento. Igual que yo.\n\n*(Si tienes la palabra clave `LA VERDAD DE TOMÁS`, puedes nombrarlo por su nombre real. Ve a la sección **120** para intentar hablar con él.)*\n\n*(Si tienes la palabra clave `VENTAJA DE SIGILO` y prefieres no arriesgarte a hablar, puedes atacar de inmediato: ve a la sección **122**.)*\n\n**1.** Intentar razonar con él: ve a la sección **120**.\n**2.** Atacar sin más palabras: ve a la sección **122**.",
+    "text": "El Padre Ceniza baja los brazos y se vuelve hacia ti, y por un instante —solo un instante— algo en su rostro no es ni furia ni miedo, sino un reconocimiento cansado, casi triste.\n\n—Alguien con la Marca, de Valcenar —dice, con la misma voz serena del prisionero que oíste describir, o del hombre que escuchaste junto al fuego, si fue ese tu camino hasta aquí—. Has recorrido un camino muy largo para llegar hasta este momento. Igual que yo.\n\n*(Si tienes la palabra clave `LA VERDAD DE TOMÁS`, puedes nombrarlo por su nombre real. Ve a la sección **120** para intentar hablar con él.)*\n\n*(Si tienes la palabra clave `VENTAJA DE SIGILO` y prefieres no arriesgarte a hablar, puedes atacar de inmediato: ve a la sección **122**.)*\n\n**1.** Intentar razonar con él: ve a la sección **120**.\n**2.** Atacar sin más palabras: ve a la sección **122**.",
     "combat": null,
     "choices": [
       {
@@ -2465,7 +2488,7 @@
     "id": 125,
     "thread": "mazmorra",
     "title": "Lo que fue Ser Dravin",
-    "text": "La criatura que se alza del altar roto os mira —a ti, y al Padre Ceniza, si sigue en pie— con dos puntos de luz donde deberían estar los ojos. Cuando habla, su voz suena como piedra rascando piedra, apenas reconocible como algo que una vez fue humano.\n\n*«Veinte años»*, dice, o algo que se le parece. *«Veinte años sosteniendo esto solo. Nadie... vino.»*\n\n*(Si tienes la palabra clave `TOMÁS VACILA` o `PADRE CENIZA CAPTURADO`, el Padre Ceniza, malherido, se pone a tu lado en vez de huir.)* —Puedo ayudarte a distraerlo —dice—. Es lo mínimo que le debo. A él, y a ti.\n\n*(Si no, estás sola ante lo que viene.)*\n\nNo hay más tiempo para hablar. El Quebrado Mayor —lo que fue Ser Dravin— se prepara para atacar.\n\nVe a la sección **126**.",
+    "text": "La criatura que se alza del altar roto os mira —a ti, y al Padre Ceniza, si sigue en pie— con dos puntos de luz donde deberían estar los ojos. Cuando habla, su voz suena como piedra rascando piedra, apenas reconocible como algo que una vez fue humano.\n\n*«Veinte años»*, dice, o algo que se le parece. *«Veinte años sosteniendo esto solo. Nadie... vino.»*\n\n*(Si tienes la palabra clave `TOMÁS VACILA` o `PADRE CENIZA CAPTURADO`, el Padre Ceniza, malherido, se pone a tu lado en vez de huir.)* —Puedo ayudarte a distraerlo —dice—. Es lo mínimo que le debo. A él, y a ti.\n\n*(Si no, estás sin nadie ante lo que viene.)*\n\nNo hay más tiempo para hablar. El Quebrado Mayor —lo que fue Ser Dravin— se prepara para atacar.\n\nVe a la sección **126**.",
     "combat": null,
     "choices": [
       {
@@ -2486,7 +2509,7 @@
       "caption": "El Quebrado Mayor — jefe final",
       "brief": "Criatura gigantesca a medio camino entre caballero y monstruo de cristal negro, armadura fusionada y fracturada, un ala de cristal roto emergiendo de la espalda, múltiples grietas luminosas recorriendo el cuerpo entero como venas de luz roja. Se alza sobre el altar destrozado en el centro de una cámara en colapso parcial, niebla roja arremolinándose a su alrededor. El protagonista, pequeño en comparación, se prepara para el combate en primer plano. Estilo: jefe final épico D&D/Pathfinder, escala imponente, doble página, iluminación intensa rojo-negro."
     },
-    "text": "◈ **QUEBRADO MAYOR — \"LO QUE FUE SER DRAVIN\"** — Defensa 12 · Vida 40 · Ataque +4 · Daño 6\n\n*Fase de furia:* cuando su Vida baja de 15, gana Ataque +5, Daño 7, y ataca dos veces por ronda.\n*Grieta abierta:* una vez, en lugar de atacar, puede forzarte a una prueba de VOL Difícil (11+); si fallas, pierdes 1D6 Vida directamente y ganas 1 punto de Corrupción.\n\n*(Si el Padre Ceniza lucha a tu lado —ve la sección 125—, resta 2 al resultado de cada tirada de ataque del Quebrado Mayor mientras dure el combate: te cubre y distrae constantemente.)*\n*(Si tienes el objeto `Anillo del Eco Liberado`, tu Defensa en este combate es +1 adicional.)*\n\nEste es el combate más duro de *La Marca Rota*. Usa todos los recursos que tengas: pociones, hechizos, Dones Forzados si hace falta.\n\nVe a la sección **127**.",
+    "text": "◈ **QUEBRADO MAYOR — \"LO QUE FUE SER DRAVIN\"** — Defensa 12 · Vida 40 · Ataque +4 · Daño 6\n\n*Fase de furia:* cuando su Vida baja de 15, gana Ataque +5, Daño 7, y ataca dos veces por ronda.\n*Grieta abierta:* una vez, en lugar de atacar, puede forzarte a una prueba de VOL Difícil (11+); si fallas, pierdes 1D6 Vida directamente y ganas 1 punto de Corrupción.\n\n*(Si el Padre Ceniza lucha a tu lado —ve la sección 125—, resta 2 al resultado de cada tirada de ataque del Quebrado Mayor mientras dure el combate: te cubre y distrae constantemente.)*\n*(Si tienes el objeto `Anillo del Eco Liberado`, tu Defensa en este combate es +1 adicional.)*\n\n*(Combate excepcionalmente duro: cuenta con emplear pociones, hechizos y Dones Forzados si hace falta.)*\n\nVe a la sección **127**.",
     "combat": {
       "enemy": "QUEBRADO MAYOR",
       "on_win": 127,
@@ -2606,7 +2629,7 @@
     "id": 133,
     "thread": "mazmorra",
     "title": "Tabla de finales",
-    "text": "Comprueba, por orden, las siguientes condiciones, y ve a la primera que cumplas:\n\n1. Si tu Corrupción es **10**, ve a la sección **950** (Final: *Lo que ya no eres*).\n2. Si tu Corrupción es **7 o más** (pero menor de 10), ve a la sección **905** (Final: *El precio de la Marca*).\n3. Si tienes la palabra clave `PADRE CENIZA CAÍDO` y tu Reputación con la Orden de la Ceniza es **+4 o más**, ve a la sección **901** (Final: *La espada de la Orden*).\n4. Si tienes la palabra clave `TOMÁS VACILA` o `PADRE CENIZA CAPTURADO`, y tu Reputación con la Secta de los Renacidos es **0 o más**, ve a la sección **902** (Final: *La grieta y la duda*).\n5. Si tu Reputación con Los Libres es **+4 o más**, ve a la sección **903** (Final: *Los que quedan*).\n6. Si tienes las palabras clave `NIÑOS A SALVO` y `BREN RESCATADO`, y ninguna de las condiciones anteriores aplica, ve a la sección **904** (Final: *Una promesa cumplida*).\n7. Si no cumples ninguna de las anteriores, ve a la sección **906** (Final: *Superviviente de Vaelgard*).\n\nVe a la sección que corresponda.",
+    "text": "Comprueba, por orden, las siguientes condiciones, y ve a la primera que cumplas:\n\n1. Si tu Corrupción es **10**, ve a la sección **950** (Final: *Lo que ya no eres*).\n2. Si tu Corrupción es **7 o más** (pero menor de 10), ve a la sección **905** (Final: *El precio de la Marca*).\n3. Si tienes las palabras clave `NIÑOS A SALVO` y `BREN RESCATADO`, ve a la sección **904** (Final: *Una promesa cumplida*).\n4. Si tienes la palabra clave `PADRE CENIZA CAÍDO` y tu Reputación con la Orden de la Ceniza es **+4 o más**, ve a la sección **901** (Final: *La espada de la Orden*).\n5. Si tienes la palabra clave `TOMÁS VACILA` o `PADRE CENIZA CAPTURADO`, y tu Reputación con la Secta de los Renacidos es **0 o más**, ve a la sección **902** (Final: *La grieta y la duda*).\n6. Si tu Reputación con Los Libres es **+4 o más**, ve a la sección **903** (Final: *Los que quedan*).\n7. Si no cumples ninguna de las anteriores, ve a la sección **906** (Final: *Superviviente de Vaelgard*).\n\nVe a la sección que corresponda.",
     "combat": null,
     "choices": [],
     "sets_flags": [],
@@ -2626,6 +2649,142 @@
     "libro": "Libro Primero — La Marca Rota",
     "illustration": null
   },
+  "447": {
+    "id": 447,
+    "thread": "prologo",
+    "title": "Fuera de la línea de golpe",
+    "illustration": null,
+    "text": "El cuchillo curvo llega antes que tu guardia, y lo último que ves con claridad es el suelo subiendo hacia ti. Luego una mano te agarra por el cuello del jubón y tira.\n\nSor Ygrid te arrastra fuera de la brecha sin dejar de cubrirte con el escudo, mientras el fanático busca otro blanco más cerca de la empalizada.\n\n—De pie —dice, sin mirarte—. Todavía no.\n\nTe levantas con el costado ardiendo. Vas a llevar esa herida durante mucho tiempo.\n\n*(Continúas con 1 punto de Vida.)*",
+    "combat": null,
+    "choices": [
+      {
+        "text": "Seguir a Ygrid",
+        "target": 5
+      }
+    ],
+    "sets_flags": [
+      "HERIDA_DE_VALCENAR"
+    ],
+    "rep_delta": {},
+    "libro": "Libro Primero — La Marca Rota"
+  },
+  "448": {
+    "id": 448,
+    "thread": "prologo",
+    "title": "La irrupción de Ygrid",
+    "illustration": null,
+    "text": "El Custodio es más rápido de lo que nada de ese tamaño debería ser, y cuando el golpe te alcanza, el mundo se estrecha hasta el tamaño de una moneda.\n\nSor Ygrid entra por el lateral de la capilla en el último instante y te aparta de la línea de golpe con el hombro, como quien empuja un carro. Duele casi tanto como el golpe que te ahorra.\n\nEl Custodio no la persigue. Ya tiene lo que venía a buscar.\n\n*(Continúas con 1 punto de Vida.)*",
+    "combat": null,
+    "choices": [
+      {
+        "text": "Levantarte",
+        "target": 5
+      }
+    ],
+    "sets_flags": [
+      "HERIDA_DE_VALCENAR"
+    ],
+    "rep_delta": {},
+    "libro": "Libro Primero — La Marca Rota"
+  },
+  "449": {
+    "id": 449,
+    "thread": "hebra_a",
+    "title": "Cael te saca de la pelea",
+    "illustration": null,
+    "text": "Fallas la parada por un dedo, y el peso entero del Custodio te manda contra el suelo helado del campamento.\n\nCael no grita ni se detiene a comprobar si respiras: te engancha por el arnés y tira de ti hacia atrás mientras Ceniza gruñe a la altura de tu oreja. Cuando vuelves a ver algo, estás a veinte pasos de donde caíste.\n\n—La próxima vez —dice Cael, sin reproche— mira las manos, no la cara.\n\n*(Continúas con 1 punto de Vida.)*",
+    "combat": null,
+    "choices": [
+      {
+        "text": "Recuperar el aliento",
+        "target": 18
+      }
+    ],
+    "sets_flags": [
+      "HERIDA_DEL_CAMPAMENTO"
+    ],
+    "rep_delta": {},
+    "libro": "Libro Primero — La Marca Rota"
+  },
+  "450": {
+    "id": 450,
+    "thread": "hebra_b",
+    "title": "Alguien paga por ti",
+    "illustration": null,
+    "text": "La Espina Andante te alcanza cuando ya no te quedan fuerzas para esquivar, y lo siguiente que oyes no es tu propio grito.\n\nUno de los refugiados —un hombre flaco que en toda la marcha no ha dicho ni diez palabras— se interpone con lo primero que encuentra y recibe en tu lugar lo que ibas a recibir tú. Los demás lo arrastran hacia el fuego. Sobrevivirá. No volverá a andar igual.\n\nNadie te lo echa en cara. Eso es lo peor.\n\n*(Continúas con 1 punto de Vida.)*",
+    "combat": null,
+    "choices": [
+      {
+        "text": "Continuar la marcha",
+        "target": 34
+      }
+    ],
+    "sets_flags": [
+      "PRECIO_PAGADO"
+    ],
+    "rep_delta": {},
+    "libro": "Libro Primero — La Marca Rota"
+  },
+  "451": {
+    "id": 451,
+    "thread": "hebra_c",
+    "title": "Ganado el asalto, perdido el sigilo",
+    "illustration": null,
+    "text": "Derribas al fanático antes de que consiga dar la alarma en condiciones, pero el ruido ya ha hecho su trabajo: hay linternas encendiéndose por todo el campamento y voces que preguntan qué ha sido eso.\n\nHas ganado la pelea y has perdido la noche. Te retiras hacia los matorrales antes de que alguien piense en contar cuántos son y cuántos deberían ser.",
+    "combat": null,
+    "choices": [
+      {
+        "text": "Retirarte entre los matorrales",
+        "target": 54
+      }
+    ],
+    "sets_flags": [
+      "ATAQUE_PREMATURO"
+    ],
+    "rep_delta": {},
+    "libro": "Libro Primero — La Marca Rota"
+  },
+  "452": {
+    "id": 452,
+    "thread": "hebra_c",
+    "title": "Retirada a la carrera",
+    "illustration": null,
+    "text": "Son más que tú, están despiertos y lo sabías antes de empezar. Cuando el segundo golpe te dobla la rodilla, dejas de pensar en ganar y empiezas a pensar en el bosque.\n\nCorres. Corres mal, sangrando y a oscuras, oyendo detrás de ti una persecución que se cansa antes que tú, simplemente porque no les compensa. Cuando por fin te detienes, no sabes cuánto has corrido ni en qué dirección.\n\n*(Continúas con 1 punto de Vida.)*",
+    "combat": null,
+    "choices": [
+      {
+        "text": "Orientarte de nuevo",
+        "target": 54
+      }
+    ],
+    "sets_flags": [
+      "RETIRADA_FORZOSA"
+    ],
+    "rep_delta": {},
+    "libro": "Libro Primero — La Marca Rota"
+  },
+  "453": {
+    "id": 453,
+    "thread": "hebra_b",
+    "title": "Después de la bandada",
+    "illustration": null,
+    "text": "El último cuervo de cristal se rompe contra las piedras del círculo del fuego con un sonido de vajilla cayendo, y el silencio que queda después es casi peor que el chillido metálico.\n\nAhora toca contar: gente, mantas, dedos.",
+    "combat": null,
+    "choices": [
+      {
+        "text": "La bandada cayó en tres asaltos o menos: nadie resultó herido",
+        "target": 43
+      },
+      {
+        "text": "Tardó más de tres asaltos: uno de los refugiados tiene un corte",
+        "target": 43,
+        "sets_flag": "NOCHE_DIFICIL"
+      }
+    ],
+    "sets_flags": [],
+    "rep_delta": {},
+    "libro": "Libro Primero — La Marca Rota"
+  },
   "900": {
     "id": 900,
     "thread": "final",
@@ -2634,7 +2793,7 @@
       "caption": "Final: Caída en Vaelgard",
       "brief": "Silueta de una lápida improvisada de piedra sin nombre en un paisaje de ceniza gris, con la niebla rojiza de una Grieta difuminándose en el horizonte al fondo. Sin figuras humanas. Estilo: minimalista, melancólico, tono de cierre sobrio, paleta gris-rojo apagada."
     },
-    "text": "Vaelgard no perdona los errores, y esta noche —o esta tarde, o este amanecer, según en qué página de tu historia haya ocurrido— no ha hecho ninguna excepción contigo.\n\nTu cuerpo queda entre la ceniza y el cristal negro de un mundo que ya se había cobrado demasiadas vidas antes de la tuya, y que se cobrará muchas más después. Bren, si llegó a saber tu nombre completo, lo recordará. La Orden de la Ceniza, si llegó a conocerte, lo anotará en un registro entre cientos de nombres parecidos. El Padre Ceniza seguirá su camino, convencido o no de tener razón, sin que nada de lo que intentaste lo haya detenido.\n\nEste es el final de tu historia en *La Marca Rota* — pero no tiene por qué ser el único.\n\n**FIN DE ESTA PARTIDA.**\n\nVaelgard es un mundo duro, y este librojuego está diseñado para jugarse más de una vez: cada Marcado que crees, cada decisión distinta que tomes, revelará caminos, personajes y secretos que esta partida no llegó a mostrarte. Copia una Hoja de Personaje nueva, elige de nuevo tu vocación, y vuelve a la sección 1 cuando quieras volver a intentarlo.",
+    "text": "Vaelgard no perdona los errores, y esta noche —o esta tarde, o este amanecer, según en qué página de tu historia haya ocurrido— no ha hecho ninguna excepción contigo.\n\nTu cuerpo queda entre la ceniza y el cristal negro de un mundo que ya se había cobrado demasiadas vidas antes de la tuya, y que se cobrará muchas más después. Bren, si llegó a saber tu nombre completo, lo recordará. La Orden de la Ceniza, si llegó a conocerte, lo anotará en un registro entre cientos de nombres parecidos. El Padre Ceniza seguirá su camino, convencido o no de tener razón, sin que nada de lo que intentaste lo haya detenido.\n\nEste es el final de tu historia en *La Marca Rota* — pero no tiene por qué ser el único.\n\n**FIN DE ESTA PARTIDA.**\n\nVaelgard es un mundo duro. Cada Marcado nuevo, cada decisión distinta, abre caminos, personajes y secretos que esta partida no llegó a mostrar. Copia una Hoja de Personaje nueva, elige de nuevo tu vocación, y vuelve a la sección 1 cuando quieras volver a intentarlo.",
     "combat": null,
     "choices": [],
     "sets_flags": [],
@@ -2649,7 +2808,7 @@
       "caption": "Final: La espada de la Orden",
       "brief": "El protagonista, ahora con el uniforme completo de agente de la Orden de la Ceniza (armadura con símbolo de cadena rota), de pie en las almenas de Puesto Ceniza al atardecer, mirando hacia el horizonte con expresión endurecida y decidida. El Comandante Orwyn a su lado, ambos en silencio. Estilo: retrato de determinación sombría, luz de atardecer fría, composición formal."
     },
-    "text": "El Padre Ceniza no sobrevivió a las Fauces Rotas, y una parte de ti —la parte que sostuvo la espada al final— no está segura de arrepentirse de ello, por mucho que las últimas palabras de Ygrid le pesen en la memoria: *no los odies, ni siquiera a ellos*.\n\nEl Comandante Orwyn te recibe de vuelta en Puesto Ceniza como lo que ya eres, formalmente y de hecho: una agente de la Orden de la Ceniza, la primera en generaciones en demostrar, desde dentro de la propia experiencia de ser Marcada, que la disciplina y el deber pueden convivir con la Sangre Vieja sin que esta te consuma.\n\nBren se queda en el Puesto, bajo la tutela de la Orden —a salvo, aunque no exactamente libre—, y tú aceptas tu primer encargo oficial antes de que la ceniza de las Fauces Rotas termine de asentarse: hay más Grietas en Vaelgard, más Sectas, más niños con cicatrices de cristal que proteger o vigilar, según se mire.\n\nLa cadena rota que llevas ahora al cuello ya no es solo el recuerdo de Ygrid. Es una promesa nueva, más dura, más fría, y quizás no del todo distinta de la que hizo el propio Tomás Ferreira antes de convertirse en el Padre Ceniza.\n\n**FIN DE *LA MARCA ROTA*.** Tu historia como agente de la Orden de la Ceniza continuará en el Libro Segundo de *Ceniza y Corona*.",
+    "text": "El Padre Ceniza no sobrevivió a las Fauces Rotas, y una parte de ti —la parte que sostuvo la espada al final— no acaba de arrepentirse de ello, por mucho que las últimas palabras de Ygrid le pesen en la memoria: *no los odies, ni siquiera a ellos*.\n\nEl Comandante Orwyn te recibe de vuelta en Puesto Ceniza como lo que ya eres, formalmente y de hecho: agente de la Orden de la Ceniza, la primera persona en generaciones en demostrar, desde dentro de la propia experiencia de ser Marcada, que la disciplina y el deber pueden convivir con la Sangre Vieja sin que esta te consuma.\n\nBren se queda en el Puesto, bajo la tutela de la Orden —a salvo, aunque no exactamente libre—, y tú aceptas tu primer encargo oficial antes de que la ceniza de las Fauces Rotas termine de asentarse: hay más Grietas en Vaelgard, más Sectas, más niños con cicatrices de cristal que proteger o vigilar, según se mire.\n\nLa cadena rota que llevas ahora al cuello ya no es solo el recuerdo de Ygrid. Es una promesa nueva, más dura, más fría, y quizás no del todo distinta de la que hizo el propio Tomás Ferreira antes de convertirse en el Padre Ceniza.\n\n**FIN DE *LA MARCA ROTA*.** Tu historia como agente de la Orden de la Ceniza continuará en el Libro Segundo de *Ceniza y Corona*.",
     "combat": null,
     "choices": [],
     "sets_flags": [],
@@ -2736,7 +2895,7 @@
       "caption": "Final: Lo que ya no eres",
       "brief": "Silueta del protagonista casi irreconocible, cristal negro cubriendo buena parte de su cuerpo, de pie sobre los restos de las Fauces Rotas bajo la niebla roja, con una postura ya no del todo humana. Bren, pequeño en la distancia, retrocediendo con miedo genuino. Estilo: trágico, inquietante pero no gráfico, paleta roja y negra intensa, composición que evoca pérdida más que horror."
     },
-    "text": "Forzaste tu don demasiadas veces. Tocaste la Sangre Vieja más de lo que ningún Marcado debería tocarla en una sola noche, y la Grieta Bermeja, al fin, dejó de darte prestado su poder y empezó, sencillamente, a cobrárselo.\n\nNo mueres. Eso sería, en cierto modo, más sencillo. En su lugar, te transformas: el cristal negro se extiende bajo tu piel más rápido de lo que ningún sanador podría detener, tu voluntad se difumina en algo más grande y más frío que tú misma, y cuando Bren te llama por tu nombre, al final, no estás segura de reconocerlo.\n\nQuizás, dentro de veinte años, alguien encuentre lo que queda de ti vigilando alguna otra Grieta olvidada de Vaelgard, hablando en fragmentos de piedra rascando piedra sobre una promesa que ya no recuerda del todo a quién se la hizo.\n\nEste es el final de tu historia en *La Marca Rota* — el más oscuro de todos los que este libro tiene que ofrecer, y una advertencia honesta sobre el precio real de la Sangre Vieja.\n\n**FIN DE ESTA PARTIDA.**\n\nCopia una Hoja de Personaje nueva y vuelve a la sección 1 si quieres intentar un camino que trate con más cuidado el poder que llevas dentro.",
+    "text": "Forzaste tu don demasiadas veces. Tocaste la Sangre Vieja más de lo que ningún Marcado debería tocarla en una sola noche, y la Grieta Bermeja, al fin, dejó de darte prestado su poder y empezó, sencillamente, a cobrárselo.\n\nNo mueres. Eso sería, en cierto modo, más sencillo. En su lugar, te transformas: el cristal negro se extiende bajo tu piel más rápido de lo que ningún sanador podría detener, tu voluntad se difumina en algo más grande y más frío que tú, y cuando Bren te llama por tu nombre, al final, no sabes si lo reconoces.\n\nQuizás, dentro de veinte años, alguien encuentre lo que queda de ti vigilando alguna otra Grieta olvidada de Vaelgard, hablando en fragmentos de piedra rascando piedra sobre una promesa que ya no recuerda del todo a quién se la hizo.\n\nEste es el final de tu historia en *La Marca Rota*: el más oscuro de todos, el precio de la Sangre Vieja cobrado entero.\n\n**FIN DE ESTA PARTIDA.**\n\nCopia una Hoja de Personaje nueva y vuelve a la sección 1 si quieres intentar un camino que trate con más cuidado el poder que llevas dentro.",
     "combat": null,
     "choices": [],
     "sets_flags": [],
@@ -2751,7 +2910,7 @@
       "caption": "Tres meses después de las Fauces Rotas",
       "brief": "El protagonista (con la ropa/equipo de su clase, ya desgastados por el uso) de pie en el patio de Puesto Ceniza o en el linde de un camino, mirando hacia el horizonte donde se distingue, muy lejos, la neblina rojiza de la Grieta Bermeja todavía inestable. Luz de media mañana, tono contenido, sin acción. Estilo: retrato de transición narrativa, paleta gris-ocre."
     },
-    "text": "Han pasado tres meses desde que las Fauces Rotas dejaron de arder.\n\n*(Si tu Final del Libro Primero fue el 901, \"La espada de la Orden\", lee este párrafo: llevas el brazal de la Orden de la Ceniza con una naturalidad que todavía te sorprende algunas mañanas. Tres meses de patrullas, informes y guardias en Puesto Ceniza te han enseñado más sobre la burocracia del miedo que ningún combate. El Comandante Orwyn confía en ti lo bastante como para haberte encargado ya dos misiones de reconocimiento por tu cuenta.)*\n\n*(En cualquier otro caso —incluido si empiezas tu aventura directamente por este libro—, lee este párrafo en su lugar: sea cual sea el camino que tomaste tras las Fauces Rotas, la Marca en tu piel ha dejado de ser una novedad y ha empezado a convertirse, simplemente, en una parte más de quién eres. Has tenido tiempo de curar las heridas más visibles, aunque no todas.)*\n\nPero Vaelgard rara vez concede tres meses de paz sin cobrarse algo a cambio. Las noticias que llegan desde el resto del Reino de Cárdenas son cada vez más inquietantes: la propia Grieta Bermeja sigue sin cerrarse del todo, y de ella —dicen los informes— ha empezado a manar algo nuevo. Grietas más pequeñas. Grietas hijas.\n\nVe a la sección **1002**.",
+    "text": "Han pasado tres meses desde que las Fauces Rotas dejaron de arder.\n\n*(Si tu Final del Libro Primero fue el 901, \"La espada de la Orden\", lee este párrafo: llevas el brazal de la Orden de la Ceniza con una naturalidad que todavía te sorprende algunas mañanas. Tres meses de patrullas, informes y guardias en Puesto Ceniza te han enseñado más sobre la burocracia del miedo que ningún combate. El Comandante Orwyn confía en ti lo bastante como para haberte encargado ya dos misiones de reconocimiento por tu cuenta.)*\n\n*(En cualquier otro caso —incluido si empiezas tu aventura directamente por este libro—, lee este párrafo en su lugar: sea cual sea el camino que tomaste tras las Fauces Rotas, la Marca en tu piel ha dejado de ser una novedad y ha empezado a convertirse, simplemente, en una parte más de quién eres. Has tenido tiempo de curar las heridas más visibles, aunque no todas.)*\n\nPero Vaelgard rara vez concede tres meses de paz sin cobrarse algo a cambio. Las noticias que llegan desde el resto del Reino de Cárdenas son cada vez más inquietantes: la propia Grieta Bermeja sigue sin cerrarse del todo, y de ella —dicen los informes— ha empezado a manar algo nuevo. Grietas más pequeñas. Grietas hijas.\n\n**Lo que dejaste atrás.** *(Lee únicamente los párrafos cuyas palabras clave tengas anotadas de tu Libro Primero. Si empiezas la saga por este libro, sáltalos todos.)*\n\n*(`BREN RESCATADO`: Bren pasó el invierno en Puesto Ceniza y ahora trabaja en la herrería de un pueblo a dos jornadas de las Fauces. No escribe —nunca aprendió—, pero cada pocas semanas llega un mensaje de tres palabras dictado a alguien que sí sabe: *sigo aquí, gracias*. Guardas todos.)*\n\n*(`VISTE A BREN CAUTIVO` y no `BREN RESCATADO`: nadie ha vuelto a ver a Bren. La Orden abrió un expediente, lo dejó abierto y se lo llevó a Cárdenas con otros doscientos igual de abiertos. Tú sigues preguntando en cada puesto por el que pasas, y en cada puesto te miran con la misma cara de paciencia.)*\n\n*(`NIÑOS A SALVO`: de los niños que sacaste de las Fauces, cuatro fueron reclamados por familias del Confin y tres no tenían a nadie. Esos tres viven ahora en el Refugio, y uno de ellos —una niña que no habló durante dos meses— ha empezado a contar tu historia a los recién llegados, cada vez más adornada.)*\n\n*(`TOMÁS VACILA` o `LA VERDAD DE TOMÁS`: Tomás no volvió a la Secta. Tampoco fue a la Orden. Lo último que se sabe de él es que vendió el hábito en un mercado del sur y compró, con lo que sacó, un caballo malo y un mapa peor.)*\n\nVe a la sección **1002**.",
     "combat": null,
     "choices": [
       {
@@ -2771,7 +2930,7 @@
       "caption": "El mensajero de la Convocatoria",
       "brief": "Jinete con librea formal en azul y plata, portando un estandarte pequeño con el emblema entrelazado de las Cinco Casas, entregando un rollo de pergamino sellado con cera. Fondo: puesto fronterizo o aldea polvorienta, contraste entre la elegancia del mensajero y la aspereza del entorno. Estilo: heráldico, luz de mediodía."
     },
-    "text": "La carta llega un martes, en manos de un jinete con librea de la capital que parece incómodo de estar tan lejos de los adoquines pulidos a los que está acostumbrado.\n\n*(Si eres agente de la Orden de la Ceniza, es Orwyn quien te la entrega en persona, con el sello ya roto.)* *(En cualquier otro caso, el mensajero pregunta por ti por tu nombre —o por la descripción de \"la Marcada de Valcenar\"— antes de entregártela directamente a ti.)*\n\nEl sello es el de las Cinco Casas: un círculo partido por cinco líneas que convergen sin llegar a tocarse. Dentro, una convocatoria formal, escrita en el lenguaje seco y ceremonioso de la burocracia de Cárdenas:\n\n*\"Por orden del Consejo de las Casas, se requiere la comparecencia de todo testigo directo de los sucesos conocidos como 'las Fauces Rotas' ante la Convocatoria de las Casas, a celebrarse en la capital con motivo de la crisis de las Grietas hijas. Se ruega presentarse en un plazo no mayor a quince días.\"*\n\nDebajo, una segunda línea, añadida a mano con una letra distinta, más directa: *\"Ven. Te necesitamos aquí. — Orwyn\"* (si no conoces a Orwyn personalmente, esa línea no aparece, y en su lugar hay solo un nombre de contacto: \"Comandante Orwyn, Casa de la Orden en Cárdenas\").\n\nVe a la sección **1003**.",
+    "text": "La carta llega un martes, en manos de un jinete con librea de la capital que parece incómodo de estar tan lejos de los adoquines pulidos a los que está acostumbrado.\n\n*(Si eres agente de la Orden de la Ceniza, es Orwyn quien te la entrega en persona, con el sello ya roto.)* *(En cualquier otro caso, el mensajero pregunta por ti por tu nombre —o por la descripción de \"quien lleva la Marca de Valcenar\"— antes de entregártela directamente a ti.)*\n\nEl sello es el de las Cinco Casas: un círculo partido por cinco líneas que convergen sin llegar a tocarse. Dentro, una convocatoria formal, escrita en el lenguaje seco y ceremonioso de la burocracia de Cárdenas:\n\n*\"Por orden del Consejo de las Casas, se requiere la comparecencia de todo testigo directo de los sucesos conocidos como 'las Fauces Rotas' ante la Convocatoria de las Casas, a celebrarse en la capital con motivo de la crisis de las Grietas hijas. Se ruega presentarse en un plazo no mayor a quince días.\"*\n\nDebajo, una segunda línea, añadida a mano con una letra distinta, más directa: *\"Ven. Te necesitamos aquí. — Orwyn\"* (si no conoces a Orwyn personalmente, esa línea no aparece, y en su lugar hay solo un nombre de contacto: \"Comandante Orwyn, Casa de la Orden en Cárdenas\").\n\nVe a la sección **1003**.",
     "combat": null,
     "choices": [
       {
@@ -2906,7 +3065,7 @@
       "caption": "La Casa de la Orden de la Ceniza en Cárdenas",
       "brief": "Fachada de piedra gris de un edificio institucional serio, sin ostentación, con el símbolo de la cadena rota tallado sobre la puerta principal. Dos guardias de la Orden custodian la entrada. Contraste deliberado con la opulencia de los edificios nobles cercanos. Estilo: arquitectura funcional y austera, luz de mañana fría."
     },
-    "text": "La Casa de la Orden en Cárdenas no se parece en nada a Puesto Ceniza: es un edificio urbano, discreto, encajado entre una casa de cambio y un gremio de tejedores, como si la propia Orden hubiera decidido hace tiempo que llamar demasiado la atención en la capital nunca trae nada bueno.\n\nDentro, el ambiente es tenso de un modo que no recuerdas de Puesto Ceniza. Agentes con el brazal de la cadena rota cruzan pasillos con prisa, hablando en voz baja, y más de uno te mira dos veces al verte entrar: la Marcada de las Fauces Rotas ya tiene cierta reputación, para bien y para mal, incluso aquí.\n\nOrwyn te recibe él mismo en el vestíbulo, con expresión de quien lleva días sin dormir bien.\n\n—Llegas justo a tiempo —dice, sin preámbulos—. Ven. Hay alguien que quiero que conozcas antes de que empieces a formarte una opinión sobre esta Orden basándote solo en mí.\n\nVe a la sección **1012**.",
+    "text": "La Casa de la Orden en Cárdenas no se parece en nada a Puesto Ceniza: es un edificio urbano, discreto, encajado entre una casa de cambio y un gremio de tejedores, como si la propia Orden hubiera decidido hace tiempo que llamar demasiado la atención en la capital nunca trae nada bueno.\n\nDentro, el ambiente es tenso de un modo que no recuerdas de Puesto Ceniza. Agentes con el brazal de la cadena rota cruzan pasillos con prisa, hablando en voz baja, y más de uno te mira dos veces al verte entrar: quien sobrevivió a las Fauces Rotas ya tiene cierta reputación, para bien y para mal, incluso aquí.\n\nOrwyn te recibe él mismo en el vestíbulo, con expresión de quien lleva días sin dormir bien.\n\n—Llegas justo a tiempo —dice, sin preámbulos—. Ven. Hay alguien que quiero que conozcas antes de que empieces a formarte una opinión sobre esta Orden basándote solo en mí.\n\nVe a la sección **1012**.",
     "combat": null,
     "choices": [
       {
@@ -3162,16 +3321,18 @@
     "id": 1025,
     "thread": "hebra_diplomatico",
     "title": "La reacción de Serel",
-    "text": "Serel Ashvane, cuando se entera del incidente, no reacciona con la indignación que esperarías de una agente de la Orden ante una incursión de palacio en su propio archivo.\n\n—Es exactamente el tipo de golpe de mano que la Duquesa Ordaz jamás reconocería en público —dice, midiendo cada palabra—. Y exactamente el tipo de prueba de mala fe que podría convencerme de que Orwyn tiene más razón de la que le he concedido hasta ahora.\n\n**1.** Preguntarle directamente si va a informar a Ordaz de que tienes la evidencia de Ashkelen: ve a la sección **1030**.\n**2.** No presionarla más y dejar que sea ella quien decida qué hacer con lo que acaba de admitir: ve a la sección **1030**.\n\n*(Anota la palabra clave `ORDEN DIVIDIDA CONOCIDA`: lo que ocurra entre Orwyn y Serel a partir de ahora será importante en el Libro Tercero de esta crónica, gane quien gane la Convocatoria.)*",
+    "text": "Serel Ashvane, cuando se entera del incidente, no reacciona con la indignación que esperarías de una agente de la Orden ante una incursión de palacio en su propio archivo.\n\n—Es exactamente el tipo de golpe de mano que la Duquesa Ordaz jamás reconocería en público —dice, midiendo cada palabra—. Y exactamente el tipo de prueba de mala fe que podría convencerme de que Orwyn tiene más razón de la que le he concedido hasta ahora.\n\n**1.** Preguntarle directamente si va a informar a Ordaz de que tienes la evidencia de Ashkelen: ve a la sección **1030**.\n**2.** No presionarla más y dejar que sea ella quien decida qué hacer con lo que acaba de admitir: ve a la sección **1030**.\n\n*(Anota la palabra clave `ORDEN DIVIDIDA CONOCIDA`: lo que ocurra entre Orwyn y Serel a partir de ahora pesará mucho más allá de la Convocatoria, gane quien la gane.)*",
     "combat": null,
     "choices": [
       {
         "text": "Preguntarle directamente a Serel",
-        "target": 1030
+        "target": 1030,
+        "sets_flag": "SEREL_INTERPELADA"
       },
       {
         "text": "No presionarla más",
-        "target": 1030
+        "target": 1030,
+        "sets_flag": "SEREL_RESPETADA"
       }
     ],
     "sets_flags": [
@@ -3265,7 +3426,7 @@
     "id": 1030,
     "thread": "hebra_diplomatico",
     "title": "La respuesta de Serel",
-    "text": "—No pienso informar a nadie de nada que no tenga ya delante de sus propios ojos —dice Serel al fin, eligiendo las palabras con el cuidado de quien sabe que la están escuchando aunque nadie más esté en la sala—. Pero tampoco pienso mentir si el Consejo me pregunta directamente qué sé. Haz lo que tengas que hacer con esa evidencia, Marcada. Solo te pido que, cuando llegue el momento, recuerdes que no todos en esta Orden compartimos exactamente el mismo miedo.\n\nNo es una promesa de lealtad. Tampoco es una amenaza. Es, quizás, lo más honesto que Serel Ashvane te ha dicho desde que la conociste.\n\nVe a la sección **1026**.",
+    "text": "—No pienso informar a nadie de nada que no tenga ya delante de sus propios ojos —dice Serel al fin, eligiendo las palabras con el cuidado de quien sabe que la están escuchando aunque nadie más esté en la sala—. Pero tampoco pienso mentir si el Consejo me pregunta directamente qué sé. Haz lo que tengas que hacer con esa evidencia, Marcada. Solo te pido que, cuando llegue el momento, recuerdes que no todos en esta Orden compartimos exactamente el mismo miedo.\n\nNo es una promesa de lealtad. Tampoco es una amenaza. Es, quizás, lo más honesto que Serel Ashvane te ha dicho desde que la conociste.\n\nVe a la sección **1026**.\n\n*(Si le preguntaste directamente, anota la palabra clave `SEREL INTERPELADA`. Si decidiste no presionarla, anota `SEREL RESPETADA`.)*",
     "combat": null,
     "choices": [
       {
@@ -3302,7 +3463,7 @@
     "id": 1032,
     "thread": "hebra_diplomatico",
     "title": "Restos de fe",
-    "text": "El converso —dice llamarse Yannic, aunque no estás segura de que sea su verdadero nombre— te cuenta lo que sabe: algunos Renacidos remanentes, sin liderazgo claro desde la caída del Padre Ceniza, han empezado a acercarse a la Grieta hija del monasterio, convencidos de que puede ser una segunda oportunidad para terminar lo que empezaron en las Fauces Rotas.\n\n—No todos estamos de acuerdo —añade, con una amargura que suena sincera—. Algunos creemos que ya vimos hasta dónde llega ese camino. Pero los más desesperados no escuchan, y me temo que van a intentar algo en el monasterio antes de que el Censo de Ordaz les quite hasta esa posibilidad.\n\n**1.** Prometerle que investigarás el monasterio y evitarás una tragedia si puedes: ve a la sección **1033**.\n**2.** Decirle que informarás a la Orden de lo que te ha contado, sin promesas adicionales: ve a la sección **1034**.",
+    "text": "El converso —dice llamarse Yannic, aunque no tienes claro que sea su verdadero nombre— te cuenta lo que sabe: algunos Renacidos remanentes, sin liderazgo claro desde la caída del Padre Ceniza, han empezado a acercarse a la Grieta hija del monasterio, convencidos de que puede ser una segunda oportunidad para terminar lo que empezaron en las Fauces Rotas.\n\n—No todos estamos de acuerdo —añade, con una amargura que suena sincera—. Algunos creemos que ya vimos hasta dónde llega ese camino. Pero los más desesperados no escuchan, y me temo que van a intentar algo en el monasterio antes de que el Censo de Ordaz les quite hasta esa posibilidad.\n\n**1.** Prometerle que investigarás el monasterio y evitarás una tragedia si puedes: ve a la sección **1033**.\n**2.** Decirle que informarás a la Orden de lo que te ha contado, sin promesas adicionales: ve a la sección **1034**.",
     "combat": null,
     "choices": [
       {
@@ -3363,7 +3524,7 @@
     "id": 1035,
     "thread": "hebra_diplomatico",
     "title": "Rumbo a la Convocatoria",
-    "text": "La mañana de la Convocatoria llega antes de que te sientas del todo preparada, como ocurre siempre con los días que de verdad importan. Llevas contigo las copias de los fragmentos de Ashkelen, cualesquiera que hayan resultado ser; llevas también, ahora, el peso de saber que la propia Orden que se supone que debe protegerte está más dividida de lo que Orwyn admitiría en voz alta.\n\nOrwyn te acompaña personalmente hasta el Palacio de las Cinco Casas, donde ya se congrega una multitud de nobles, escoltas, curiosos y unos pocos, muy pocos, Marcados que se han atrevido a acudir sin más protección que la tuya propia.\n\n—Sea lo que sea lo que digas ahí dentro —dice Orwyn, antes de que crucen las puertas del gran salón—, dilo con la verdad de lo que viviste. Es lo único que de verdad podemos ofrecerles.\n\nVe a la sección **1086**.",
+    "text": "La mañana de la Convocatoria llega antes de que te sientas en condiciones, como ocurre siempre con los días que de verdad importan. Llevas contigo las copias de los fragmentos de Ashkelen, cualesquiera que hayan resultado ser; llevas también, ahora, el peso de saber que la propia Orden que se supone que debe protegerte está más dividida de lo que Orwyn admitiría en voz alta.\n\nOrwyn te acompaña personalmente hasta el Palacio de las Cinco Casas, donde ya se congrega una multitud de nobles, escoltas, curiosos y unos pocos, muy pocos, Marcados que se han atrevido a acudir sin más protección que la tuya propia.\n\n—Sea lo que sea lo que digas ahí dentro —dice Orwyn, antes de que crucen las puertas del gran salón—, dilo con la verdad de lo que viviste. Es lo único que de verdad podemos ofrecerles.\n\nVe a la sección **1086**.",
     "combat": null,
     "choices": [
       {
@@ -3532,7 +3693,7 @@
     "id": 1044,
     "thread": "hebra_infiltrado",
     "title": "Silencio sospechoso",
-    "text": "El segundo refugio ocupa el sótano de un taller de curtidores abandonado, y en cuanto te acercas sabes que algo va mal: la puerta que debería estar cerrada con tres cerrojos está apenas entornada, y no hay ni rastro del murmullo bajo de vida cotidiana que oíste en El Refugio principal de Sera.\n\n**Prueba de VOL (Media, 9+)** para calmarte lo suficiente como para acercarte con cabeza fría en vez de irrumpir sin pensar.\n\n- **Si tienes éxito:** te acercas con cuidado, observando antes de actuar, y detectas movimiento sospechoso en la calle de enfrente antes de que te vea a ti. Ve a la sección **1045**.\n- **Si fallas:** entras directamente, dejándote llevar por la urgencia, y solo dentro te das cuenta de que no estás sola. Ve a la sección **1046**.",
+    "text": "El segundo refugio ocupa el sótano de un taller de curtidores abandonado, y en cuanto te acercas sabes que algo va mal: la puerta que debería estar cerrada con tres cerrojos está apenas entornada, y no hay ni rastro del murmullo bajo de vida cotidiana que oíste en El Refugio principal de Sera.\n\n**Prueba de VOL (Media, 9+)** para calmarte lo suficiente como para acercarte con cabeza fría en vez de irrumpir sin pensar.\n\n- **Si tienes éxito:** te acercas con cuidado, observando antes de actuar, y detectas movimiento sospechoso en la calle de enfrente antes de que te vea a ti. Ve a la sección **1045**.\n- **Si fallas:** entras directamente, dejándote llevar por la urgencia, y solo dentro te das cuenta de que no estás a solas. Ve a la sección **1046**.",
     "combat": null,
     "choices": [
       {
@@ -3991,7 +4152,7 @@
     "id": 1069,
     "thread": "hebra_independiente",
     "title": "Después del jardín",
-    "text": "El espadachín, ya sea derrotado o en fuga, no revela quién lo contrató antes de desaparecer entre las sombras del jardín, pero el mensaje que llevaba queda claro de todos modos: alguien con recursos suficientes para pagar a un duelista profesional prefiere que Meritxell Vaas no siga tejiendo alianzas contra el Decreto del Censo.\n\n—Esto confirma lo que sospechaba —dice Meritxell, recomponiendo la compostura con una rapidez que te impresiona—. No es solo Ordaz. Hay más gente con intereses en que esto salga adelante de la que el propio Consejo sabe.\n\nTe mira con una gratitud sincera, sin la formalidad de la primera reunión en la casa de té.\n\n—Gracias. De verdad. Y perdona por no haberte hablado con más franqueza la primera vez que nos vimos, si es que ya nos vimos en esta versión de tu historia.\n\nAnota la palabra clave `CONTACTO CON VAAS` si todavía no la tenías.\n\nVe a la sección **1070**.",
+    "text": "El espadachín, ya sea derrotado o en fuga, no revela quién lo contrató antes de desaparecer entre las sombras del jardín, pero el mensaje que llevaba queda claro de todos modos: alguien con recursos suficientes para pagar a un duelista profesional prefiere que Meritxell Vaas no siga tejiendo alianzas contra el Decreto del Censo.\n\n—Esto confirma lo que sospechaba —dice Meritxell, recomponiendo la compostura con una rapidez que te impresiona—. No es solo Ordaz. Hay más gente con intereses en que esto salga adelante de la que el propio Consejo sabe.\n\nTe mira con una gratitud sincera, sin la formalidad de la primera reunión en la casa de té.\n\n—Gracias. De verdad.\n\n*(Si ya tenías la palabra clave `CONTACTO CON VAAS` antes de entrar en el jardín, añade: —Y perdona por no haberte hablado con más franqueza la primera vez que nos vimos.)*\n\nAnota la palabra clave `CONTACTO CON VAAS` si todavía no la tenías.\n\nVe a la sección **1070**.",
     "combat": null,
     "choices": [
       {
@@ -4145,7 +4306,7 @@
     "id": 1077,
     "thread": "hebra_independiente",
     "title": "Una advertencia clara",
-    "text": "Encuentras a los cabecillas de la otra banda en una taberna cercana al mercado de pescado, y les dejas muy claro, sin necesidad de desenvainar nada, que meterse con Los Libres significa meterse contigo, y que ya has tenido suficientes enemigos poderosos este año como para añadir a un grupo de matones de muelle a la lista sin que les salga bien.\n\nFunciona mejor de lo esperado: tu reputación —la Marcada que sobrevivió a las Fauces Rotas y derrotó a un espadachín profesional en un jardín de palacio— te precede lo suficiente como para que decidan que no merece la pena el riesgo.\n\nAnota la palabra clave `REPUTACIÓN EN LOS MUELLES` (+1 Reputación con Los Libres).\n\nVe a la sección **1079**.",
+    "text": "Encuentras a los cabecillas de la otra banda en una taberna cercana al mercado de pescado, y les dejas muy claro, sin necesidad de desenvainar nada, que meterse con Los Libres significa meterse contigo, y que ya has tenido suficientes enemigos poderosos este año como para añadir a un grupo de matones de muelle a la lista sin que les salga bien.\n\nFunciona mejor de lo esperado: tu reputación —quien sobrevivió a las Fauces Rotas y derrotó a un espadachín profesional en un jardín de palacio— te precede lo suficiente como para que decidan que no merece la pena el riesgo.\n\nAnota la palabra clave `REPUTACIÓN EN LOS MUELLES` (+1 Reputación con Los Libres).\n\nVe a la sección **1079**.",
     "combat": null,
     "choices": [
       {
@@ -4229,7 +4390,7 @@
     "id": 1081,
     "thread": "hebra_independiente",
     "title": "Última noche libre",
-    "text": "Duermes mal esa noche, no por miedo, sino por la cantidad de piezas sueltas que llevas ya reunidas: el rumor del monasterio, confirmado ahora por tres fuentes distintas si has seguido caminos distintos en libros o partidas anteriores; la certeza de que Casa Ordaz tiene más enemigos poderosos de los que declara en público; y la sensación, cada vez más firme, de que la Convocatoria de mañana va a ser mucho más que un simple trámite de testimonios.\n\nCuando por fin amanece, no estás descansada, pero sí tienes clarísimo el tamaño de lo que llevas encima. Hay formas peores de entrar en un palacio.\n\nVe a la sección **1083**.",
+    "text": "Duermes mal esa noche, no por miedo, sino por la cantidad de piezas sueltas que llevas ya reunidas: el rumor del monasterio, confirmado ahora por tres fuentes distintas; la certeza de que Casa Ordaz tiene más enemigos poderosos de los que declara en público; y la sensación, cada vez más firme, de que la Convocatoria de mañana va a ser mucho más que un simple trámite de testimonios.\n\nCuando por fin amanece, no has descansado, pero sí tienes clarísimo el tamaño de lo que llevas encima. Hay formas peores de entrar en un palacio.\n\nVe a la sección **1083**.",
     "combat": null,
     "choices": [
       {
@@ -4322,7 +4483,7 @@
       "caption": "El gran salón de la Convocatoria",
       "brief": "Enorme salón de techos altísimos sostenidos por columnas de piedra clara, gradas de asientos ocupadas por decenas de nobles y sus séquitos dispuestos en cinco sectores (uno por cada Gran Casa), un estrado central bajo un rosetón de cristal coloreado que proyecta luz sobre el suelo de mármol. Estilo: arquitectura solemne y opresiva, luz de vitral multicolor, escala monumental."
     },
-    "text": "*(Si tienes la palabra clave `SENDA DEL DIPLOMÁTICO`, lee este párrafo: entras acompañada por Orwyn en persona, con el peso simbólico de toda la Orden de la Ceniza detrás de cada paso que das por el pasillo central.)*\n\n*(Si tienes la palabra clave `SENDA DEL INFILTRADO`, lee este párrafo: entras sola, con la Marca cubierta por costumbre, sabiendo cosas sobre esta ciudad que nadie más en este salón sospecha siquiera que existen.)*\n\n*(Si tienes la palabra clave `SENDA DEL INDEPENDIENTE`, lee este párrafo: entras sin séquito ni institución que te respalde, solo con la carta de la Convocatoria y una red de favores y deudas que ningún noble presente reconocería como una fuerza real, aunque lo sea.)*\n\nSea cual sea tu camino hasta aquí, el gran salón del Palacio de las Cinco Casas es exactamente tan imponente como esperabas: gradas repletas de nobles agrupados por Casa, un estrado central bajo un enorme rosetón de cristal coloreado, y un murmullo de conversación que se apaga, poco a poco, a medida que la sesión está a punto de comenzar.\n\nLa sesión tarda en empezar. Las Casas discuten el orden de los turnos con la misma solemnidad con la que discutirían una guerra, y nadie parece tener ninguna prisa por sentarse.\n\nAprovechas el compás de espera. Te retiras al banco de piedra del fondo, apoyas la espalda contra el muro frío y respiras despacio hasta que la Marca deja de tirarte de la muñeca. En un salón lleno de gente que ha venido a mirarte, es el único sitio donde puedes estar sola un rato.\n\n**🕯 Punto de Descanso.** Recupera todos tus Ecos y la mitad de tu Vida máxima (redondeando hacia arriba).\n\nVe a la sección **1087**.",
+    "text": "*(Si tienes la palabra clave `SENDA DEL DIPLOMÁTICO`, lee este párrafo: entras acompañada por Orwyn en persona, con el peso simbólico de toda la Orden de la Ceniza detrás de cada paso que das por el pasillo central.)*\n\n*(Si tienes la palabra clave `SENDA DEL INFILTRADO`, lee este párrafo: entras a solas, con la Marca tapada por costumbre, sabiendo cosas sobre esta ciudad que nadie más en este salón sospecha siquiera que existen.)*\n\n*(Si tienes la palabra clave `SENDA DEL INDEPENDIENTE`, lee este párrafo: entras sin séquito ni institución que te respalde, solo con la carta de la Convocatoria y una red de favores y deudas que ningún noble presente reconocería como una fuerza real, aunque lo sea.)*\n\nSea cual sea tu camino hasta aquí, el gran salón del Palacio de las Cinco Casas es exactamente tan imponente como esperabas: gradas repletas de nobles agrupados por Casa, un estrado central bajo un enorme rosetón de cristal coloreado, y un murmullo de conversación que se apaga, poco a poco, a medida que la sesión está a punto de comenzar.\n\nLa sesión tarda en empezar. Las Casas discuten el orden de los turnos con la misma solemnidad con la que discutirían una guerra, y nadie parece tener ninguna prisa por sentarse.\n\nAprovechas el compás de espera. Te retiras al banco de piedra del fondo, apoyas la espalda contra el muro frío y respiras despacio hasta que la Marca deja de tirarte de la muñeca. En un salón lleno de gente que ha venido a mirarte, es el único sitio donde puedes estar a solas un rato.\n\n**🕯 Punto de Descanso.** Recupera todos tus Ecos y la mitad de tu Vida máxima (redondeando hacia arriba).\n\nVe a la sección **1087**.",
     "combat": null,
     "choices": [
       {
@@ -4875,7 +5036,7 @@
       "caption": "El sótano del ala este",
       "brief": "Escalera de piedra descendiendo hacia un sótano abovedado iluminado por un resplandor rojizo pulsante procedente de una grieta luminosa en el suelo central, fragmentos de cristal negro esparcidos, marcas de trabajo reciente (andamios, herramientas) alrededor del perímetro. Estilo: descenso opresivo, iluminación rojiza ambiental, sensación de intrusión en algo prohibido."
     },
-    "text": "Bajas por una escalera de piedra que claramente no formaba parte del diseño original del monasterio, tallada con premura en las últimas semanas, hasta llegar a una cámara abovedada donde el resplandor rojizo que viste desde fuera se revela en toda su intensidad: una Grieta hija, más pequeña que la Bermeja pero innegablemente activa, pulsa en el centro del suelo como una herida que respira.\n\nA su alrededor, andamios, herramientas y restos de equipo de excavación reciente, todo abandonado con la misma prisa con la que, aparentemente, alguien evacuó este lugar hace poco.\n\nNo estás sola.\n\nVe a la sección **1115**.",
+    "text": "Bajas por una escalera de piedra que claramente no formaba parte del diseño original del monasterio, tallada con premura en las últimas semanas, hasta llegar a una cámara abovedada donde el resplandor rojizo que viste desde fuera se revela en toda su intensidad: una Grieta hija, más pequeña que la Bermeja pero innegablemente activa, pulsa en el centro del suelo como una herida que respira.\n\nA su alrededor, andamios, herramientas y restos de equipo de excavación reciente, todo abandonado con la misma prisa con la que, aparentemente, alguien evacuó este lugar hace poco.\n\nNo estás a solas.\n\nVe a la sección **1115**.",
     "combat": null,
     "choices": [
       {
@@ -5237,12 +5398,13 @@
     "id": 1133,
     "thread": "mazmorra",
     "title": "Liberar a los prisioneros",
-    "text": "Te mueves hacia los prisioneros más cercanos antes que hacia Bastian, decidida a quitarle a Ordaz sus \"sujetos preparados\" antes de que nada más pueda ocurrir.\n\n**Prueba de FUE (Difícil, 11+)** para forzar las cadenas rituales —diseñadas para ceder solo mediante un proceso controlado, no para resistir un forcejeo— antes de que Bastian reaccione con fuerza.\n\n- **Si tienes éxito:** consigues liberar a la mayoría de los prisioneros, que huyen de inmediato hacia la escalera, antes de que Bastian, furioso por primera vez, se lance al combate. Anota la palabra clave `MARCADOS LIBERADOS` (+2 Reputación con Los Libres). Ve a la sección **1137**.\n- **Si fallas:** las cadenas resisten más de lo esperado, y Bastian te alcanza antes de que consigas liberar a nadie, obligándote a combatir de inmediato sin haber logrado nada. Ve a la sección **1137**.",
+    "text": "Te mueves hacia los prisioneros más cercanos antes que hacia Bastian, con la intención de quitarle a Ordaz sus \"sujetos preparados\" antes de que nada más pueda ocurrir.\n\n**Prueba de FUE (Difícil, 11+)** para forzar las cadenas rituales —diseñadas para ceder solo mediante un proceso controlado, no para resistir un forcejeo— antes de que Bastian reaccione con fuerza.\n\n- **Si tienes éxito:** consigues liberar a la mayoría de los prisioneros, que huyen de inmediato hacia la escalera, antes de que Bastian, furioso por primera vez, se lance al combate. Anota la palabra clave `MARCADOS LIBERADOS` (+2 Reputación con Los Libres). Ve a la sección **1137**.\n- **Si fallas:** las cadenas resisten más de lo esperado, y Bastian te alcanza antes de que consigas liberar a nadie, obligándote a combatir de inmediato sin haber logrado nada. Ve a la sección **1137**.",
     "combat": null,
     "choices": [
       {
         "text": "Éxito liberando a los prisioneros",
-        "target": 1137
+        "target": 1137,
+        "sets_flag": "MARCADOS_LIBERADOS"
       },
       {
         "text": "Fallo — Bastian ataca antes de tiempo",
@@ -5301,7 +5463,8 @@
     "choices": [
       {
         "text": "Éxito liberando a Bastian",
-        "target": 1138
+        "target": 1138,
+        "sets_flag": "BASTIAN_LIBERADO"
       },
       {
         "text": "Fallo — se desata la transformación",
@@ -5359,7 +5522,7 @@
       "caption": "La Duquesa Ordaz, entre los restos del ritual",
       "brief": "La Duquesa Illiana Ordaz entrando en la cámara ritual ya colapsando, sosteniendo su báculo con la Vara del Censo, expresión de frialdad quebrada por primera vez ante la escena de destrucción. Prisioneros liberados escapando al fondo. Estilo: retrato de poder derrumbándose, iluminación roja inestable, composición de confrontación final."
     },
-    "text": "No estás sola mucho tiempo con los restos del ritual: Illiana Ordaz entra en la cámara con la Vara del Censo bien sujeta, y por primera vez desde que la conociste, algo parecido a la sorpresa genuina cruza su rostro al ver a su campeón derrotado y el altar apagándose.\n\n—Esto no estaba planeado así —dice, casi para sí misma, antes de recomponerse con la disciplina de siempre—. Pero un contratiempo no invalida el objetivo. Vaelgard sigue necesitando lo que yo estaba a punto de darle.\n\nTe mira directamente.\n\n—¿Qué va a ser, testigo? ¿Vamos a seguir siendo adversarias hasta el final, o hay todavía una manera de que esto termine sin que ninguna de las dos tenga que perderlo todo?\n\nVe a la sección **1140**.",
+    "text": "No estás a solas mucho tiempo con los restos del ritual: Illiana Ordaz entra en la cámara con la Vara del Censo bien sujeta, y por primera vez desde que la conociste, algo parecido a la sorpresa genuina cruza su rostro al ver a su campeón derrotado y el altar apagándose.\n\n—Esto no estaba planeado así —dice, casi para sí misma, antes de recomponerse con la disciplina de siempre—. Pero un contratiempo no invalida el objetivo. Vaelgard sigue necesitando lo que yo estaba a punto de darle.\n\nTe mira directamente.\n\n—¿Qué va a ser, testigo? ¿Vamos a seguir siendo adversarias hasta el final, o hay todavía una manera de que esto termine sin que ninguna de las dos tenga que perderlo todo?\n\nVe a la sección **1140**.",
     "combat": null,
     "choices": [
       {
@@ -5471,10 +5634,124 @@
     "id": 1145,
     "thread": "mazmorra",
     "title": "Lo que decides al final",
-    "text": "Sales a la superficie, a los jardines traseros del Palacio de las Cinco Casas, justo cuando el amanecer empieza a teñir el cielo sobre Cárdenas. Detrás de ti, la crisis del Decreto del Censo —y todo lo que decidas hacer con lo que has aprendido, con quién te has aliado, y con lo que ha quedado de Illiana Ordaz y de Sir Bastian Roure— está a punto de definir el rumbo del Reino de Cárdenas para los años venideros.\n\nConsulta ahora la Hoja de Finales de *El Trono Roto*, en el orden indicado, y anota cuál corresponde a tu historia:\n\n- Si tu Corrupción es 10, ve a la sección **1950**.\n- Si tienes `ALIANZA VAAS`, `ORDAZ EXPUESTA`, y tu Favor Cortesano es +3 o más, ve a la sección **1901**.\n- Si tienes `EL GUARDIÁN DEL CENSO` derrotado y `ORDAZ CONVENCIDA`, ve a la sección **1902**.\n- Si tienes `ALIANZA REFUGIO` y tu Reputación con Los Libres es +3 o más, ve a la sección **1903**.\n- Si el Guardián del Censo ha caído y tu Reputación con la Orden de la Ceniza es +3 o más (y ninguna de las anteriores aplica), ve a la sección **1904**.\n- Si el Guardián del Censo ha caído y tu Corrupción está entre 7 y 9 (y ninguna de las anteriores aplica), ve a la sección **1905**.\n- Si ninguna de las condiciones anteriores aplica, ve a la sección **1906**.",
+    "text": "Sales a la superficie, a los jardines traseros del Palacio de las Cinco Casas, justo cuando el amanecer empieza a teñir el cielo sobre Cárdenas. Detrás de ti, la crisis del Decreto del Censo —y todo lo que decidas hacer con lo que has aprendido, con quién te has aliado, y con lo que ha quedado de Illiana Ordaz y de Sir Bastian Roure— está a punto de definir el rumbo del Reino de Cárdenas para los años venideros.\n\nConsulta ahora la Hoja de Finales de *El Trono Roto*, en el orden indicado, y anota cuál corresponde a tu historia:\n\n- Si tu Corrupción es 10, ve a la sección **1950**.\n- Si el Guardián del Censo ha caído y tu Corrupción está entre 7 y 9, ve a la sección **1905**.\n- Si tienes `ALIANZA VAAS`, `ORDAZ EXPUESTA`, y tu Favor Cortesano es +3 o más, ve a la sección **1901**.\n- Si tienes `EL GUARDIÁN DEL CENSO` derrotado y `ORDAZ CONVENCIDA`, ve a la sección **1902**.\n- Si tienes `ALIANZA REFUGIO` y tu Reputación con Los Libres es +3 o más, ve a la sección **1903**.\n- Si el Guardián del Censo ha caído y tu Reputación con la Orden de la Ceniza es +3 o más (y ninguna de las anteriores aplica), ve a la sección **1904**.\n- Si ninguna de las condiciones anteriores aplica, ve a la sección **1906**.",
     "combat": null,
     "choices": [],
     "sets_flags": [],
+    "rep_delta": {},
+    "libro": "Libro Segundo — El Trono Roto",
+    "illustration": null
+  },
+  "1500": {
+    "id": 1500,
+    "thread": "hebra_emisaria",
+    "title": "Sin atarte las manos",
+    "text": "No se la aceptas. No del todo.\n\n—Si tengo que elegir entre avisarte a ti y usar esto en el momento en que sirva de algo —dices—, voy a usarlo. Prefiero decírtelo ahora a prometerte lo contrario y romperlo delante de toda la Convocatoria.\n\nSera te mira un rato largo. No hay reproche en esa mirada; hay cálculo, y quizás algo parecido al reconocimiento de alguien que lleva demasiado tiempo tratando con gente que promete cosas fácilmente.\n\n—Al menos no me mientes —dice al fin—. Es más de lo que puedo decir de la mayoría. Entonces déjame trabajar con eso: si no vas a esperarme, dime al menos por dónde vas a empezar.\n\nEsa noche, antes de que empieces a prepararte para la Convocatoria, te enseña de todos modos su propia lista: los nombres reales de quienes El Refugio ha protegido a lo largo de los años. Muchos más de los que caben en un solo sótano.\n\n—Esto es lo que de verdad hay en juego —dice—. Ahora ya no puedes decir que no lo sabías.\n\nVe a la sección **1056**.",
+    "combat": null,
+    "choices": [
+      {
+        "text": null,
+        "target": 1056
+      }
+    ],
+    "sets_flags": [
+      "EVIDENCIA_SIN_ATADURAS"
+    ],
+    "rep_delta": {},
+    "libro": "Libro Segundo — El Trono Roto",
+    "illustration": null
+  },
+  "1501": {
+    "id": 1501,
+    "thread": "hebra_emisaria",
+    "title": "Tu palabra a Sera",
+    "text": "—Te doy mi palabra —dices—. Pase lo que pase ahí dentro, El Refugio no sale de mi boca.\n\nSera no te da las gracias. Asiente una vez, despacio, como quien acaba de guardar algo en un sitio del que no piensa sacarlo, y por primera vez desde que la conociste deja caer los hombros un dedo.\n\n—Entonces vas a entrar ahí con una mano atada —dice—. Que lo sepas. Y aún así prefiero eso.\n\nVe a la sección **1058**.",
+    "combat": null,
+    "choices": [
+      {
+        "text": null,
+        "target": 1058
+      }
+    ],
+    "sets_flags": [
+      "REFUGIO_PROTEGIDO"
+    ],
+    "rep_delta": {},
+    "libro": "Libro Segundo — El Trono Roto",
+    "illustration": null
+  },
+  "1502": {
+    "id": 1502,
+    "thread": "hebra_emisaria",
+    "title": "Sin promesas que no puedas cumplir",
+    "text": "—No voy a prometerte eso —dices—. Si llega un momento en que enseñar lo que hacéis aquí es lo único que impide que el Decreto siga adelante, lo voy a enseñar. Y voy a cargar yo con lo que venga después.\n\nSera tarda en contestar.\n\n—Cargar con ello —repite—. Eso lo dice siempre quien no va a ser el que duerma aquí cuando vengan. —Pero no aparta la mirada, y no te retira nada de lo que te ha dado—. Está bien. Al menos irás ahí dentro con todas tus armas. Solo asegúrate de que valga la pena antes de gastarnos.\n\nVe a la sección **1058**.",
+    "combat": null,
+    "choices": [
+      {
+        "text": null,
+        "target": 1058
+      }
+    ],
+    "sets_flags": [
+      "REFUGIO_COMO_BAZA"
+    ],
+    "rep_delta": {},
+    "libro": "Libro Segundo — El Trono Roto",
+    "illustration": null
+  },
+  "1503": {
+    "id": 1503,
+    "thread": "hebra_independiente",
+    "title": "Preguntar primero",
+    "text": "—Antes de decir que sí —respondes— quiero saber para qué. No me gusta enterarme de en qué ando metida cuando ya no puedo salirme.\n\nCorvina levanta una ceja, y por un momento no sabes si acabas de perder el encargo.\n\n—La mayoría no pregunta —dice—. La mayoría tampoco dura mucho. —Se inclina hacia delante—. Meritxell Vaas está juntando a las Casas menores que pueden votar contra el Decreto del Censo. Si palacio se entera antes de tiempo de quiénes son, esas Casas dejan de existir en una semana. Eso es en lo que te metes.\n\nAhí está: te lo ha dicho entero, sin adornos. Aceptas sabiendo el tamaño de lo que llevas encima.\n\nVe a la sección **1066**.",
+    "combat": null,
+    "choices": [
+      {
+        "text": null,
+        "target": 1066
+      }
+    ],
+    "sets_flags": [
+      "ENCARGO_CON_CONDICIONES"
+    ],
+    "rep_delta": {},
+    "libro": "Libro Segundo — El Trono Roto",
+    "illustration": null
+  },
+  "1504": {
+    "id": 1504,
+    "thread": "investigacion",
+    "title": "Por la puerta principal",
+    "text": "Un pequeño destacamento de guardias oficiales, enviados por el propio Consejo, custodia la entrada principal. Tu salvoconducto de palacio te franquea el paso sin demasiadas preguntas, aunque más de uno de los guardias te observa con una mezcla de curiosidad y recelo que ya empiezas a reconocer como habitual en Cárdenas.\n\nEntras por donde se supone que debes entrar, con la misión del Consejo por delante y a plena luz. Tiene sus ventajas: nadie podrá decir después que te colaste, y el oficial al mando te trata desde el primer momento como a alguien a quien debe explicaciones.\n\nTambién tiene su precio. Para cuando cruzas el patio, todo el mundo dentro del monasterio sabe ya que has llegado y a qué vienes.\n\nVe a la sección **1111**.",
+    "combat": null,
+    "choices": [
+      {
+        "text": null,
+        "target": 1111
+      }
+    ],
+    "sets_flags": [
+      "ENTRADA_ANUNCIADA"
+    ],
+    "rep_delta": {},
+    "libro": "Libro Segundo — El Trono Roto",
+    "illustration": null
+  },
+  "1505": {
+    "id": 1505,
+    "thread": "investigacion",
+    "title": "El ala este, de cerca",
+    "text": "Antes de anunciarte, rodeas la colina por el lado de los olivos y te acercas al ala este por detrás, donde no hay guardias porque nadie considera que haya nada que vigilar.\n\nDe cerca, los andamiajes cuentan una historia distinta a la que se ve desde el camino: no están sujetando el muro para repararlo. Están sujetándolo para que aguante un poco más. La piedra, alrededor de la grieta principal, tiene el aspecto vidriado y ligeramente traslucido que ya has aprendido a reconocer, y la luz rojiza del sótano late despacio, con un ritmo que se parece demasiado a una respiración.\n\nHay algo más, medio tapado por la maleza: un camino de carro, reciente, que baja desde una portezuela de servicio hasta perderse ladera abajo. Alguien ha estado sacando cosas de este monasterio sin pasar por la entrada principal.\n\nSolo después vuelves sobre tus pasos y te presentas en la puerta con el salvoconducto por delante. Los guardias te franquean el paso sin demasiadas preguntas; ninguno te pregunta de dónde vienes.\n\nVe a la sección **1111**.",
+    "combat": null,
+    "choices": [
+      {
+        "text": null,
+        "target": 1111
+      }
+    ],
+    "sets_flags": [
+      "ALA_ESTE_VISTA_DE_CERCA"
+    ],
     "rep_delta": {},
     "libro": "Libro Segundo — El Trono Roto",
     "illustration": null
@@ -5589,7 +5866,7 @@
       "caption": "Final: Lo que ya no eres (II)",
       "brief": "Silueta del protagonista casi irreconocible, cristal negro geométrico —más ordenado y frío que el caos rojizo de las Fauces Rotas— cubriendo buena parte de su cuerpo, de pie entre los restos de la cámara ritual bajo el palacio. Meritxell u Orwyn, pequeños en la distancia, retrocediendo con miedo genuino. Estilo: trágico, inquietante pero no gráfico, paleta azul y negra intensa, composición que evoca pérdida más que horror."
     },
-    "text": "Forzaste tu don demasiadas veces, otra vez, en una ciudad que exigía cada vez más de ti a cada paso: contra los sabuesos del Censo, contra los guardias de palacio, contra el propio Guardián del Censo si llegaste a enfrentarlo con la Sangre Vieja como último recurso. La Grieta Bermeja, lejos en el este, deja por fin de prestarte su poder y empieza, sencillamente, a cobrárselo del todo.\n\nNo mueres. En su lugar, te transformas, esta vez con una precisión geométrica que resulta todavía más inquietante que el caos de tu primera transformación estuvo a punto de ser: el cristal negro se ordena bajo tu piel como si algo, en algún lugar, hubiera aprendido a diseñar mejor la corrupción que antes solo sabía imponer por la fuerza.\n\nCuando Meritxell, u Orwyn, o quien haya llegado a importarte en esta ciudad, te llama por tu nombre al final, no estás segura de reconocerlo.\n\nEste es el final de tu historia en *El Trono Roto* — el más oscuro de todos los que este libro tiene que ofrecer, y una advertencia honesta, una vez más, sobre el precio real de la Sangre Vieja cuando se fuerza sin límite.\n\n**FIN DE ESTA PARTIDA.**\n\nCopia una Hoja de Personaje nueva y vuelve a la sección donde comenzaste este libro, si quieres intentar un camino que trate con más cuidado el poder que llevas dentro.",
+    "text": "Forzaste tu don demasiadas veces, otra vez, en una ciudad que exigía cada vez más de ti a cada paso: contra los sabuesos del Censo, contra los guardias de palacio, contra el propio Guardián del Censo si llegaste a enfrentarlo con la Sangre Vieja como último recurso. La Grieta Bermeja, lejos en el este, deja por fin de prestarte su poder y empieza, sencillamente, a cobrárselo del todo.\n\nNo mueres. En su lugar, te transformas, esta vez con una precisión geométrica que resulta todavía más inquietante que el caos de tu primera transformación estuvo a punto de ser: el cristal negro se ordena bajo tu piel como si algo, en algún lugar, hubiera aprendido a diseñar mejor la corrupción que antes solo sabía imponer por la fuerza.\n\nCuando Meritxell, u Orwyn, o quien haya llegado a importarte en esta ciudad, te llama por tu nombre al final, no sabes si lo reconoces.\n\nEste es el final de tu historia en *El Trono Roto*: el más oscuro de todos, el precio de la Sangre Vieja cuando se fuerza sin límite.\n\n**FIN DE ESTA PARTIDA.**\n\nCopia una Hoja de Personaje nueva y vuelve a la sección donde comenzaste este libro, si quieres intentar un camino que trate con más cuidado el poder que llevas dentro.",
     "combat": null,
     "choices": [],
     "sets_flags": [],
@@ -5604,7 +5881,7 @@
       "caption": "El sueño compartido",
       "brief": "Paisaje onírico visto desde arriba: cientos de figuras humanas diminutas de pie sobre una llanura de ceniza, todas mirando en la misma dirección hacia una silueta inmensa y oscura semienterrada en el horizonte, de la que salen cadenas de luz hacia el cielo. Sin detalle facial. Estilo: onírico y monumental, escala abrumadora, paleta de grises y rojos apagados con acentos azules."
     },
-    "text": "*(Esta es una sección de sueño: no puedes perder Vida ni morir en ella.)*\n\nEmpieza siempre igual.\n\nEstás de pie sobre una llanura de ceniza que no existe en ningún mapa de Vaelgard, y no estás sola: hay cientos de personas contigo, miles quizás, todas mirando en la misma dirección. No reconoces a ninguna, y sin embargo sabes exactamente quiénes son, del mismo modo que se saben las cosas en los sueños. Son Marcados. Todos los Marcados. Los del Confín y los de la capital, los que se esconden y los que ya no pueden, los viejos que recuerdan la Ruptura y los niños que nacieron el mes pasado con una veta de cristal en la muñeca.\n\nY en el horizonte, medio enterrado en la tierra, hay algo tan grande que al principio lo confundiste con una cordillera.\n\nRespira. Muy despacio. Una vez cada mucho tiempo.\n\nY cuando empieza a hablar, no lo hace en ningún idioma que hayas aprendido, pero lo entiendes igual, y lo entienden los miles de personas que están de pie a tu lado, y todos ellos —todos nosotros— entendemos exactamente lo mismo:\n\n*Ya casi.*\n\nVe a la sección **2002**.",
+    "text": "*(Esta es una sección de sueño: no puedes perder Vida ni morir en ella.)*\n\nEmpieza siempre igual.\n\nEstás de pie sobre una llanura de ceniza que no existe en ningún mapa de Vaelgard, y no estás a solas: hay cientos de personas contigo, miles quizás, todas mirando en la misma dirección. No reconoces a ninguna, y sin embargo sabes exactamente quiénes son, del mismo modo que se saben las cosas en los sueños. Son Marcados. Todos los Marcados. Los del Confín y los de la capital, los que se esconden y los que ya no pueden, los viejos que recuerdan la Ruptura y los niños que nacieron el mes pasado con una veta de cristal en la muñeca.\n\nY en el horizonte, medio enterrado en la tierra, hay algo tan grande que al principio lo confundiste con una cordillera.\n\nRespira. Muy despacio. Una vez cada mucho tiempo.\n\nY cuando empieza a hablar, no lo hace en ningún idioma que hayas aprendido, pero lo entiendes igual, y lo entienden los miles de personas que están de pie a tu lado, y todos ellos —todos nosotros— entendemos exactamente lo mismo:\n\n*Ya casi.*\n\n*(Nota de reglas: este libro añade un marcador propio, el **Vínculo**, que empezarás a anotar cuando el libro te lo indique. Las Reputaciones que traigas de libros anteriores siguen contando; el Vínculo es aparte.)*\n\n**Los que siguen ahí fuera.** *(Lee solo los párrafos cuyas palabras clave tengas anotadas.)*\n\n*(`BREN RESCATADO`: la última carta dictada de Bren llegó hace nueve días y es más larga que de costumbre. Pregunta si es verdad lo que se dice de los sueños. Pregunta si tú también los tienes. Y después, con esa franqueza suya que nunca supo disimular: *si tienes que ir, ve, pero vuelve otra vez*.)*\n\n*(`ALIANZA REFUGIO`: en El Refugio han empezado a llegar Marcados de comarcas donde nunca hubo Grieta. Nadie los ha convocado. Todos cuentan el mismo sueño.)*\n\n*(`ORDAZ CONVENCIDA` o `ORDAZ EXPUESTA`: de Cárdenas llega una carta con el sello del Consejo y una sola línea escrita a mano bajo la fórmula oficial: *esta vez leí su informe antes de decidir*.)*\n\nVe a la sección **2002**.",
     "combat": null,
     "choices": [
       {
@@ -5802,7 +6079,7 @@
     "combat": null,
     "choices": [
       {
-        "text": "Copiar tú misma la lista entera",
+        "text": "Copiar en persona la lista entera",
         "target": 2014
       },
       {
@@ -5819,7 +6096,7 @@
     "id": 2014,
     "thread": "hebra_peregrino",
     "title": "Cuatrocientos nombres",
-    "text": "Terminas al amanecer, con la mano acalambrada y cuatrocientos doce nombres copiados en tu propio cuaderno.\n\nCombe, que te encuentra dormida sobre la losa con la lámpara ya apagada, no dice nada durante el desayuno. Solo mucho más tarde, ya en el camino, comenta, sin mirarte:\n\n—Sabes que llevaré esa lista a Cárdenas cuando esto termine, ¿verdad? Y que voy a insistir hasta que alguien la grabe en algún sitio donde la gente pase por delante.\n\n—Contaba con ello —respondes.\n\nAnota +1 Vínculo. Cada nombre que has copiado es alguien que llevaba dentro lo mismo que tú, y entenderlo así —no como historia, sino como parentesco— es el primer paso real hacia comprender la Sangre Vieja.\n\nVe a la sección **2016**.",
+    "text": "*(Nota de reglas: a partir de aquí empieza a contar el **Vínculo**. Anota un nuevo marcador en tu Hoja de Personaje, empezando en 0. El Vínculo no mide lo que otros piensan de ti, como la Reputación: mide cuánto has llegado a entender la Sangre Vieja que llevas dentro. Solo sube, nunca baja, y varias veces a lo largo de este libro decidirá qué puedes comprender —y qué puedes elegir— cuando llegues al fondo del Corazón del Ligamen.)*\n\nTerminas al amanecer, con la mano acalambrada y cuatrocientos doce nombres copiados en tu propio cuaderno.\n\nCombe, que te encuentra dormida sobre la losa con la lámpara ya apagada, no dice nada durante el desayuno. Solo mucho más tarde, ya en el camino, comenta, sin mirarte:\n\n—Sabes que llevaré esa lista a Cárdenas cuando esto termine, ¿verdad? Y que voy a insistir hasta que alguien la grabe en algún sitio donde la gente pase por delante.\n\n—Contaba con ello —respondes.\n\nAnota +1 Vínculo. Cada nombre que has copiado es alguien que llevaba dentro lo mismo que tú, y entenderlo así —no como historia, sino como parentesco— es el primer paso real hacia comprender la Sangre Vieja.\n\nVe a la sección **2016**.",
     "combat": null,
     "choices": [
       {
@@ -5949,7 +6226,7 @@
     "id": 2021,
     "thread": "hebra_peregrino",
     "title": "☾ El sueño de la torre",
-    "text": "*(Sección de sueño: no puedes perder Vida ni morir en ella.)*\n\nEsa noche, el sueño es distinto por primera vez en cuatro meses.\n\nSigues estando en la llanura de ceniza, y la silueta enorme sigue estando en el horizonte. Pero esta vez no hay miles de personas contigo. Esta vez estás sola, y cuando la respiración lenta llena el aire, la sensación no es de anuncio colectivo, sino de alguien que ha girado la cabeza para mirarte específicamente a ti.\n\n*Has leído sus cartas.*\n\nNo es una pregunta. Y la voz —si es una voz— no suena triunfal ni amenazante. Suena, sobre todo, cansada.\n\n*Cuatrocientos doce. Los recuerdo a todos. Es lo menos que puedo hacer, ya que fui yo quien tuvo que sentir cómo se apagaba cada uno.*\n\nTe despiertas con las mejillas mojadas y sin saber en qué momento empezaste a llorar.\n\nAnota la palabra clave `ASHKELEN TE CONOCE` y +1 Vínculo.\n\nVe a la sección **2022**.",
+    "text": "*(Sección de sueño: no puedes perder Vida ni morir en ella.)*\n\nEsa noche, el sueño es distinto por primera vez en cuatro meses.\n\nSigues estando en la llanura de ceniza, y la silueta enorme sigue estando en el horizonte. Pero esta vez no hay miles de personas contigo. Esta vez estás a solas, y cuando la respiración lenta llena el aire, la sensación no es de anuncio colectivo, sino de alguien que ha girado la cabeza para mirarte específicamente a ti.\n\n*Has leído sus cartas.*\n\nNo es una pregunta. Y la voz —si es una voz— no suena triunfal ni amenazante. Suena, sobre todo, cansada.\n\n*Cuatrocientos doce. Los recuerdo a todos. Es lo menos que puedo hacer, ya que fui yo quien tuvo que sentir cómo se apagaba cada uno.*\n\nTe despiertas con las mejillas mojadas y sin saber en qué momento empezaste a llorar.\n\nAnota la palabra clave `ASHKELEN TE CONOCE` y +1 Vínculo.\n\nVe a la sección **2022**.",
     "combat": null,
     "choices": [
       {
@@ -5970,7 +6247,7 @@
     "id": 2022,
     "thread": "hebra_peregrino",
     "title": "Lo que le cuentas a Combe",
-    "text": "Por la mañana tienes que decidir cuánto contar.\n\n**1.** Contárselo todo a Combe, incluido el sueño: si alguien puede contextualizar lo que acaba de pasar, es él. Ve a la sección **2023**.\n**2.** Guardártelo por ahora: es tu sueño, tu sangre y tu conversación, y no estás segura de querer que se convierta en una nota al pie de un informe de la Orden. Ve a la sección **2024**.",
+    "text": "Por la mañana tienes que decidir cuánto contar.\n\n**1.** Contárselo todo a Combe, incluido el sueño: si alguien puede contextualizar lo que acaba de pasar, es él. Ve a la sección **2023**.\n**2.** Guardártelo por ahora: es tu sueño, tu sangre y tu conversación, y no tienes claro que quieras que se convierta en una nota al pie de un informe de la Orden. Ve a la sección **2024**.",
     "combat": null,
     "choices": [
       {
@@ -6029,7 +6306,7 @@
     "id": 2025,
     "thread": "hebra_peregrino",
     "title": "El almacén de anclaje",
-    "text": "La última gran ruina de la calzada, ya con las montañas del Confín ocupando medio horizonte, es un complejo bajo y alargado que Combe identifica como un almacén de tránsito: el lugar donde las anclas pasaban sus últimas semanas antes de descender.\n\nEs, con diferencia, la ruina más difícil de recorrer de todo el viaje. No por peligro: por lo que hay escrito en las paredes.\n\nCientos de inscripciones hechas a mano por gente que sabía adónde iba. Nombres. Fechas. Mensajes para familias que llevan ocho siglos muertas. Un dibujo infantil de una casa con tres figuras delante. Una frase repetida en distintas caligrafías, como si se hubiera ido copiando de unos a otros: *\"El que venga después: no estás solo aquí.\"*\n\nVe a la sección **2026**.",
+    "text": "La última gran ruina de la calzada, ya con las montañas del Confín ocupando medio horizonte, es un complejo bajo y alargado que Combe identifica como un almacén de tránsito: el lugar donde las anclas pasaban sus últimas semanas antes de descender.\n\nEs, con diferencia, la ruina más difícil de recorrer de todo el viaje. No por peligro: por lo que hay escrito en las paredes.\n\nCientos de inscripciones hechas a mano por gente que sabía adónde iba. Nombres. Fechas. Mensajes para familias que llevan ocho siglos muertas. Un dibujo infantil de una casa con tres figuras delante. Una frase repetida en distintas caligrafías, como si se hubiera ido copiando de unos a otros: *\"El que venga después: no estás a solas aquí.\"*\n\nVe a la sección **2026**.",
     "combat": null,
     "choices": [
       {
@@ -6353,7 +6630,7 @@
     "id": 2042,
     "thread": "hebra_emisaria",
     "title": "Trescientas personas escuchando",
-    "text": "Es el discurso más difícil de tu vida, y no porque haya nobles delante: porque no los hay.\n\nLes cuentas lo del ritual. Lo de las anclas. Les explicas, con las palabras más claras que encuentras, que la razón por la que llevan generaciones siendo temidos, censados y perseguidos es que sus antepasados —los de todos ellos— sostuvieron el mundo entero sin que nadie se lo agradeciera nunca, porque nadie lo sabía.\n\nY les dices la parte que más te cuesta: que reforjar la cadena exigiría anclas plenas y voluntarias, y que por eso no piensas decidirlo sola.\n\nCuando terminas, no hay aplausos. Hay algo mejor: doscientas manos levantadas y una anciana en primera fila que dice, en voz alta y perfectamente audible, *\"Pues ya era hora de que alguien nos lo preguntara.\"*\n\nAnota +2 Reputación con Los Libres y +1 Vínculo.\n\nVe a la sección **2043**.",
+    "text": "Es el discurso más difícil de tu vida, y no porque haya nobles delante: porque no los hay.\n\nLes cuentas lo del ritual. Lo de las anclas. Les explicas, con las palabras más claras que encuentras, que la razón por la que llevan generaciones siendo temidos, censados y perseguidos es que sus antepasados —los de todos ellos— sostuvieron el mundo entero sin que nadie se lo agradeciera nunca, porque nadie lo sabía.\n\nY les dices la parte que más te cuesta: que reforjar la cadena exigiría anclas plenas y voluntarias, y que por eso no piensas decidirlo en solitario.\n\nCuando terminas, no hay aplausos. Hay algo mejor: doscientas manos levantadas y una anciana en primera fila que dice, en voz alta y perfectamente audible, *\"Pues ya era hora de que alguien nos lo preguntara.\"*\n\nAnota +2 Reputación con Los Libres y +1 Vínculo.\n\nVe a la sección **2043**.",
     "combat": null,
     "choices": [
       {
@@ -6411,7 +6688,7 @@
     "id": 2045,
     "thread": "hebra_emisaria",
     "title": "La primera fractura",
-    "text": "La primera crisis seria llega a las tres semanas, en un vado del río Cendra: un sargento de Casa Doncastro se niega a que los doce voluntarios Marcados crucen con el grueso de la columna, alegando \"riesgo de resonancia\" cerca de los carros de suministros.\n\nEs una excusa, y todo el mundo lo sabe. También es exactamente la clase de grieta por la que se desmorona una expedición entera si nadie la cierra a tiempo.\n\n**1.** Imponerte con autoridad: recordarle al sargento quién dirige esta expedición y por orden de quién. Ve a la sección **2046**.\n**2.** Resolverlo cruzando tú misma con los doce, delante de todos, sin discutir ni una palabra. Ve a la sección **2047**.",
+    "text": "La primera crisis seria llega a las tres semanas, en un vado del río Cendra: un sargento de Casa Doncastro se niega a que los doce voluntarios Marcados crucen con el grueso de la columna, alegando \"riesgo de resonancia\" cerca de los carros de suministros.\n\nEs una excusa, y todo el mundo lo sabe. También es exactamente la clase de grieta por la que se desmorona una expedición entera si nadie la cierra a tiempo.\n\n**1.** Imponerte con autoridad: recordarle al sargento quién dirige esta expedición y por orden de quién. Ve a la sección **2046**.\n**2.** Resolverlo cruzándolo en persona con los doce, delante de todos, sin discutir ni una palabra. Ve a la sección **2047**.",
     "combat": null,
     "choices": [
       {
@@ -6419,7 +6696,7 @@
         "target": 2046
       },
       {
-        "text": "Cruzar tú misma con los doce",
+        "text": "Cruzarlo en persona con los doce",
         "target": 2047
       }
     ],
@@ -6930,7 +7207,7 @@
     "id": 2071,
     "thread": "hebra_hereje",
     "title": "Un no rotundo",
-    "text": "—No —repites—. Ni aquí, ni improvisando, ni tú sola de madrugada con un cordel y un montón de chatarra viva. Si al final hay que anclar a alguien, se hará abajo, con conocimiento, y con más de una persona presente para asegurarse de que quien se ofrece sabe a qué se está ofreciendo. Como no lo hizo el Imperio.\n\nIlena aprieta la mandíbula, pero recoge los eslabones y los tira al barranco sin decir nada más.\n\nA la mañana siguiente está de mejor humor del que la has visto desde que os encontrasteis en el cruce.\n\n—Gracias —dice, sin mirarte, mientras ensilla—. Por no dejarme.\n\nVe a la sección **2073**.",
+    "text": "—No —repites—. Ni aquí, ni improvisando, ni tú en solitario de madrugada con un cordel y un montón de chatarra viva. Si al final hay que anclar a alguien, se hará abajo, con conocimiento, y con más de una persona presente para asegurarse de que quien se ofrece sabe a qué se está ofreciendo. Como no lo hizo el Imperio.\n\nIlena aprieta la mandíbula, pero recoge los eslabones y los tira al barranco sin decir nada más.\n\nA la mañana siguiente está de mejor humor del que la has visto desde que os encontrasteis en el cruce.\n\n—Gracias —dice, sin mirarte, mientras ensilla—. Por no dejarme.\n\nVe a la sección **2073**.",
     "combat": null,
     "choices": [
       {
@@ -7062,7 +7339,7 @@
     "id": 2078,
     "thread": "hebra_hereje",
     "title": "El nombre del primero",
-    "text": "La última estrofa de la Canción, la que la caravana solo canta si alguien la pide expresamente, es un lamento por una sola persona:\n\n*\"Corvo bajó el primero y el primero se quedó, / corona de hierro y padre de piedra, / no llores por el hijo del emperador, / llora por lo que le pidieron.\"*\n\n—Corvo —dice Ilena—. El hijo del emperador. La primera ancla. Y por lo que dice la canción, sigue ahí abajo.\n\n—¿Después de ochocientos años?\n\n—Tú misma lo has dicho antes —responde ella—. Las anclas no se mueren como se muere la gente.\n\nAnota la palabra clave `NOMBRE DE CORVO`.\n\nVe a la sección **2079**.",
+    "text": "La última estrofa de la Canción, la que la caravana solo canta si alguien la pide expresamente, es un lamento por una sola persona:\n\n*\"Corvo bajó el primero y el primero se quedó, / corona de hierro y padre de piedra, / no llores por el hijo del emperador, / llora por lo que le pidieron.\"*\n\n—Corvo —dice Ilena—. El hijo del emperador. La primera ancla. Y por lo que dice la canción, sigue ahí abajo.\n\n—¿Después de ochocientos años?\n\n—Tú lo has dicho antes —responde ella—. Las anclas no se mueren como se muere la gente.\n\nAnota la palabra clave `NOMBRE DE CORVO`.\n\nVe a la sección **2079**.",
     "combat": null,
     "choices": [
       {
@@ -7713,7 +7990,7 @@
     "id": 2111,
     "thread": "descenso",
     "title": "El primer rellano",
-    "text": "El primer rellano aparece a unos setecientos metros de profundidad: una plataforma amplia excavada en la pared, con restos de lo que fue un puesto de trabajo imperial. Bancos de piedra. Un brasero apagado. Cajas podridas.\n\nY en la pared, un mural.\n\nEstá sorprendentemente bien conservado, y representa el ritual: el emperador en el centro, con los brazos abiertos; el dragón debajo, esquemático, atravesado por líneas radiales; y a los lados, en dos hileras ordenadas, cuatrocientas figuras humanas idénticas y sin rostro.\n\n—Fíjate en el detalle —dice tu acompañante, o lo piensas tú misma si bajas sola—. Al emperador le han pintado la cara. A las anclas, no. Ni una sola.\n\nVe a la sección **2112**.",
+    "text": "El primer rellano aparece a unos setecientos metros de profundidad: una plataforma amplia excavada en la pared, con restos de lo que fue un puesto de trabajo imperial. Bancos de piedra. Un brasero apagado. Cajas podridas.\n\nY en la pared, un mural.\n\nEstá sorprendentemente bien conservado, y representa el ritual: el emperador en el centro, con los brazos abiertos; el dragón debajo, esquemático, atravesado por líneas radiales; y a los lados, en dos hileras ordenadas, cuatrocientas figuras humanas idénticas y sin rostro.\n\n—Fíjate en el detalle —dice tu acompañante, o lo piensas por tu cuenta si bajas en solitario—. Al emperador le han pintado la cara. A las anclas, no. Ni una sola.\n\nVe a la sección **2112**.",
     "combat": null,
     "choices": [
       {
@@ -8016,7 +8293,7 @@
     "id": 2127,
     "thread": "descenso",
     "title": "Lo último antes de entrar",
-    "text": "Si llevas acompañante, este es el punto donde tienes que decidir si entra contigo.\n\n*(Si te acompaña Combe, él mismo te pide quedarse en el umbral: \"Yo he venido a leer, no a hablar. Y esto de dentro no es un documento.\")*\n\n*(Si te acompaña Orwyn, insiste en entrar, y tienes que decidir si se lo permites. Si entra, su presencia te ayudará en combate; si se queda, evitarás que su instinto militar complique cualquier conversación.)*\n\n*(Si te acompaña Ilena, entra contigo sin preguntar, y no hay forma humana de convencerla de lo contrario.)*\n\n*(Si bajas sola, no hay nada que decidir.)*\n\nAnota tu decisión y ve a la sección **2128**.",
+    "text": "Si llevas acompañante, este es el punto donde tienes que decidir si entra contigo.\n\n*(Si te acompaña Combe, él mismo te pide quedarse en el umbral: \"Yo he venido a leer, no a hablar. Y esto de dentro no es un documento.\")*\n\n*(Si te acompaña Orwyn, insiste en entrar, y tienes que decidir si se lo permites. Si entra, su presencia te ayudará en combate; si se queda, evitarás que su instinto militar complique cualquier conversación.)*\n\n*(Si te acompaña Ilena, entra contigo sin preguntar, y no hay forma humana de convencerla de lo contrario.)*\n\n*(Si bajas en solitario, no hay nada que decidir.)*\n\nAnota tu decisión y ve a la sección **2128**.",
     "combat": null,
     "choices": [
       {
@@ -8467,7 +8744,7 @@
     "id": 2150,
     "thread": "corazon",
     "title": "Tabla de finales de La Cadena Rota",
-    "text": "Consulta ahora la tabla de finales, en el orden indicado, y ve a la primera sección cuya condición cumplas.\n\n- Si tu Corrupción es 10, ve a la sección **2950**.\n- Si tienes las palabras clave `PACTO PROPUESTO` y `PACTO ACEPTADO`, y tu Vínculo es 8 o más, ve a la sección **2903**.\n- Si elegiste reforjar la cadena y tienes la palabra clave `VOLUNTARIOS DEL VALLE`, ve a la sección **2901**.\n- Si elegiste romper la cadena, ve a la sección **2902**.\n- Si elegiste reforjar la cadena y tienes `VOLUNTARIOS RECHAZADOS`, ve a la sección **2904**.\n- Si tu Corrupción está entre 7 y 9, ve a la sección **2905**.\n- Si ninguna de las condiciones anteriores aplica, ve a la sección **2906**.\n\n*(Si mataste a Ashkelen, ve igualmente a la sección que te corresponda por esta tabla: el final incorporará ese desenlace.)*",
+    "text": "Consulta ahora la tabla de finales, en el orden indicado, y ve a la primera sección cuya condición cumplas.\n\n- Si tu Corrupción es 10, ve a la sección **2950**.\n- Si tu Corrupción está entre 7 y 9, ve a la sección **2905**.\n- Si tienes la palabra clave `ASHKELEN MUERTO`, ve a la sección **2907**.\n- Si tienes las palabras clave `PACTO PROPUESTO` y `PACTO ACEPTADO`, y tu Vínculo es 8 o más, ve a la sección **2903**.\n- Si elegiste reforjar la cadena y tienes la palabra clave `VOLUNTARIOS DEL VALLE`, ve a la sección **2901**.\n- Si elegiste romper la cadena, ve a la sección **2902**.\n- Si elegiste reforjar la cadena y tienes `VOLUNTARIOS RECHAZADOS`, ve a la sección **2904**.\n- Si ninguna de las condiciones anteriores aplica, ve a la sección **2906**.",
     "combat": null,
     "choices": [],
     "sets_flags": [],
@@ -8513,7 +8790,7 @@
       "caption": "Final: El dragón libre",
       "brief": "Silueta colosal de un dragón alzándose contra un cielo de amanecer sobre una cordillera, vista desde muy lejos, con la luz del sol atravesando las vetas de cristal rojo de sus escamas. En primer plano, figuras humanas diminutas en un valle observando sin huir. Estilo: épico y ambiguo, más asombro que catástrofe, paleta de amanecer con rojos y dorados."
     },
-    "text": "La cadena se rompió, y el mundo no se acabó.\n\nEso es lo primero y lo más importante que hay que decir, porque durante los once minutos que duró la ruptura, y durante las tres semanas siguientes, nadie en Vaelgard habría apostado por ello.\n\nLo que sí ocurrió: todas las Grietas de Vaelgard se cerraron a la vez, porque eran eslabones y ya no había cadena. Todos los Marcados del reino perdieron el conocimiento el mismo instante y despertaron unas horas después con la Marca intacta pero sin ninguno de sus efectos: ni Corrupción, ni Ecos, ni Dones Forzados. Ochocientos años de herencia soltados de golpe.\n\nY Ashkelen salió.\n\nTardó dos meses en desenterrarse y otro más en poder volar. No destruyó ninguna ciudad. No exigió tributo. No hizo, de hecho, casi nada de lo que llevaban ocho siglos temiendo los sucesivos gobiernos de Vaelgard: se marchó hacia el oeste, despacio, y la última vez que alguien lo vio con certeza fue sobrevolando la costa, muy alto, en dirección al mar.\n\nLa pregunta que te hizo la primera noche —*¿sigue habiendo mar?*— te ha perseguido desde entonces.\n\nNo todo salió bien. Dos aldeas del Confín quedaron sepultadas cuando la cordillera se reasentó. Hubo hambre en el este durante dos inviernos. Y hay mucha gente en Vaelgard que jamás te perdonará haber apostado el mundo entero en una decisión que tomaste tú sola, a mil doscientos metros bajo tierra, sin consultar a nadie de arriba.\n\nTienen parte de razón. Vas a vivir con ello.\n\nPero de vez en cuando, en las noches muy claras, algunos Marcados —ex-Marcados, ahora— dicen que sueñan con el mar. Nada más. Solo el mar, visto desde muy arriba, y una sensación tranquila que ninguno consigue describir del todo.\n\n**FIN DE *LA CADENA ROTA*. FIN DE LAS CRÓNICAS DE VAELGARD.**",
+    "text": "La cadena se rompió, y el mundo no se acabó.\n\nEso es lo primero y lo más importante que hay que decir, porque durante los once minutos que duró la ruptura, y durante las tres semanas siguientes, nadie en Vaelgard habría apostado por ello.\n\nLo que sí ocurrió: todas las Grietas de Vaelgard se cerraron a la vez, porque eran eslabones y ya no había cadena. Todos los Marcados del reino perdieron el conocimiento el mismo instante y despertaron unas horas después con la Marca intacta pero sin ninguno de sus efectos: ni Corrupción, ni Ecos, ni Dones Forzados. Ochocientos años de herencia soltados de golpe.\n\nY Ashkelen salió.\n\nTardó dos meses en desenterrarse y otro más en poder volar. No destruyó ninguna ciudad. No exigió tributo. No hizo, de hecho, casi nada de lo que llevaban ocho siglos temiendo los sucesivos gobiernos de Vaelgard: se marchó hacia el oeste, despacio, y la última vez que alguien lo vio con certeza fue sobrevolando la costa, muy alto, en dirección al mar.\n\nLa pregunta que te hizo la primera noche —*¿sigue habiendo mar?*— te ha perseguido desde entonces.\n\nNo todo salió bien. Dos aldeas del Confín quedaron sepultadas cuando la cordillera se reasentó. Hubo hambre en el este durante dos inviernos. Y hay mucha gente en Vaelgard que jamás te perdonará haber apostado el mundo entero en una decisión que tomaste en solitario, a mil doscientos metros bajo tierra, sin consultar a nadie de arriba.\n\nTienen parte de razón. Vas a vivir con ello.\n\nPero de vez en cuando, en las noches muy claras, algunos Marcados —ex-Marcados, ahora— dicen que sueñan con el mar. Nada más. Solo el mar, visto desde muy arriba, y una sensación tranquila que ninguno consigue describir del todo.\n\n**FIN DE *LA CADENA ROTA*. FIN DE LAS CRÓNICAS DE VAELGARD.**",
     "combat": null,
     "choices": [],
     "sets_flags": [],
@@ -8528,7 +8805,7 @@
       "caption": "Final: El Pacto",
       "brief": "Escena nocturna de una ciudad y su campo circundante vistos desde el aire, con finísimos hilos de luz azul saliendo de miles de casas y convergiendo suavemente hacia el horizonte oriental, sin tensión ni violencia, como una red viva. Estilo: sereno y luminoso, escala amplia, paleta nocturna con azules cálidos, sensación de conexión más que de carga."
     },
-    "text": "No reforjaste la cadena. No la rompiste.\n\nHiciste lo que nadie había intentado en ochocientos años, porque nadie había bajado hasta ahí con la comprensión necesaria para formularlo: le ofreciste un trato, y él lo aceptó.\n\nEl anclaje central se desmontó. Corvo Ashkelen fue liberado del eje que llevaba ocho siglos sujetando —y murió tres semanas después, arriba, a la luz del sol, de puro agotamiento acumulado, después de pedirte que le contaras cómo era el mar—. Las cien anclas de la galería descendieron al suelo y se apagaron despacio, una por una, en lo que fue menos una muerte que un permiso para descansar por fin.\n\nY el peso de Ashkelen se repartió: no clavado en pocos, sino sostenido por todos. Decenas de miles de Marcados en todo Vaelgard, cada uno llevando una fracción tan pequeña que no pesa, conscientes de lo que llevan y de por qué lo llevan, con derecho a saberlo y con la posibilidad de hablarlo.\n\nLa condición que él puso se cumple cada noche: los nombres. Cada Marcado sabe de quién lleva el peso. Y Ashkelen, por primera vez desde que un emperador se lo robó, tiene su nombre de vuelta en decenas de miles de bocas.\n\nNo es libre. Sigue bajo el Confín, demasiado grande para salir sin arrasar el mundo de arriba, y los dos lo sabéis. Pero ya no está atado: está sostenido por acuerdo, y el acuerdo se renegocia en asamblea cada siete años, porque insististe en que constara así.\n\nY hablan. Todas las noches, decenas de miles de personas y una criatura de ocho siglos, en el único idioma que no necesita traducción. Hay Marcados que le enseñan canciones. Hay niños que le hacen preguntas absurdas. Hay una mujer mayor en el valle del Confín que por fin obtuvo, seis meses después, la respuesta sobre su hija que tú prometiste subir a buscar.\n\nCombe escribió, años después, que este fue el primer tratado de la historia de Vaelgard firmado entre dos partes que se habían hecho daño de verdad, y que por eso fue el único que duró.\n\nTú lo recuerdas de otra manera. Lo recuerdas como una conversación muy larga que empezó con alguien preguntando si todavía había mar.\n\n**FIN DE *LA CADENA ROTA*. FIN DE LAS CRÓNICAS DE VAELGARD.**\n\n*(Este es el final más difícil de alcanzar de toda la saga: exige haber cultivado el Vínculo desde la primera sección, haber escuchado en vez de rehuir, y haber bajado a preguntar en vez de a resolver. Si lo has conseguido, enhorabuena de verdad.)*",
+    "text": "No reforjaste la cadena. No la rompiste.\n\nHiciste lo que nadie había intentado en ochocientos años, porque nadie había bajado hasta ahí con la comprensión necesaria para formularlo: le ofreciste un trato, y él lo aceptó.\n\nEl anclaje central se desmontó. Corvo Ashkelen fue liberado del eje que llevaba ocho siglos sujetando —y murió tres semanas después, arriba, a la luz del sol, de puro agotamiento acumulado, después de pedirte que le contaras cómo era el mar—. Las cien anclas de la galería descendieron al suelo y se apagaron despacio, una por una, en lo que fue menos una muerte que un permiso para descansar por fin.\n\nY el peso de Ashkelen se repartió: no clavado en pocos, sino sostenido por todos. Decenas de miles de Marcados en todo Vaelgard, cada uno llevando una fracción tan pequeña que no pesa, conscientes de lo que llevan y de por qué lo llevan, con derecho a saberlo y con la posibilidad de hablarlo.\n\nLa condición que él puso se cumple cada noche: los nombres. Cada Marcado sabe de quién lleva el peso. Y Ashkelen, por primera vez desde que un emperador se lo robó, tiene su nombre de vuelta en decenas de miles de bocas.\n\nNo es libre. Sigue bajo el Confín, demasiado grande para salir sin arrasar el mundo de arriba, y los dos lo sabéis. Pero ya no está atado: está sostenido por acuerdo, y el acuerdo se renegocia en asamblea cada siete años, porque insististe en que constara así.\n\nY hablan. Todas las noches, decenas de miles de personas y una criatura de ocho siglos, en el único idioma que no necesita traducción. Hay Marcados que le enseñan canciones. Hay niños que le hacen preguntas absurdas. Hay una mujer mayor en el valle del Confín que por fin obtuvo, seis meses después, la respuesta sobre su hija que tú prometiste subir a buscar.\n\nCombe escribió, años después, que este fue el primer tratado de la historia de Vaelgard firmado entre dos partes que se habían hecho daño de verdad, y que por eso fue el único que duró.\n\nTú lo recuerdas de otra manera. Lo recuerdas como una conversación muy larga que empezó con alguien preguntando si todavía había mar.\n\n**FIN DE *LA CADENA ROTA*. FIN DE LAS CRÓNICAS DE VAELGARD.**\n\n*(Final excepcional: solo se alcanza con el Vínculo cultivado desde el principio, escuchando en vez de rehuir y bajando a preguntar en vez de a resolver.)*",
     "combat": null,
     "choices": [],
     "sets_flags": [],
@@ -8558,7 +8835,7 @@
       "caption": "Final: El precio final",
       "brief": "Figura humana sentada sola en el borde de un valle de montaña al atardecer, de espaldas, con vetas de cristal claramente visibles recorriéndole el brazo y el cuello, mirando hacia la boca sellada de un pozo. Estilo: introspectivo y agridulce, luz larga de atardecer, paleta gris-violeta con destellos rojos."
     },
-    "text": "Se resolvió. Sea cual sea la decisión que tomaste ahí abajo, se ejecutó, y Vaelgard sobrevivió a ella.\n\nTú también sobreviviste. Técnicamente.\n\nLas vetas de cristal que empezaron en tu muñeca hace tres libros te llegan ahora hasta el hombro por un lado y hasta la mandíbula por el otro. Forzaste la Sangre Vieja demasiadas veces en el descenso —cada Don arrancado a la desesperada, cada prueba salvada tirando de lo que llevas dentro en vez de de lo que sabes— y la Grieta, como siempre, llevaba la cuenta.\n\nLos sanadores de la Orden dicen que es estable. Dicen que puede quedarse así durante años. Dicen \"puede\".\n\nYa no duermes bien, y no por los sueños: los sueños se acabaron, o cambiaron, según cómo terminara todo. No duermes bien porque hay noches en que te despiertas y no reconoces el peso de tus propias manos.\n\nVas al valle del Confín una vez al año. Te sientas en el borde, sola, y miras la boca sellada del pozo hasta que se pone el sol. La gente del campamento permanente te trata con una mezcla de reverencia y cautela que no le deseas a nadie.\n\nBren —o quien sea que te haya sobrevivido de todo lo que empezó en Valcenar— te escribe cada pocos meses. Le contestas siempre. Nunca le cuentas lo del cristal.\n\nSalvaste el mundo. Pagaste el precio entero tú sola, sin que nadie te lo pidiera y sin que casi nadie llegue a saberlo nunca.\n\nEs, probablemente, la cosa más de Vaelgard que ha ocurrido en toda esta historia.\n\n**FIN DE *LA CADENA ROTA*. FIN DE LAS CRÓNICAS DE VAELGARD.**",
+    "text": "Se resolvió. Sea cual sea la decisión que tomaste ahí abajo, se ejecutó, y Vaelgard sobrevivió a ella.\n\nTú también sobreviviste. Técnicamente.\n\nLas vetas de cristal que empezaron en tu muñeca hace tres libros te llegan ahora hasta el hombro por un lado y hasta la mandíbula por el otro. Forzaste la Sangre Vieja demasiadas veces en el descenso —cada Don arrancado a la desesperada, cada prueba salvada tirando de lo que llevas dentro en vez de de lo que sabes— y la Grieta, como siempre, llevaba la cuenta.\n\nLos sanadores de la Orden dicen que es estable. Dicen que puede quedarse así durante años. Dicen \"puede\".\n\nYa no duermes bien, y no por los sueños: los sueños se acabaron, o cambiaron, según cómo terminara todo. No duermes bien porque hay noches en que te despiertas y no reconoces el peso de tus propias manos.\n\nVas al valle del Confín una vez al año. Te sientas en el borde, a solas, y miras la boca sellada del pozo hasta que se pone el sol. La gente del campamento permanente te trata con una mezcla de reverencia y cautela que no le deseas a nadie.\n\nBren —o quien sea que te haya sobrevivido de todo lo que empezó en Valcenar— te escribe cada pocos meses. Le contestas siempre. Nunca le cuentas lo del cristal.\n\nSalvaste el mundo. Pagaste el precio entero en solitario, sin que nadie te lo pidiera y sin que casi nadie llegue a saberlo nunca.\n\nEs, probablemente, la cosa más de Vaelgard que ha ocurrido en toda esta historia.\n\n**FIN DE *LA CADENA ROTA*. FIN DE LAS CRÓNICAS DE VAELGARD.**",
     "combat": null,
     "choices": [],
     "sets_flags": [],
@@ -8570,7 +8847,19 @@
     "thread": "final",
     "title": "FINAL 6 — El último Marcado",
     "illustration": null,
-    "text": "No hay monumento. No hay tratado. No hay una calle con tu nombre en Cárdenas.\n\nBajaste al Corazón del Ligamen, viste lo que había, hiciste lo que pudiste con lo que sabías en ese momento, y subiste. La cadena quedó como quedó: ni reforjada del todo con conocimiento y consentimiento, ni rota del todo, ni transformada en otra cosa. Quedó, sencillamente, en manos de la gente que vino después: comisiones, expediciones de mantenimiento, informes.\n\nEl mundo sigue. Las Grietas se han estabilizado —no cerrado: estabilizado— y hay una generación entera creciendo en Vaelgard que ha oído la historia del dragón bajo el Confín y no está segura de creérsela.\n\nTú vuelves a casa. A lo que te quede de casa, después de tres libros.\n\nY hay noches, no muchas, en que todavía sueñas con una llanura de ceniza y una respiración muy lenta, y en que te despiertas con la sensación clarísima de que alguien allá abajo sigue esperando pacientemente a que alguien baje a hacerle las preguntas que tú no llegaste a hacer.\n\nQuizás baje otra persona algún día. Quizás lleve mejores respuestas que tú.\n\nEso, en un mundo como Vaelgard, ya es una forma de esperanza.\n\n**FIN DE *LA CADENA ROTA*. FIN DE LAS CRÓNICAS DE VAELGARD.**\n\n*(Este es el final neutro de la saga. Si has llegado aquí, prueba a jugarla de nuevo escuchando más y resolviendo menos: hay al menos dos desenlaces que este camino no llega a mostrarte.)*",
+    "text": "No hay monumento. No hay tratado. No hay una calle con tu nombre en Cárdenas.\n\nBajaste al Corazón del Ligamen, viste lo que había, hiciste lo que pudiste con lo que sabías en ese momento, y subiste. La cadena quedó como quedó: ni reforjada del todo con conocimiento y consentimiento, ni rota del todo, ni transformada en otra cosa. Quedó, sencillamente, en manos de la gente que vino después: comisiones, expediciones de mantenimiento, informes.\n\nEl mundo sigue. Las Grietas se han estabilizado —no cerrado: estabilizado— y hay una generación entera creciendo en Vaelgard que ha oído la historia del dragón bajo el Confín y no está segura de creérsela.\n\nTú vuelves a casa. A lo que te quede de casa, después de tres libros.\n\nY hay noches, no muchas, en que todavía sueñas con una llanura de ceniza y una respiración muy lenta, y en que te despiertas con la sensación clarísima de que alguien allá abajo sigue esperando pacientemente a que alguien baje a hacerle las preguntas que tú no llegaste a hacer.\n\nQuizás baje otra persona algún día. Quizás lleve mejores respuestas que tú.\n\nEso, en un mundo como Vaelgard, ya es una forma de esperanza.\n\n**FIN DE *LA CADENA ROTA*. FIN DE LAS CRÓNICAS DE VAELGARD.**\n\n*(Final neutro. Hay al menos dos desenlaces que este camino no llega a mostrar: se abren escuchando más y resolviendo menos.)*",
+    "combat": null,
+    "choices": [],
+    "sets_flags": [],
+    "rep_delta": {},
+    "libro": "Libro Tercero — La Cadena Rota"
+  },
+  "2907": {
+    "id": 2907,
+    "thread": "final",
+    "title": "FINAL 7 — El silencio que compraste",
+    "text": "Ochocientos años de dolor terminaron en una exhalación, y tú fuiste quien la provocó.\n\nEso es lo primero que dicen de ti, y es verdad. Las Grietas se cerraron todas la misma tarde. No se estabilizaron, no quedaron en manos de comisiones ni de expediciones de mantenimiento: se cerraron, del todo, y ocho siglos de sangre y de cosas saliendo del suelo se acabaron ahí. Hay pueblos enteros en la frontera de Vaelgard donde este año han nacido niños que no van a saber nunca lo que era mirar al horizonte con miedo. Nadie va a poder discutírtelo jamás.\n\nLo segundo que dicen tarda más en llegar, y llega igual.\n\nPorque el Ligamen no era solo una herida: también era una fuente. Tres semanas después de tu subida, los Marcados empiezan a notarlo. La Marca no se borra —sigue ahí, en la muñeca, con su dibujo de siempre— pero se enfría. Deja de doler y deja de servir. Los que sanaban ya no sanan. Los que veían lo que iba a pasar dejan de verlo justo a tiempo de no avisar a nadie. En el Refugio hay una mujer que llevaba nueve años manteniendo con vida a su hermano y que una mañana de otoño descubre que ya no puede, y que nadie tiene la culpa, y que por eso mismo no hay a quién reprocharárselo.\n\nA ti sí. A ti te encuentran enseguida.\n\nNo es una persecución; es peor. Es gente que viene a verte, uno detrás de otro, durante años, y que no te grita. Que se sienta enfrente y te cuenta lo que perdió y luego se levanta y se va sin pedirte nada, porque saben —todos lo saben— que si hubieran estado ahí abajo, con el ojo abierto delante y aquella voz razonable en la cabeza, puede que hubieran hecho exactamente lo mismo.\n\nVives mucho. Ese es el chiste, si alguna vez te apetece contarlo: matar a lo que te dio la Marca no te quitó los años que la Marca te había dado. Te quedan décadas para pensarlo despacio.\n\nY en todas ellas, cada vez que la conversación se apaga y la casa se queda en silencio, vuelve la única frase que no supiste responder:\n\n*Por si sirve de algo: no te lo reprocho.*\n\nLo peor no es que lo dijera para hacerte daño.\n\nLo peor es que era verdad.\n\n---\n\n**Has completado *La Cadena Rota*.**\n\nEste es el final más limpio del mundo y el más sucio para ti: salvaste a todos de golpe y le cobraste el precio a los tuyos. Si quieres ver qué pasaba al otro lado de esa decisión, vuelve al Corazón del Ligamen y escucha un poco más antes de levantar la mano.",
+    "illustration": null,
     "combat": null,
     "choices": [],
     "sets_flags": [],
@@ -8591,119 +8880,5 @@
     "sets_flags": [],
     "rep_delta": {},
     "libro": "Libro Tercero — La Cadena Rota"
-  },
-  "1500": {
-    "id": 1500,
-    "thread": "hebra_emisaria",
-    "title": "Sin atarte las manos",
-    "text": "No se la aceptas. No del todo.\n\n—Si tengo que elegir entre avisarte a ti y usar esto en el momento en que sirva de algo —dices—, voy a usarlo. Prefiero decírtelo ahora a prometerte lo contrario y romperlo delante de toda la Convocatoria.\n\nSera te mira un rato largo. No hay reproche en esa mirada; hay cálculo, y quizás algo parecido al reconocimiento de alguien que lleva demasiado tiempo tratando con gente que promete cosas fácilmente.\n\n—Al menos no me mientes —dice al fin—. Es más de lo que puedo decir de la mayoría. Entonces déjame trabajar con eso: si no vas a esperarme, dime al menos por dónde vas a empezar.\n\nEsa noche, antes de que empieces a prepararte para la Convocatoria, te enseña de todos modos su propia lista: los nombres reales de quienes El Refugio ha protegido a lo largo de los años. Muchos más de los que caben en un solo sótano.\n\n—Esto es lo que de verdad hay en juego —dice—. Ahora ya no puedes decir que no lo sabías.\n\nVe a la sección **1056**.",
-    "combat": null,
-    "choices": [
-      {
-        "text": null,
-        "target": 1056
-      }
-    ],
-    "sets_flags": [
-      "EVIDENCIA_SIN_ATADURAS"
-    ],
-    "rep_delta": {},
-    "libro": "Libro Segundo — El Trono Roto",
-    "illustration": null
-  },
-  "1501": {
-    "id": 1501,
-    "thread": "hebra_emisaria",
-    "title": "Tu palabra a Sera",
-    "text": "—Te doy mi palabra —dices—. Pase lo que pase ahí dentro, El Refugio no sale de mi boca.\n\nSera no te da las gracias. Asiente una vez, despacio, como quien acaba de guardar algo en un sitio del que no piensa sacarlo, y por primera vez desde que la conociste deja caer los hombros un dedo.\n\n—Entonces vas a entrar ahí con una mano atada —dice—. Que lo sepas. Y aún así prefiero eso.\n\nVe a la sección **1058**.",
-    "combat": null,
-    "choices": [
-      {
-        "text": null,
-        "target": 1058
-      }
-    ],
-    "sets_flags": [
-      "REFUGIO_PROTEGIDO"
-    ],
-    "rep_delta": {},
-    "libro": "Libro Segundo — El Trono Roto",
-    "illustration": null
-  },
-  "1502": {
-    "id": 1502,
-    "thread": "hebra_emisaria",
-    "title": "Sin promesas que no puedas cumplir",
-    "text": "—No voy a prometerte eso —dices—. Si llega un momento en que enseñar lo que hacéis aquí es lo único que impide que el Decreto siga adelante, lo voy a enseñar. Y voy a cargar yo con lo que venga después.\n\nSera tarda en contestar.\n\n—Cargar con ello —repite—. Eso lo dice siempre quien no va a ser el que duerma aquí cuando vengan. —Pero no aparta la mirada, y no te retira nada de lo que te ha dado—. Está bien. Al menos irás ahí dentro con todas tus armas. Solo asegúrate de que valga la pena antes de gastarnos.\n\nVe a la sección **1058**.",
-    "combat": null,
-    "choices": [
-      {
-        "text": null,
-        "target": 1058
-      }
-    ],
-    "sets_flags": [
-      "REFUGIO_COMO_BAZA"
-    ],
-    "rep_delta": {},
-    "libro": "Libro Segundo — El Trono Roto",
-    "illustration": null
-  },
-  "1503": {
-    "id": 1503,
-    "thread": "hebra_independiente",
-    "title": "Preguntar primero",
-    "text": "—Antes de decir que sí —respondes— quiero saber para qué. No me gusta enterarme de en qué ando metida cuando ya no puedo salirme.\n\nCorvina levanta una ceja, y por un momento no sabes si acabas de perder el encargo.\n\n—La mayoría no pregunta —dice—. La mayoría tampoco dura mucho. —Se inclina hacia delante—. Meritxell Vaas está juntando a las Casas menores que pueden votar contra el Decreto del Censo. Si palacio se entera antes de tiempo de quiénes son, esas Casas dejan de existir en una semana. Eso es en lo que te metes.\n\nAhí está: te lo ha dicho entero, sin adornos. Aceptas sabiendo el tamaño de lo que llevas encima.\n\nVe a la sección **1066**.",
-    "combat": null,
-    "choices": [
-      {
-        "text": null,
-        "target": 1066
-      }
-    ],
-    "sets_flags": [
-      "ENCARGO_CON_CONDICIONES"
-    ],
-    "rep_delta": {},
-    "libro": "Libro Segundo — El Trono Roto",
-    "illustration": null
-  },
-  "1504": {
-    "id": 1504,
-    "thread": "investigacion",
-    "title": "Por la puerta principal",
-    "text": "Un pequeño destacamento de guardias oficiales, enviados por el propio Consejo, custodia la entrada principal. Tu salvoconducto de palacio te franquea el paso sin demasiadas preguntas, aunque más de uno de los guardias te observa con una mezcla de curiosidad y recelo que ya empiezas a reconocer como habitual en Cárdenas.\n\nEntras por donde se supone que debes entrar, con la misión del Consejo por delante y a plena luz. Tiene sus ventajas: nadie podrá decir después que te colaste, y el oficial al mando te trata desde el primer momento como a alguien a quien debe explicaciones.\n\nTambién tiene su precio. Para cuando cruzas el patio, todo el mundo dentro del monasterio sabe ya que has llegado y a qué vienes.\n\nVe a la sección **1111**.",
-    "combat": null,
-    "choices": [
-      {
-        "text": null,
-        "target": 1111
-      }
-    ],
-    "sets_flags": [
-      "ENTRADA_ANUNCIADA"
-    ],
-    "rep_delta": {},
-    "libro": "Libro Segundo — El Trono Roto",
-    "illustration": null
-  },
-  "1505": {
-    "id": 1505,
-    "thread": "investigacion",
-    "title": "El ala este, de cerca",
-    "text": "Antes de anunciarte, rodeas la colina por el lado de los olivos y te acercas al ala este por detrás, donde no hay guardias porque nadie considera que haya nada que vigilar.\n\nDe cerca, los andamiajes cuentan una historia distinta a la que se ve desde el camino: no están sujetando el muro para repararlo. Están sujetándolo para que aguante un poco más. La piedra, alrededor de la grieta principal, tiene el aspecto vidriado y ligeramente traslucido que ya has aprendido a reconocer, y la luz rojiza del sótano late despacio, con un ritmo que se parece demasiado a una respiración.\n\nHay algo más, medio tapado por la maleza: un camino de carro, reciente, que baja desde una portezuela de servicio hasta perderse ladera abajo. Alguien ha estado sacando cosas de este monasterio sin pasar por la entrada principal.\n\nSolo después vuelves sobre tus pasos y te presentas en la puerta con el salvoconducto por delante. Los guardias te franquean el paso sin demasiadas preguntas; ninguno te pregunta de dónde vienes.\n\nVe a la sección **1111**.",
-    "combat": null,
-    "choices": [
-      {
-        "text": null,
-        "target": 1111
-      }
-    ],
-    "sets_flags": [
-      "ALA_ESTE_VISTA_DE_CERCA"
-    ],
-    "rep_delta": {},
-    "libro": "Libro Segundo — El Trono Roto",
-    "illustration": null
   }
 }
