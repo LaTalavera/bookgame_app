@@ -4,6 +4,7 @@ struct GameSnapshot: Codable, Hashable {
     var nombre: String
     var vocacion: Vocacion
     var atributos: [String: Int]
+    var nivel: Int = 1
     var vida: Int
     var vidaMaxima: Int
     var ecos: Int
@@ -41,6 +42,7 @@ struct GameSnapshot: Codable, Hashable {
         nombre = s.nombre
         vocacion = s.vocacion
         atributos = Dictionary(uniqueKeysWithValues: s.atributos.map { ($0.key.rawValue, $0.value) })
+        nivel = s.nivel
         vida = s.vida
         vidaMaxima = s.vidaMaxima
         ecos = s.ecos
@@ -80,6 +82,7 @@ struct GameSnapshot: Codable, Hashable {
         var attrs: [Atributo: Int] = [:]
         for (k, v) in atributos { if let a = Atributo(rawValue: k) { attrs[a] = v } }
         s.atributos = attrs
+        s.nivel = nivel
         s.vida = vida
         s.vidaMaxima = vidaMaxima
         s.ecos = ecos

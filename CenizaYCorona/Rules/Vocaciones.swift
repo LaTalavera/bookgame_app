@@ -160,4 +160,15 @@ enum Vocacion: String, CaseIterable, Identifiable, Codable, Hashable {
     var resumenDeAtributos: String {
         "FUE \(atributos[.fue] ?? 0) · AGI \(atributos[.agi] ?? 0) · VOL \(atributos[.vol] ?? 0)"
     }
+
+    /// El atributo que decide el modo de ataque principal de cada vocación.
+    /// Solo se usa como reparto por defecto de la subida de nivel cuando no
+    /// hay una persona eligiendo (simulación, tests).
+    var atributoPrimario: Atributo {
+        switch self {
+        case .cuchilla, .penitente: return .fue
+        case .vigia: return .agi
+        case .vidente: return .vol
+        }
+    }
 }

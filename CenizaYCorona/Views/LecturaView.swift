@@ -11,7 +11,9 @@ struct LecturaView: View {
 
     var body: some View {
         ZStack {
-            if let section = state.seccion {
+            if state.nivelPendiente {
+                SubidaDeNivelView(state: state)
+            } else if let section = state.seccion {
                 if section.esFinal {
                     FinalView(state: state, section: section)
                 } else if let combate = router.combate, combate.seccionID == section.id {

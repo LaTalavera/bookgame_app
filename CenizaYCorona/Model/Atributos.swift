@@ -111,6 +111,10 @@ enum Reglas {
     /// Parte III, §21: puntos libres a repartir sobre la vocación.
     static let puntosDePersonalizacion = 3
     static let maximoPorAtributo = 2
+    /// Subida de nivel: puntos libres a repartir cada vez que cruzas a un
+    /// libro nuevo (solo dos veces en toda la saga). Decisión de diseño, no
+    /// del libro — ver REGLAS-Y-DATOS.md.
+    static let puntosPorNivel = 1
     /// Parte II, §13: si tu atributo relevante es 7 o más, +1 de daño.
     static let umbralDeDanoExtra = 7
     /// Parte II, §14: espacios de mochila.

@@ -79,6 +79,9 @@ final class GameState {
     var nombre: String
     var vocacion: Vocacion
     var atributos: [Atributo: Int]
+    /// Sube en el salto de libro (Libro I→II→III); nunca dentro de un mismo
+    /// libro. Ver `nivelPendiente` y `subirDeNivel(reparto:)`.
+    var nivel: Int = 1
 
     // ── Recursos ────────────────────────────────────────────────────────────
     var vida: Int
@@ -833,6 +836,43 @@ final class GameState {
         let resto = section.id % 1000
         guard resto != 900 && resto != 950 else { return nil }
         return libroActual.next
+    }
+
+    // ── Nivel ───────────────────────────────────────────────────────────────
+    // Decisión de diseño (no del libro): subes de nivel solo al cruzar a un
+    // libro nuevo, nunca dentro de uno. Los enemigos ya escalan por libro
+    // (Bestiario.stats), así que no hace falta tocar ningún combate: llegar
+    // más fuerte a un libro que ya es más duro es la sensación de progresión.
+
+    /// Cierto justo después de cruzar a un libro nuevo, hasta que repartes
+    /// los puntos de esa subida.
+    var nivelPendiente: Bool { nivel < libroActual.rawValue }
+
+    /// Reparte los puntos de la subida de nivel pendiente. `reparto` debe
+    /// sumar exactamente `Reglas.puntosPorNivel` en valores no negativos; si
+    /// no cuadra, no hace nada y devuelve `false`.
+    @discardableResult
+    func subirDeNivel(reparto: [Atributo: Int]) -> Bool {
+        guard nivelPendiente,
+              reparto.values.allSatisfy({ $0 >= 0 }),
+              reparto.values.reduce(0, +) == Reglas.puntosPorNivel
+        else { return false }
+        for (attr, extra) in reparto where extra > 0 {
+            atributos[attr, default: 0] += extra
+        }
+        nivel = libroActual.rawValue
+        let detalle = reparto.filter { $0.value > 0 }
+            .sorted { $0.key.rawValue < $1.key.rawValue }
+            .map { "\($0.key.sigla) +\($0.value)" }.joined(separator: " · ")
+        registrar(.sistema, texto: "Subes a nivel \(nivel)", detalle: detalle)
+        return true
+    }
+
+    /// Reparto por defecto para partidas sin nadie eligiendo (simulación,
+    /// tests): todos los puntos al atributo primario de la vocación.
+    @discardableResult
+    func subirDeNivelAutomatico() -> Bool {
+        subirDeNivel(reparto: [vocacion.atributoPrimario: Reglas.puntosPorNivel])
     }
 
     func continuarAlSiguienteLibro() {

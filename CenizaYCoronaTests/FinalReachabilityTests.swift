@@ -108,6 +108,51 @@ final class FinalReachabilityTests: XCTestCase {
         print("Vocaciones con ruta a un final: \(capaces)/\(Vocacion.allCases.count).")
     }
 
+    func testSubirDeNivelSoloEnCruceDeLibroYSumaExacta() {
+        let state = GameState(nombre: "Nivel", vocacion: .cuchilla,
+                              reparto: [.fue: 1, .agi: 1, .vol: 1], scope: .saga)
+        XCTAssertEqual(state.nivel, 1)
+        XCTAssertFalse(state.nivelPendiente, "No hay subida pendiente dentro del Libro I.")
+        XCTAssertFalse(state.subirDeNivel(reparto: [.fue: Reglas.puntosPorNivel]),
+                       "No debe poder subir de nivel sin haber cruzado de libro.")
+
+        state.seccionActual = 1001 // Inicio del Libro II
+        XCTAssertTrue(state.nivelPendiente)
+        XCTAssertFalse(state.subirDeNivel(reparto: [.fue: Reglas.puntosPorNivel + 1]),
+                       "Un reparto que no sume Reglas.puntosPorNivel no debe aplicarse.")
+        XCTAssertFalse(state.subirDeNivel(reparto: [.fue: -1, .agi: Reglas.puntosPorNivel + 1]),
+                       "Un reparto con un valor negativo no debe aplicarse aunque la suma cuadre.")
+        XCTAssertTrue(state.nivelPendiente, "Un reparto inválido no debe consumir la subida pendiente.")
+
+        let fuerzaAntes = state.atributo(.fue)
+        XCTAssertTrue(state.subirDeNivel(reparto: [.fue: Reglas.puntosPorNivel]))
+        XCTAssertEqual(state.atributo(.fue), fuerzaAntes + Reglas.puntosPorNivel)
+        XCTAssertEqual(state.nivel, 2)
+        XCTAssertFalse(state.nivelPendiente, "Repartir los puntos resuelve la subida.")
+
+        state.seccionActual = 2001 // Inicio del Libro III
+        XCTAssertTrue(state.nivelPendiente)
+        state.subirDeNivelAutomatico()
+        XCTAssertEqual(state.nivel, 3)
+        XCTAssertFalse(state.nivelPendiente)
+    }
+
+    func testSubirDeNivelAutomaticoFuncionaParaLasCuatroVocaciones() {
+        for vocacion in Vocacion.allCases {
+            let state = GameState(nombre: vocacion.nombre, vocacion: vocacion,
+                                  reparto: [.fue: 1, .agi: 1, .vol: 1], scope: .saga)
+            let sumaInicial = Atributo.allCases.reduce(0) { $0 + state.atributo($1) }
+            state.seccionActual = 1001
+            state.subirDeNivelAutomatico()
+            state.seccionActual = 2001
+            state.subirDeNivelAutomatico()
+            let sumaFinal = Atributo.allCases.reduce(0) { $0 + state.atributo($1) }
+            XCTAssertEqual(state.nivel, 3, "\(vocacion.nombre) debe llegar a nivel 3 en el Libro III.")
+            XCTAssertEqual(sumaFinal, sumaInicial + 2 * Reglas.puntosPorNivel,
+                           "\(vocacion.nombre) debe ganar exactamente los puntos de las dos subidas.")
+        }
+    }
+
     func testTravelPreparationsAreConsumableAndNeverGateProgress() {
         let state = GameState(nombre: "Marcha", vocacion: .vidente,
                               reparto: [.fue: 1, .agi: 1, .vol: 1], scope: .saga)

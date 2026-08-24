@@ -97,3 +97,48 @@ y en `../bookgame_web/lib/full-rules.ts` (`VOCATIONS.vigia.maxLife` y
 en proporción a la Vida máxima de la vocación cambió su valor esperado de
 11 a 12 como consecuencia directa (no es una regresión: el propio cálculo
 no cambió, solo la constante de la que depende).
+
+## Sistema de nivel: solo por libro, un punto de atributo (24 de agosto de 2026)
+
+Decisión de diseño, no del libro. El personaje sube de nivel únicamente al
+cruzar de un libro al siguiente — dos veces en toda la saga, nunca dentro
+de un mismo libro — y reparte 1 punto libre entre FUE/AGI/VOL en cada
+subida, sin tope por atributo (es un reparto aparte del de creación, no
+comparte su límite de +2). Nada más cambia: ni Vida, ni Ecos, ni el
+bestiario, ni ninguna de las 19 reglas especiales de combate de
+`ReglasEspeciales.swift`, porque los enemigos ya escalan por libro con su
+propia fórmula (`Bestiario.stats`, `defensa = 9 + paso` etc.). Llegar algo
+más fuerte a un libro que ya es más duro basta para la sensación de
+progresión sin desajustar ningún combate afinado a mano.
+
+Simulando 100 partidas completas (Libro I a III) por vocación con el motor
+de `bookgame_web` (mismo método que el ajuste de la Vigía de más arriba), la
+muerte baja en las cuatro vocaciones (Penitente: 64%→45%, el mayor salto) y
+la Vidente pasa a completar la saga el 46% de las veces (antes 37%). Se
+probó primero con 2 puntos por subida: la muerte bajaba más, pero la
+Corrupción subía todavía más — no porque el nivel la cause, sino porque un
+personaje que ya no muere en combate vive lo bastante como para llegar al
+tope de Corrupción en su lugar (Vigía: 54%→69% de finales de Corrupción,
+frente a 54%→57% con 1 punto). Con 1 punto el efecto es el mismo pero
+comedido, así que es el valor elegido.
+
+Nuevo en esta edición:
+
+- `nivel: Int` en `GameState` (Swift) y `level: number` en `Game` (TS),
+  empieza en 1.
+- `GameState.nivelPendiente` / `game-engine.ts::levelPending`: cierto justo
+  tras cruzar de libro, hasta repartir los puntos.
+- `GameState.subirDeNivel(reparto:)` / `game-engine.ts::applyLevelUp`:
+  valida que el reparto sume exactamente `Reglas.puntosPorNivel` /
+  `LEVEL_UP_POINTS` en valores no negativos.
+- `Vocacion.atributoPrimario` / `Vocation.primaryAttribute`: el atributo del
+  modo de ataque principal de cada vocación, usado como reparto por defecto
+  en simulación y pruebas (`subirDeNivelAutomatico`).
+- Pantalla nueva `SubidaDeNivelView.swift` (iOS) y el componente `LevelUp`
+  en `app/page.tsx` (web), mostrados entre el Final de un libro y la
+  primera sección del siguiente. Ambos guardan la partida al confirmar; si
+  se cierra la app a mitad de reparto, `nivelPendiente`/`levelPending`
+  vuelve a mostrar la pantalla al reabrir, porque se deriva de comparar
+  `nivel`/`level` contra el número de libro, no de una bandera aparte.
+- Guardado: `nivel`/`level` viaja en el snapshot con valor por defecto 1
+  para partidas guardadas antes de este cambio.

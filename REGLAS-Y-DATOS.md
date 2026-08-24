@@ -191,6 +191,35 @@ de las veces (Cuchilla: 46%) y `scripts/balance-por-vocacion.mjs`, con 3.000
 partidas por libro, confirma la paridad: 9,9% de muertes para la Cuchilla
 frente a 10,0% para la Vigía jugando con recursos.
 
+### Sistema de nivel (24 de agosto de 2026)
+
+Decisión de diseño, no del libro: el personaje sube de nivel **solo al
+cruzar de libro** (Libro I→II→III, dos subidas en toda la saga) y reparte
+**1 punto libre** entre FUE/AGI/VOL en cada una, sin tope por atributo. No
+se toca nada más — ni Vida, ni Ecos, ni el bestiario, ni ninguna de las 19
+reglas especiales de combate — porque los enemigos ya escalan por libro con
+su propia fórmula (`Bestiario.stats`), así que llegar más fuerte a un libro
+que ya es más duro basta para dar la sensación de progresión sin desajustar
+ningún combate afinado a mano.
+
+Simulando 100 partidas completas (Libro I a III) por vocación:
+
+| | Muerte sin nivel → con nivel | Éxito sin nivel → con nivel | Corrupción sin nivel → con nivel |
+|---|---|---|---|
+| Cuchilla | 42% → 35% | 7% → 6% | 51% → 59% |
+| Vigía | 44% → 39% | 2% → 4% | 54% → 57% |
+| Vidente | 47% → 40% | 37% → 46% | 16% → 14% |
+| Penitente | 64% → 45% | 7% → 8% | 29% → 47% |
+
+Se probó también con 2 puntos por subida: bajaba la muerte a la mitad
+aproximadamente, pero disparaba la Corrupción mucho más de lo que bajaba la
+muerte (Vigía llegaba al 69% de finales de Corrupción) — no porque el nivel
+"cause" Corrupción, sino porque un personaje que ya no muere en combate vive
+lo bastante como para llegar al tope de Corrupción en su lugar. Con 1 punto
+el efecto es el mismo pero más comedido, así que es el valor elegido:
+`Reglas.puntosPorNivel` / `LEVEL_UP_POINTS` en el código, ajustable si hace
+falta revisarlo más adelante.
+
 Simulando 7.200 partidas con el motor de la app, ya con pruebas de habilidad:
 
 - 0 fallos estructurales: toda partida termina en un final real.
